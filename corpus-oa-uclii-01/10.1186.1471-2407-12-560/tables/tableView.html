@@ -1,0 +1,859 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<meta charset="UTF-8" /><style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: none;
+    background-color: #f1f1f1;
+		margin: 20px 0;
+		width: auto;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+		text-decoration: none;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+		text-decoration: none;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+		text-decoration: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+}
+</style><style>
+/* Make individual cells more visible and highlight cells marked as 'empty' */
+
+body, html {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+td, th {
+	width: 130px;
+	min-width: 130px;
+	text-align: left;
+}
+
+/* Default colour for row header cells -- only wraps with no allocated role will stay this colour */
+tbody th {
+	color: black;
+}
+
+
+td.cell, th {
+	border: #eee 1px solid;
+}
+
+td.empty {
+	border: yellow 1px dotted;
+}
+
+th[data-role="obslabel"] {
+	color: red;
+	text-align: left;
+}
+
+/* Supplemental data values created by decomposing compound columns */
+
+td[data-role="supp-obs"] {
+	color: blue;
+	background: #ff2;
+}
+
+.subtable td[data-role="supp-obs"] {
+	color: blue;
+	background: #cf4;
+}
+
+/* Semantic markup for transformed structures */
+
+/* Subtable body, apply green background */
+
+.subtable {
+	background-color: #bbffbb;
+}
+
+/* Indent subtable rows of observation data, highlighted orange */
+
+.subtable th[data-role="obslabel"] {
+	color: #dd5533;
+}
+
+
+.subtable tr[data-role="obs"] {
+	color: purple;
+	border: dashed 1px black; padding-left: 0;
+}
+
+th[colspan] {
+	border-bottom: 3px solid black;
+}
+
+tr[data-tblrole="columnheaderrow"] th {
+	color: black;
+}
+
+thead {
+	border-bottom: 4px solid red;
+}
+
+/* Subtable title is not indented, highlighted red */
+
+tr[data-tblseg="subtabletitle"] th {
+	background-color: #00ff22;
+	padding-left: -10px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.subtable tr:not([data-tblseg="subtabletitle"]) th[data-role="obslabel"] {
+	padding-left: 10px;
+}
+
+tbody:not[class="subtable"] th[data-role="obslabel"] {
+	color: blue;
+	padding-left: -10px;
+	margin-left: -10px;
+}
+
+caption {
+	margin: 15px 0 25px 0;
+}
+
+tfoot tr td {
+	padding: 20px 0 0 0;
+}
+</style></head><body><h1>10.1186.1471-2407-12-560</h1><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button><button title="table4" class="tablinks" onClick="openTab(event, 'table4', 'tabcontent')">table4</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 1 Demographic variables </caption>
+    <thead>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="304.000" data-cellmaxx="333.000">Variable </th>
+      <th class="cell" data-cellminx="506.000" data-cellmaxx="524.000">n=22 </th>
+      <th data-role="supp-header">n=22 :0</th>
+      <th data-role="supp-header">n=22 :1</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="304.724" data-rowminy="114.096">
+      <th data-role="obslabel">Age, mean (SD)</th>
+      <td class="cell" data-cellminx="506.437" data-cellminy="114.096">47.3 (13.4)</td>
+      <td data-role="supp-obs" class="cell">47.3</td>
+      <td data-role="supp-obs" class="cell">13.4</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="128.099">
+      <th data-role="obslabel">Gender, n (%) female</th>
+      <td class="cell" data-cellminx="506.436" data-cellminy="128.099">18 (81.8)</td>
+      <td data-role="supp-obs" class="cell">18</td>
+      <td data-role="supp-obs" class="cell">81.8</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="142.102">
+      <th data-role="obslabel">Born in Australia, n (%)</th>
+      <td class="cell" data-cellminx="506.436" data-cellminy="142.102">20 (90.9)</td>
+      <td data-role="supp-obs" class="cell">20</td>
+      <td data-role="supp-obs" class="cell">90.9</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="156.105">
+      <th data-role="obslabel">Aboriginal/Torres Strait Islander, n (%)</th>
+      <td class="cell" data-cellminx="506.437" data-cellminy="156.105">0</td>
+      <td data-role="supp-obs" class="cell">0</td>
+      <td data-role="supp-obs" class="cell">0</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="170.108">
+      <th data-role="obslabel">English speaking, n (%)</th>
+      <td class="cell" data-cellminx="506.436" data-cellminy="170.108">22 (100)</td>
+      <td data-role="supp-obs" class="cell">22</td>
+      <td data-role="supp-obs" class="cell">100</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="184.111">
+      <th data-role="obslabel">Married/De-facto, n (%)</th>
+      <td class="cell" data-cellminx="506.436" data-cellminy="184.111">16 (72.7)</td>
+      <td data-role="supp-obs" class="cell">16</td>
+      <td data-role="supp-obs" class="cell">72.7</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="198.114">
+      <th data-role="obslabel">Completed at least high school, n (%)</th>
+      <td class="cell" data-cellminx="506.437" data-cellminy="198.114">21 (95.5)</td>
+      <td data-role="supp-obs" class="cell">21</td>
+      <td data-role="supp-obs" class="cell">95.5</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="212.117">
+      <th data-role="obslabel">Employed, n (%)</th>
+      <td class="cell" data-cellminx="506.436" data-cellminy="212.117">13 (59.1)</td>
+      <td data-role="supp-obs" class="cell">13</td>
+      <td data-role="supp-obs" class="cell">59.1</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="226.121">
+      <th data-role="obslabel">Private Health Insurance, n (%)</th>
+      <td class="cell" data-cellminx="506.437" data-cellminy="226.121">19 (86.4)</td>
+      <td data-role="supp-obs" class="cell">19</td>
+      <td data-role="supp-obs" class="cell">86.4</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="240.124">
+      <th>Household income, n (%)</th>
+      <td class="empty" />
+      <td data-role="supp-obs" class="empty" />
+      <td data-role="supp-obs" class="empty" />
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="254.127">
+      <th data-role="obslabel">-&lt; $25,000</th>
+      <td class="cell" data-cellminx="506.437" data-cellminy="254.127">4 (18.2)</td>
+      <td data-role="supp-obs" class="cell">4</td>
+      <td data-role="supp-obs" class="cell">18.2</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="268.073">
+      <th data-role="obslabel">-$25,000-$40,000</th>
+      <td class="cell" data-cellminx="506.437" data-cellminy="268.073">1 (4.6)</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4.6</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="282.076">
+      <th data-role="obslabel">-$40,000-$65,000</th>
+      <td class="cell" data-cellminx="506.437" data-cellminy="282.076">6 (27.3)</td>
+      <td data-role="supp-obs" class="cell">6</td>
+      <td data-role="supp-obs" class="cell">27.3</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="296.079">
+      <th data-role="obslabel">-$65,000-$100,000</th>
+      <td class="cell" data-cellminx="506.437" data-cellminy="296.079">5 (22.7)</td>
+      <td data-role="supp-obs" class="cell">5</td>
+      <td data-role="supp-obs" class="cell">22.7</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="310.082">
+      <th data-role="obslabel">-&gt;$100,000</th>
+      <td class="cell" data-cellminx="506.437" data-cellminy="310.082">1 (4.6)</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4.6</td>
+     </tr>
+     <tr data-rowminx="304.724" data-rowminy="324.085">
+      <th data-role="obslabel">Number of First Degree Relatives &gt;1, n (%)</th>
+      <td class="cell" data-cellminx="506.438" data-cellminy="324.085">4 (21.1)</td>
+      <td data-role="supp-obs" class="cell">4</td>
+      <td data-role="supp-obs" class="cell">21.1</td>
+     </tr>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="2" />
+     </tr>
+    </tfoot>
+   </table>
+   <p>corpus-oa-uclii-01/10.1186.1471-2407-12-560/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 2 Mean change in moderate to vigorous physical activity (MVPA), TV viewing, diet (red meat, processed meat, fruit, vegetables), alcohol, body mass index and waist circumference from baseline to six weeks </caption>
+    <thead>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="56.000" data-cellmaxx="85.000">Variable </th>
+      <th class="cell" data-cellminx="188.000" data-cellmaxx="255.000">Baseline mean (SD) </th>
+      <th class="cell" data-cellminx="286.000" data-cellmaxx="358.000">Six weeks mean (SD) </th>
+      <th class="cell" data-cellminx="389.000" data-cellmaxx="489.000">Six weeks –baseline (95%CI) </th>
+      <th class="cell" data-cellminx="528.000" data-cellmaxx="532.000">p </th>
+      <th data-role="supp-header">Baseline mean (SD) :0</th>
+      <th data-role="supp-header">Baseline mean (SD) :1</th>
+      <th data-role="supp-header">Six weeks mean (SD) :0</th>
+      <th data-role="supp-header">Six weeks mean (SD) :1</th>
+      <th data-role="supp-header">Six weeks –baseline (95%CI) :0</th>
+      <th data-role="supp-header">Six weeks –baseline (95%CI) :1</th>
+      <th data-role="supp-header">Six weeks –baseline (95%CI) :2</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="56.694" data-rowminy="125.095">
+      <th data-role="obslabel">MVPA, mins/week</th>
+      <td class="cell" data-cellminx="206.135" data-cellminy="125.095">66.6 (21.1)</td>
+      <td class="cell" data-cellminx="304.723" data-cellminy="125.095">217.3 (34.7)</td>
+      <td class="cell" data-cellminx="412.383" data-cellminy="125.095">150.7 (22.7 110.5)</td>
+      <td class="cell" data-cellminx="521.062" data-cellminy="125.095">&lt;0.01</td>
+      <td data-role="supp-obs" class="cell">66.6</td>
+      <td data-role="supp-obs" class="cell">21.1</td>
+      <td data-role="supp-obs" class="cell">217.3</td>
+      <td data-role="supp-obs" class="cell">34.7</td>
+      <td data-role="supp-obs" class="cell">150.7</td>
+      <td data-role="supp-obs" class="cell">22.7</td>
+      <td data-role="supp-obs" class="cell">110.5</td>
+     </tr>
+     <tr data-rowminx="56.694" data-rowminy="139.098">
+      <th data-role="obslabel">TV viewing, hrs/week</th>
+      <td class="cell" data-cellminx="206.136" data-cellminy="139.098">12.9 (1.7)</td>
+      <td class="cell" data-cellminx="308.579" data-cellminy="139.098">11.5 (1.6)</td>
+      <td class="cell" data-cellminx="417.712" data-cellminy="139.098">-1.4 (-4.0 1.2)</td>
+      <td class="cell" data-cellminx="525.769" data-cellminy="139.098">0.28</td>
+      <td data-role="supp-obs" class="cell">12.9</td>
+      <td data-role="supp-obs" class="cell">1.7</td>
+      <td data-role="supp-obs" class="cell">11.5</td>
+      <td data-role="supp-obs" class="cell">1.6</td>
+      <td data-role="supp-obs" class="cell">-1.4</td>
+      <td data-role="supp-obs" class="cell">-4.0</td>
+      <td data-role="supp-obs" class="cell">1.2</td>
+     </tr>
+     <tbody class="subtable">
+      <tr data-rowminx="56.694" data-rowminy="153.101" data-tblseg="subtabletitle">
+       <th>Diet</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="167.104" data-role="obs">
+       <th data-role="obslabel">Red meat, serves/week</th>
+       <td class="cell" data-cellminx="209.991" data-cellminy="167.104">2.8 (1.5)</td>
+       <td class="cell" data-cellminx="314.759" data-cellminy="167.104">2.8(1.5)</td>
+       <td class="cell" data-cellminx="416.182" data-cellminy="167.104">0.02 (-0.6 0.6)</td>
+       <td class="cell" data-cellminx="525.769" data-cellminy="167.104">0.93</td>
+       <td data-role="supp-obs" class="cell">2.8</td>
+       <td data-role="supp-obs" class="cell">1.5</td>
+       <td data-role="supp-obs" class="cell">2.8</td>
+       <td data-role="supp-obs" class="cell">1.5</td>
+       <td data-role="supp-obs" class="cell">0.02</td>
+       <td data-role="supp-obs" class="cell">-0.6</td>
+       <td data-role="supp-obs" class="cell">0.6</td>
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="181.107" data-role="obs">
+       <th data-role="obslabel">Processed meat, serves/week</th>
+       <td class="cell" data-cellminx="209.991" data-cellminy="181.107">2.0 (1.8)</td>
+       <td class="cell" data-cellminx="314.759" data-cellminy="181.107">0.9(1.2)</td>
+       <td class="cell" data-cellminx="417.712" data-cellminy="181.107">-1.2 (-1.8 -0.5)</td>
+       <td class="cell" data-cellminx="521.063" data-cellminy="181.107">&lt;0.01</td>
+       <td data-role="supp-obs" class="cell">2.0</td>
+       <td data-role="supp-obs" class="cell">1.8</td>
+       <td data-role="supp-obs" class="cell">0.9</td>
+       <td data-role="supp-obs" class="cell">1.2</td>
+       <td data-role="supp-obs" class="cell">-1.2</td>
+       <td data-role="supp-obs" class="cell">-1.8</td>
+       <td data-role="supp-obs" class="cell">-0.5</td>
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="195.110" data-role="obs">
+       <th data-role="obslabel">Fruit, serves/day</th>
+       <td class="cell" data-cellminx="209.991" data-cellminy="195.110">1.8 (0.9)</td>
+       <td class="cell" data-cellminx="312.378" data-cellminy="195.110">2.2 (1.2)</td>
+       <td class="cell" data-cellminx="420.037" data-cellminy="195.110">0.3 (-0.3 0.9)</td>
+       <td class="cell" data-cellminx="525.769" data-cellminy="195.110">0.27</td>
+       <td data-role="supp-obs" class="cell">1.8</td>
+       <td data-role="supp-obs" class="cell">0.9</td>
+       <td data-role="supp-obs" class="cell">2.2</td>
+       <td data-role="supp-obs" class="cell">1.2</td>
+       <td data-role="supp-obs" class="cell">0.3</td>
+       <td data-role="supp-obs" class="cell">-0.3</td>
+       <td data-role="supp-obs" class="cell">0.9</td>
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="209.113" data-role="obs">
+       <th data-role="obslabel">Vegetables, serves/day</th>
+       <td class="cell" data-cellminx="209.991" data-cellminy="209.113">2.5 (1.3)</td>
+       <td class="cell" data-cellminx="312.378" data-cellminy="209.113">3.5 (1.1)</td>
+       <td class="cell" data-cellminx="420.037" data-cellminy="209.113">1.0 (0.4 1.6)</td>
+       <td class="cell" data-cellminx="521.063" data-cellminy="209.113">&lt;0.01</td>
+       <td data-role="supp-obs" class="cell">2.5</td>
+       <td data-role="supp-obs" class="cell">1.3</td>
+       <td data-role="supp-obs" class="cell">3.5</td>
+       <td data-role="supp-obs" class="cell">1.1</td>
+       <td data-role="supp-obs" class="cell">1.0</td>
+       <td data-role="supp-obs" class="cell">0.4</td>
+       <td data-role="supp-obs" class="cell">1.6</td>
+      </tr>
+     </tbody>
+     <tr data-rowminx="56.694" data-rowminy="223.116">
+      <th data-role="obslabel">Alcohol, standard drinks/day</th>
+      <td class="cell" data-cellminx="209.992" data-cellminy="223.116">1.9 (0.3)</td>
+      <td class="cell" data-cellminx="314.759" data-cellminy="223.116">1.5(0.3)</td>
+      <td class="cell" data-cellminx="417.713" data-cellminy="223.116">-0.4 (-0.8 0.1)</td>
+      <td class="cell" data-cellminx="525.769" data-cellminy="223.116">0.13</td>
+      <td data-role="supp-obs" class="cell">1.9</td>
+      <td data-role="supp-obs" class="cell">0.3</td>
+      <td data-role="supp-obs" class="cell">1.5</td>
+      <td data-role="supp-obs" class="cell">0.3</td>
+      <td data-role="supp-obs" class="cell">-0.4</td>
+      <td data-role="supp-obs" class="cell">-0.8</td>
+      <td data-role="supp-obs" class="cell">0.1</td>
+     </tr>
+     <tr data-rowminx="56.694" data-rowminy="235.892">
+      <th data-role="obslabel">Body mass index, kg/m^{2}</th>
+      <td class="cell" data-cellminx="206.135" data-cellminy="237.120">30.4 (7.4)</td>
+      <td class="cell" data-cellminx="308.579" data-cellminy="237.120">29.0 (6.1)</td>
+      <td class="cell" data-cellminx="417.712" data-cellminy="237.120">-1.4 (-2.3 -0.5)</td>
+      <td class="cell" data-cellminx="521.063" data-cellminy="237.120">&lt;0.01</td>
+      <td data-role="supp-obs" class="cell">30.4</td>
+      <td data-role="supp-obs" class="cell">7.4</td>
+      <td data-role="supp-obs" class="cell">29.0</td>
+      <td data-role="supp-obs" class="cell">6.1</td>
+      <td data-role="supp-obs" class="cell">-1.4</td>
+      <td data-role="supp-obs" class="cell">-2.3</td>
+      <td data-role="supp-obs" class="cell">-0.5</td>
+     </tr>
+     <tr data-rowminx="56.693" data-rowminy="251.123">
+      <th data-role="obslabel">Waist circumference, cm</th>
+      <td class="cell" data-cellminx="206.135" data-cellminy="251.123">97.5 (18.4)</td>
+      <td class="cell" data-cellminx="308.578" data-cellminy="251.123">92.4 (15.7)</td>
+      <td class="cell" data-cellminx="417.711" data-cellminy="251.123">-5.1 (-8.3 -2.0)</td>
+      <td class="cell" data-cellminx="521.062" data-cellminy="251.123">&lt;0.01</td>
+      <td data-role="supp-obs" class="cell">97.5</td>
+      <td data-role="supp-obs" class="cell">18.4</td>
+      <td data-role="supp-obs" class="cell">92.4</td>
+      <td data-role="supp-obs" class="cell">15.7</td>
+      <td data-role="supp-obs" class="cell">-5.1</td>
+      <td data-role="supp-obs" class="cell">-8.3</td>
+      <td data-role="supp-obs" class="cell">-2.0</td>
+     </tr>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="5" />
+     </tr>
+    </tfoot>
+   </table>
+   <p>corpus-oa-uclii-01/10.1186.1471-2407-12-560/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 3 Proportion of participants meeting the national recommendations for health behaviours at baseline and follow up </caption>
+    <thead>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="56.000" data-cellmaxx="85.000">Variable MVPA^{1} </th>
+      <th class="cell" data-cellminx="150.000" data-cellmaxx="199.000">Baseline n (%) </th>
+      <th class="cell" data-cellminx="209.000" data-cellmaxx="263.000">Six weeks n (%) </th>
+      <th class="cell" data-cellminx="279.000" data-cellmaxx="283.000">p </th>
+      <th data-role="supp-header">Baseline n (%) :0</th>
+      <th data-role="supp-header">Baseline n (%) :1</th>
+      <th data-role="supp-header">Six weeks n (%) :0</th>
+      <th data-role="supp-header">Six weeks n (%) :1</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="64.687" data-rowminy="427.891">
+      <th data-role="obslabel">≥ 150 mins/week</th>
+      <td class="cell" data-cellminx="166.960" data-cellminy="427.891">6(27.3)</td>
+      <td class="cell" data-cellminx="224.163" data-cellminy="427.891">13(59.1)</td>
+      <td class="empty" />
+      <td data-role="supp-obs" class="cell">6</td>
+      <td data-role="supp-obs" class="cell">27.3</td>
+      <td data-role="supp-obs" class="cell">13</td>
+      <td data-role="supp-obs" class="cell">59.1</td>
+     </tr>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="455.897" data-tblseg="subtabletitle">
+       <th>Red Meat</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="469.900" data-role="obs">
+       <th data-role="obslabel">≤ 4 serves/week</th>
+       <td class="cell" data-cellminx="163.105" data-cellminy="469.900">19(86.4)</td>
+       <td class="cell" data-cellminx="224.164" data-cellminy="469.900">20(90.9)</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">19</td>
+       <td data-role="supp-obs" class="cell">86.4</td>
+       <td data-role="supp-obs" class="cell">20</td>
+       <td data-role="supp-obs" class="cell">90.9</td>
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="483.903" data-role="obs">
+       <th data-role="obslabel">&gt; 4 serves/week</th>
+       <td class="cell" data-cellminx="166.960" data-cellminy="483.903">3(13.6)</td>
+       <td class="cell" data-cellminx="228.018" data-cellminy="483.903">2(9.1)</td>
+       <td class="cell" data-cellminx="273.032" data-cellminy="483.903">0.12</td>
+       <td data-role="supp-obs" class="cell">3</td>
+       <td data-role="supp-obs" class="cell">13.6</td>
+       <td data-role="supp-obs" class="cell">2</td>
+       <td data-role="supp-obs" class="cell">9.1</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="497.906" data-tblseg="subtabletitle">
+       <th>Fruit</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="511.910" data-role="obs">
+       <th data-role="obslabel">≥ 2 serves/day</th>
+       <td class="cell" data-cellminx="163.105" data-cellminy="511.910">15(68.2)</td>
+       <td class="cell" data-cellminx="224.163" data-cellminy="511.910">18(81.8)</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">15</td>
+       <td data-role="supp-obs" class="cell">68.2</td>
+       <td data-role="supp-obs" class="cell">18</td>
+       <td data-role="supp-obs" class="cell">81.8</td>
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="525.913" data-role="obs">
+       <th data-role="obslabel">&lt; 2 serves/day</th>
+       <td class="cell" data-cellminx="166.960" data-cellminy="525.913">7(31.8)</td>
+       <td class="cell" data-cellminx="228.018" data-cellminy="525.913">4(18.2)</td>
+       <td class="cell" data-cellminx="273.032" data-cellminy="525.913">0.04</td>
+       <td data-role="supp-obs" class="cell">7</td>
+       <td data-role="supp-obs" class="cell">31.8</td>
+       <td data-role="supp-obs" class="cell">4</td>
+       <td data-role="supp-obs" class="cell">18.2</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="539.916" data-tblseg="subtabletitle">
+       <th>Vegetables</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="553.919" data-role="obs">
+       <th data-role="obslabel">≥ 5 serves/day</th>
+       <td class="cell" data-cellminx="166.960" data-cellminy="553.919">1(4.6)</td>
+       <td class="cell" data-cellminx="228.018" data-cellminy="553.919">4(18.2)</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">1</td>
+       <td data-role="supp-obs" class="cell">4.6</td>
+       <td data-role="supp-obs" class="cell">4</td>
+       <td data-role="supp-obs" class="cell">18.2</td>
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="567.922" data-role="obs">
+       <th data-role="obslabel">&lt; 5 serves/day</th>
+       <td class="cell" data-cellminx="163.105" data-cellminy="567.922">21(95.5)</td>
+       <td class="cell" data-cellminx="224.163" data-cellminy="567.922">18(81.8)</td>
+       <td class="cell" data-cellminx="273.032" data-cellminy="567.922">0.03</td>
+       <td data-role="supp-obs" class="cell">21</td>
+       <td data-role="supp-obs" class="cell">95.5</td>
+       <td data-role="supp-obs" class="cell">18</td>
+       <td data-role="supp-obs" class="cell">81.8</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="581.925" data-tblseg="subtabletitle">
+       <th>Alcohol</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="595.871" data-role="obs">
+       <th data-role="obslabel">≤ 2 standard drinks/day</th>
+       <td class="cell" data-cellminx="163.105" data-cellminy="595.871">13(59.1)</td>
+       <td class="cell" data-cellminx="224.164" data-cellminy="595.871">16(72.7)</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">13</td>
+       <td data-role="supp-obs" class="cell">59.1</td>
+       <td data-role="supp-obs" class="cell">16</td>
+       <td data-role="supp-obs" class="cell">72.7</td>
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="609.874" data-role="obs">
+       <th data-role="obslabel">&gt; 2 standard drinks/day</th>
+       <td class="cell" data-cellminx="166.960" data-cellminy="609.874">9(40.9)</td>
+       <td class="cell" data-cellminx="228.018" data-cellminy="609.874">6(27.3)</td>
+       <td class="cell" data-cellminx="273.032" data-cellminy="609.874">&lt;0.01</td>
+       <td data-role="supp-obs" class="cell">9</td>
+       <td data-role="supp-obs" class="cell">40.9</td>
+       <td data-role="supp-obs" class="cell">6</td>
+       <td data-role="supp-obs" class="cell">27.3</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="623.877" data-tblseg="subtabletitle">
+       <th>Body mass index</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="636.711" data-role="obs">
+       <th data-role="obslabel">Normal weight^{2}</th>
+       <td class="cell" data-cellminx="166.961" data-cellminy="637.882">7(31.8)</td>
+       <td class="cell" data-cellminx="224.164" data-cellminy="637.882">10(45.5)</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">7</td>
+       <td data-role="supp-obs" class="cell">31.8</td>
+       <td data-role="supp-obs" class="cell">10</td>
+       <td data-role="supp-obs" class="cell">45.5</td>
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="650.714" data-role="obs">
+       <th data-role="obslabel">Overweight/obese^{3}</th>
+       <td class="cell" data-cellminx="163.106" data-cellminy="651.885">15(68.2)</td>
+       <td class="cell" data-cellminx="224.164" data-cellminy="651.885">12(54.5)</td>
+       <td class="cell" data-cellminx="273.033" data-cellminy="651.885">&lt;0.01</td>
+       <td data-role="supp-obs" class="cell">15</td>
+       <td data-role="supp-obs" class="cell">68.2</td>
+       <td data-role="supp-obs" class="cell">12</td>
+       <td data-role="supp-obs" class="cell">54.5</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="665.888" data-tblseg="subtabletitle">
+       <th>Waist circumference</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="678.664" data-role="obs">
+       <th data-role="obslabel">Low risk^{4}</th>
+       <td class="cell" data-cellminx="166.961" data-cellminy="679.891">4(18.2)</td>
+       <td class="cell" data-cellminx="228.019" data-cellminy="679.891">6(27.3)</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">4</td>
+       <td data-role="supp-obs" class="cell">18.2</td>
+       <td data-role="supp-obs" class="cell">6</td>
+       <td data-role="supp-obs" class="cell">27.3</td>
+      </tr>
+      <tr data-rowminx="64.687" data-rowminy="692.667" data-role="obs">
+       <th data-role="obslabel">Increased risk^{5}</th>
+       <td class="cell" data-cellminx="163.106" data-cellminy="693.895">18(81.8)</td>
+       <td class="cell" data-cellminx="224.164" data-cellminy="693.895">16(72.7)</td>
+       <td class="cell" data-cellminx="273.033" data-cellminy="693.895">&lt;0.01</td>
+       <td data-role="supp-obs" class="cell">18</td>
+       <td data-role="supp-obs" class="cell">81.8</td>
+       <td data-role="supp-obs" class="cell">16</td>
+       <td data-role="supp-obs" class="cell">72.7</td>
+      </tr>
+     </tbody>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="4">Moderate to vigorous physical activity. 2. Normal weight (18.5 –24.9 kg/m2). 3. Overweight/obese (≥25 kg/m2). 4. Low risk (≤94cm men, ≤80cm women). 5. Increased risk (&gt;94cm men, &gt;80cm women). </td>
+     </tr>
+    </tfoot>
+   </table>
+   <p>corpus-oa-uclii-01/10.1186.1471-2407-12-560/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table4" id="table4" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 4 Mean change in health-related quality of life (HRQoL) from baseline to six weeks </caption>
+    <thead>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="56.000" data-cellmaxx="137.000">Short form-36 subscale </th>
+      <th class="cell" data-cellminx="173.000" data-cellmaxx="240.000">Baseline mean (SD) </th>
+      <th class="cell" data-cellminx="277.000" data-cellmaxx="349.000">Six weeks mean (SD) </th>
+      <th class="cell" data-cellminx="385.000" data-cellmaxx="484.000">Six weeks - baseline (95%CI) </th>
+      <th class="cell" data-cellminx="527.000" data-cellmaxx="531.000">p </th>
+      <th data-role="supp-header">Baseline mean (SD) :0</th>
+      <th data-role="supp-header">Baseline mean (SD) :1</th>
+      <th data-role="supp-header">Six weeks mean (SD) :0</th>
+      <th data-role="supp-header">Six weeks mean (SD) :1</th>
+      <th data-role="supp-header">Six weeks - baseline (95%CI) :0</th>
+      <th data-role="supp-header">Six weeks - baseline (95%CI) :1</th>
+      <th data-role="supp-header">Six weeks - baseline (95%CI) :2</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="56.693" data-rowminy="114.096">
+      <th data-role="obslabel">Physical Functioning</th>
+      <td class="cell" data-cellminx="190.998" data-cellminy="114.096">50.6 (6.5)</td>
+      <td class="cell" data-cellminx="297.070" data-cellminy="114.096">52.8 (4.4)</td>
+      <td class="cell" data-cellminx="414.084" data-cellminy="114.096">2.2 (0.9 3.5)</td>
+      <td class="cell" data-cellminx="521.063" data-cellminy="114.096">&lt;0.01</td>
+      <td data-role="supp-obs" class="cell">50.6</td>
+      <td data-role="supp-obs" class="cell">6.5</td>
+      <td data-role="supp-obs" class="cell">52.8</td>
+      <td data-role="supp-obs" class="cell">4.4</td>
+      <td data-role="supp-obs" class="cell">2.2</td>
+      <td data-role="supp-obs" class="cell">0.9</td>
+      <td data-role="supp-obs" class="cell">3.5</td>
+     </tr>
+     <tr data-rowminx="56.693" data-rowminy="128.099">
+      <th data-role="obslabel">Role Physical</th>
+      <td class="cell" data-cellminx="190.998" data-cellminy="128.099">47.2 (8.5)</td>
+      <td class="cell" data-cellminx="297.069" data-cellminy="128.099">50.2 (7.7)</td>
+      <td class="cell" data-cellminx="414.083" data-cellminy="128.099">3.1 (-0.9 7.0)</td>
+      <td class="cell" data-cellminx="525.767" data-cellminy="128.099">0.12</td>
+      <td data-role="supp-obs" class="cell">47.2</td>
+      <td data-role="supp-obs" class="cell">8.5</td>
+      <td data-role="supp-obs" class="cell">50.2</td>
+      <td data-role="supp-obs" class="cell">7.7</td>
+      <td data-role="supp-obs" class="cell">3.1</td>
+      <td data-role="supp-obs" class="cell">-0.9</td>
+      <td data-role="supp-obs" class="cell">7.0</td>
+     </tr>
+     <tr data-rowminx="56.693" data-rowminy="142.102">
+      <th data-role="obslabel">Bodily Pain</th>
+      <td class="cell" data-cellminx="190.998" data-cellminy="142.102">45.0 (11.4)</td>
+      <td class="cell" data-cellminx="297.069" data-cellminy="142.102">50.7 (9.7)</td>
+      <td class="cell" data-cellminx="414.083" data-cellminy="142.102">5.8 (1.4 10.1)</td>
+      <td class="cell" data-cellminx="525.768" data-cellminy="142.102">0.01</td>
+      <td data-role="supp-obs" class="cell">45.0</td>
+      <td data-role="supp-obs" class="cell">11.4</td>
+      <td data-role="supp-obs" class="cell">50.7</td>
+      <td data-role="supp-obs" class="cell">9.7</td>
+      <td data-role="supp-obs" class="cell">5.8</td>
+      <td data-role="supp-obs" class="cell">1.4</td>
+      <td data-role="supp-obs" class="cell">10.1</td>
+     </tr>
+     <tr data-rowminx="56.693" data-rowminy="156.105">
+      <th data-role="obslabel">General Health</th>
+      <td class="cell" data-cellminx="190.998" data-cellminy="156.105">48.4 (29.6)</td>
+      <td class="cell" data-cellminx="297.069" data-cellminy="156.105">52.1 (8.6)</td>
+      <td class="cell" data-cellminx="414.083" data-cellminy="156.105">3.7 (0.3 7.1)</td>
+      <td class="cell" data-cellminx="525.768" data-cellminy="156.105">0.03</td>
+      <td data-role="supp-obs" class="cell">48.4</td>
+      <td data-role="supp-obs" class="cell">29.6</td>
+      <td data-role="supp-obs" class="cell">52.1</td>
+      <td data-role="supp-obs" class="cell">8.6</td>
+      <td data-role="supp-obs" class="cell">3.7</td>
+      <td data-role="supp-obs" class="cell">0.3</td>
+      <td data-role="supp-obs" class="cell">7.1</td>
+     </tr>
+     <tr data-rowminx="56.693" data-rowminy="170.108">
+      <th data-role="obslabel">Vitality</th>
+      <td class="cell" data-cellminx="190.998" data-cellminy="170.108">47.3 (42.7)</td>
+      <td class="cell" data-cellminx="297.069" data-cellminy="170.108">52.0 (49.3)</td>
+      <td class="cell" data-cellminx="414.083" data-cellminy="170.108">4.8 (1.4 8.2)</td>
+      <td class="cell" data-cellminx="525.768" data-cellminy="170.108">0.01</td>
+      <td data-role="supp-obs" class="cell">47.3</td>
+      <td data-role="supp-obs" class="cell">42.7</td>
+      <td data-role="supp-obs" class="cell">52.0</td>
+      <td data-role="supp-obs" class="cell">49.3</td>
+      <td data-role="supp-obs" class="cell">4.8</td>
+      <td data-role="supp-obs" class="cell">1.4</td>
+      <td data-role="supp-obs" class="cell">8.2</td>
+     </tr>
+     <tr data-rowminx="56.693" data-rowminy="184.111">
+      <th data-role="obslabel">Social Functioning</th>
+      <td class="cell" data-cellminx="190.998" data-cellminy="184.111">48.0 (43.2)</td>
+      <td class="cell" data-cellminx="297.069" data-cellminy="184.111">52.3 (49.8)</td>
+      <td class="cell" data-cellminx="414.083" data-cellminy="184.111">4.3 (-0.4 9.0)</td>
+      <td class="cell" data-cellminx="525.767" data-cellminy="184.111">0.07</td>
+      <td data-role="supp-obs" class="cell">48.0</td>
+      <td data-role="supp-obs" class="cell">43.2</td>
+      <td data-role="supp-obs" class="cell">52.3</td>
+      <td data-role="supp-obs" class="cell">49.8</td>
+      <td data-role="supp-obs" class="cell">4.3</td>
+      <td data-role="supp-obs" class="cell">-0.4</td>
+      <td data-role="supp-obs" class="cell">9.0</td>
+     </tr>
+     <tr data-rowminx="56.693" data-rowminy="198.114">
+      <th data-role="obslabel">Role Emotional</th>
+      <td class="cell" data-cellminx="190.998" data-cellminy="198.114">47.0 (14.2)</td>
+      <td class="cell" data-cellminx="297.069" data-cellminy="198.114">50.7 (6.5)</td>
+      <td class="cell" data-cellminx="414.083" data-cellminy="198.114">3.7 (-2.0 9.4)</td>
+      <td class="cell" data-cellminx="525.767" data-cellminy="198.114">0.19</td>
+      <td data-role="supp-obs" class="cell">47.0</td>
+      <td data-role="supp-obs" class="cell">14.2</td>
+      <td data-role="supp-obs" class="cell">50.7</td>
+      <td data-role="supp-obs" class="cell">6.5</td>
+      <td data-role="supp-obs" class="cell">3.7</td>
+      <td data-role="supp-obs" class="cell">-2.0</td>
+      <td data-role="supp-obs" class="cell">9.4</td>
+     </tr>
+     <tr data-rowminx="56.693" data-rowminy="212.117">
+      <th data-role="obslabel">Mental Health</th>
+      <td class="cell" data-cellminx="190.998" data-cellminy="212.117">45.8 (13.7)</td>
+      <td class="cell" data-cellminx="297.069" data-cellminy="212.117">50.6 (6.8)</td>
+      <td class="cell" data-cellminx="414.083" data-cellminy="212.117">4.8 (-0.7 10.3)</td>
+      <td class="cell" data-cellminx="525.767" data-cellminy="212.117">0.08</td>
+      <td data-role="supp-obs" class="cell">45.8</td>
+      <td data-role="supp-obs" class="cell">13.7</td>
+      <td data-role="supp-obs" class="cell">50.6</td>
+      <td data-role="supp-obs" class="cell">6.8</td>
+      <td data-role="supp-obs" class="cell">4.8</td>
+      <td data-role="supp-obs" class="cell">-0.7</td>
+      <td data-role="supp-obs" class="cell">10.3</td>
+     </tr>
+     <tr data-rowminx="56.693" data-rowminy="226.121">
+      <th data-role="obslabel">Physical HRQoL</th>
+      <td class="cell" data-cellminx="190.998" data-cellminy="226.121">48.6 (1.6)</td>
+      <td class="cell" data-cellminx="297.070" data-cellminy="226.121">51.9 (6.6)</td>
+      <td class="cell" data-cellminx="414.084" data-cellminy="226.121">3.3 (03 6.3)</td>
+      <td class="cell" data-cellminx="525.768" data-cellminy="226.121">0.03</td>
+      <td data-role="supp-obs" class="cell">48.6</td>
+      <td data-role="supp-obs" class="cell">1.6</td>
+      <td data-role="supp-obs" class="cell">51.9</td>
+      <td data-role="supp-obs" class="cell">6.6</td>
+      <td data-role="supp-obs" class="cell">3.3</td>
+      <td data-role="supp-obs" class="cell">03</td>
+      <td data-role="supp-obs" class="cell">6.3</td>
+     </tr>
+     <tr data-rowminx="56.693" data-rowminy="240.124">
+      <th data-role="obslabel">Mental HRQoL</th>
+      <td class="cell" data-cellminx="190.998" data-cellminy="240.124">46.4 (14.9)</td>
+      <td class="cell" data-cellminx="297.069" data-cellminy="240.124">50.8 (6.9)</td>
+      <td class="cell" data-cellminx="414.083" data-cellminy="240.124">4.4 (-1.9 10.7)</td>
+      <td class="cell" data-cellminx="525.767" data-cellminy="240.124">0.16</td>
+      <td data-role="supp-obs" class="cell">46.4</td>
+      <td data-role="supp-obs" class="cell">14.9</td>
+      <td data-role="supp-obs" class="cell">50.8</td>
+      <td data-role="supp-obs" class="cell">6.9</td>
+      <td data-role="supp-obs" class="cell">4.4</td>
+      <td data-role="supp-obs" class="cell">-1.9</td>
+      <td data-role="supp-obs" class="cell">10.7</td>
+     </tr>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="5" />
+     </tr>
+    </tfoot>
+   </table>
+   <p>corpus-oa-uclii-01/10.1186.1471-2407-12-560/tables/table4/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

@@ -1,0 +1,448 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<meta charset="UTF-8" /><style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: none;
+    background-color: #f1f1f1;
+		margin: 20px 0;
+		width: auto;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+		text-decoration: none;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+		text-decoration: none;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+		text-decoration: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+}
+</style><style>
+/* Make individual cells more visible and highlight cells marked as 'empty' */
+
+body, html {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+td, th {
+	width: 130px;
+	min-width: 130px;
+	text-align: left;
+}
+
+/* Default colour for row header cells -- only wraps with no allocated role will stay this colour */
+tbody th {
+	color: black;
+}
+
+
+td.cell, th {
+	border: #eee 1px solid;
+}
+
+td.empty {
+	border: yellow 1px dotted;
+}
+
+th[data-role="obslabel"] {
+	color: red;
+	text-align: left;
+}
+
+/* Supplemental data values created by decomposing compound columns */
+
+td[data-role="supp-obs"] {
+	color: blue;
+	background: #ff2;
+}
+
+.subtable td[data-role="supp-obs"] {
+	color: blue;
+	background: #cf4;
+}
+
+/* Semantic markup for transformed structures */
+
+/* Subtable body, apply green background */
+
+.subtable {
+	background-color: #bbffbb;
+}
+
+/* Indent subtable rows of observation data, highlighted orange */
+
+.subtable th[data-role="obslabel"] {
+	color: #dd5533;
+}
+
+
+.subtable tr[data-role="obs"] {
+	color: purple;
+	border: dashed 1px black; padding-left: 0;
+}
+
+th[colspan] {
+	border-bottom: 3px solid black;
+}
+
+tr[data-tblrole="columnheaderrow"] th {
+	color: black;
+}
+
+thead {
+	border-bottom: 4px solid red;
+}
+
+/* Subtable title is not indented, highlighted red */
+
+tr[data-tblseg="subtabletitle"] th {
+	background-color: #00ff22;
+	padding-left: -10px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.subtable tr:not([data-tblseg="subtabletitle"]) th[data-role="obslabel"] {
+	padding-left: 10px;
+}
+
+tbody:not[class="subtable"] th[data-role="obslabel"] {
+	color: blue;
+	padding-left: -10px;
+	margin-left: -10px;
+}
+
+caption {
+	margin: 15px 0 25px 0;
+}
+
+tfoot tr td {
+	padding: 20px 0 0 0;
+}
+</style></head><body><h1>10.1111.add.12677</h1><div class="tab"><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button></div><div class="tabcontentdiv"><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 2 Sample characteristics stratified by study group. </caption>
+    <thead>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="85.000" data-cellmaxx="113.000">Variables </th>
+      <th class="cell" data-cellminx="285.000" data-cellmaxx="312.000">Controls </th>
+      <th class="cell" data-cellminx="373.000" data-cellmaxx="430.000">Non-stage tailored </th>
+      <th class="cell" data-cellminx="482.000" data-cellmaxx="524.000">Stage tailored </th>
+      <th data-role="supp-header">Controls :0</th>
+      <th data-role="supp-header">Controls :1</th>
+      <th data-role="supp-header">Non-stage tailored :0</th>
+      <th data-role="supp-header">Non-stage tailored :1</th>
+      <th data-role="supp-header">Stage tailored :0</th>
+      <th data-role="supp-header">Stage tailored :1</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="85.039" data-rowminy="101.496">
+      <th data-role="obslabel">n</th>
+      <td class="cell" data-cellminx="290.002" data-cellminy="101.496">414</td>
+      <td class="cell" data-cellminx="377.746" data-cellminy="101.496">416</td>
+      <td class="cell" data-cellminx="486.356" data-cellminy="101.496">413</td>
+      <td data-role="supp-obs" class="cell">414</td>
+      <td data-role="supp-obs" class="cell">414</td>
+      <td data-role="supp-obs" class="cell">416</td>
+      <td data-role="supp-obs" class="cell">416</td>
+      <td data-role="supp-obs" class="cell">413</td>
+      <td data-role="supp-obs" class="cell">413</td>
+     </tr>
+     <tbody class="subtable">
+      <tr data-rowminx="85.039" data-rowminy="112.471" data-tblseg="subtabletitle">
+       <th>Alcohol-related variables</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="93.022" data-rowminy="123.447" data-role="obs">
+       <th data-role="obslabel">Number of drinks past week (M, SD)</th>
+       <td class="cell" data-cellminx="285.854" data-cellminy="123.447">12.7, 12.8</td>
+       <td class="cell" data-cellminx="373.598" data-cellminy="123.447">12.9, 14.0</td>
+       <td class="cell" data-cellminx="482.209" data-cellminy="123.447">12.6, 12.9</td>
+       <td data-role="supp-obs" class="cell">12.7</td>
+       <td data-role="supp-obs" class="cell">12.8</td>
+       <td data-role="supp-obs" class="cell">12.9</td>
+       <td data-role="supp-obs" class="cell">14.0</td>
+       <td data-role="supp-obs" class="cell">12.6</td>
+       <td data-role="supp-obs" class="cell">12.9</td>
+      </tr>
+      <tr data-rowminx="93.022" data-rowminy="134.423" data-role="obs">
+       <th data-role="obslabel">AUDIT score (M, SD)</th>
+       <td class="cell" data-cellminx="290.505" data-cellminy="134.423">8.0, 3.8</td>
+       <td class="cell" data-cellminx="378.249" data-cellminy="134.423">8.4, 3.8</td>
+       <td class="cell" data-cellminx="486.859" data-cellminy="134.423">7.6, 3.3</td>
+       <td data-role="supp-obs" class="cell">8.0</td>
+       <td data-role="supp-obs" class="cell">3.8</td>
+       <td data-role="supp-obs" class="cell">8.4</td>
+       <td data-role="supp-obs" class="cell">3.8</td>
+       <td data-role="supp-obs" class="cell">7.6</td>
+       <td data-role="supp-obs" class="cell">3.3</td>
+      </tr>
+      <tr data-rowminx="93.022" data-rowminy="145.399" data-role="obs">
+       <th data-role="obslabel">AUDIT-C score (M, SD)</th>
+       <td class="cell" data-cellminx="290.505" data-cellminy="145.399">5.7, 1.5</td>
+       <td class="cell" data-cellminx="378.249" data-cellminy="145.399">5.8, 1.5</td>
+       <td class="cell" data-cellminx="486.859" data-cellminy="145.399">5.6, 1.4</td>
+       <td data-role="supp-obs" class="cell">5.7</td>
+       <td data-role="supp-obs" class="cell">1.5</td>
+       <td data-role="supp-obs" class="cell">5.8</td>
+       <td data-role="supp-obs" class="cell">1.5</td>
+       <td data-role="supp-obs" class="cell">5.6</td>
+       <td data-role="supp-obs" class="cell">1.4</td>
+      </tr>
+      <tr data-rowminx="93.022" data-rowminy="156.375" data-role="obs">
+       <th data-role="obslabel">Number of AUD symptoms (M, SD)</th>
+       <td class="cell" data-cellminx="290.506" data-cellminy="156.375">1.1, 1.4</td>
+       <td class="cell" data-cellminx="378.250" data-cellminy="156.375">1.2, 1.3</td>
+       <td class="cell" data-cellminx="486.860" data-cellminy="156.375">1.0, 1.2</td>
+       <td data-role="supp-obs" class="cell">1.1</td>
+       <td data-role="supp-obs" class="cell">1.4</td>
+       <td data-role="supp-obs" class="cell">1.2</td>
+       <td data-role="supp-obs" class="cell">1.3</td>
+       <td data-role="supp-obs" class="cell">1.0</td>
+       <td data-role="supp-obs" class="cell">1.2</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="93.023" data-rowminy="211.254" data-tblseg="subtabletitle">
+       <th>School education (n, %)</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="101.005" data-rowminy="222.230" data-role="obs">
+       <th data-role="obslabel">&lt;10 years</th>
+       <td class="cell" data-cellminx="292.580" data-cellminy="222.230">83, 20.0</td>
+       <td class="cell" data-cellminx="380.324" data-cellminy="222.230">86, 20.7</td>
+       <td class="cell" data-cellminx="488.935" data-cellminy="222.230">91, 22.0</td>
+       <td data-role="supp-obs" class="cell">83</td>
+       <td data-role="supp-obs" class="cell">20.0</td>
+       <td data-role="supp-obs" class="cell">86</td>
+       <td data-role="supp-obs" class="cell">20.7</td>
+       <td data-role="supp-obs" class="cell">91</td>
+       <td data-role="supp-obs" class="cell">22.0</td>
+      </tr>
+      <tr data-rowminx="101.005" data-rowminy="233.206" data-role="obs">
+       <th data-role="obslabel">10– 11 years</th>
+       <td class="cell" data-cellminx="287.929" data-cellminy="233.206">242, 58.5</td>
+       <td class="cell" data-cellminx="375.673" data-cellminy="233.206">217, 52.1</td>
+       <td class="cell" data-cellminx="484.283" data-cellminy="233.206">209, 50.6</td>
+       <td data-role="supp-obs" class="cell">242</td>
+       <td data-role="supp-obs" class="cell">58.5</td>
+       <td data-role="supp-obs" class="cell">217</td>
+       <td data-role="supp-obs" class="cell">52.1</td>
+       <td data-role="supp-obs" class="cell">209</td>
+       <td data-role="supp-obs" class="cell">50.6</td>
+      </tr>
+      <tr data-rowminx="101.005" data-rowminy="244.180" data-role="obs">
+       <th data-role="obslabel">&gt;11 years^{a}</th>
+       <td class="cell" data-cellminx="292.578" data-cellminy="244.180">89, 21.5</td>
+       <td class="cell" data-cellminx="375.671" data-cellminy="244.180">113, 27.2</td>
+       <td class="cell" data-cellminx="484.281" data-cellminy="244.180">113, 27.4</td>
+       <td data-role="supp-obs" class="cell">89</td>
+       <td data-role="supp-obs" class="cell">21.5</td>
+       <td data-role="supp-obs" class="cell">113</td>
+       <td data-role="supp-obs" class="cell">27.2</td>
+       <td data-role="supp-obs" class="cell">113</td>
+       <td data-role="supp-obs" class="cell">27.4</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="93.021" data-rowminy="266.132" data-tblseg="subtabletitle">
+       <th>Recruitment site (n, %)</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="101.004" data-rowminy="277.108" data-role="obs">
+       <th data-role="obslabel">Site 1</th>
+       <td class="cell" data-cellminx="287.927" data-cellminy="277.108">131, 31.6</td>
+       <td class="cell" data-cellminx="375.671" data-cellminy="277.108">141, 33.9</td>
+       <td class="cell" data-cellminx="484.281" data-cellminy="277.108">156, 37.8</td>
+       <td data-role="supp-obs" class="cell">131</td>
+       <td data-role="supp-obs" class="cell">31.6</td>
+       <td data-role="supp-obs" class="cell">141</td>
+       <td data-role="supp-obs" class="cell">33.9</td>
+       <td data-role="supp-obs" class="cell">156</td>
+       <td data-role="supp-obs" class="cell">37.8</td>
+      </tr>
+      <tr data-rowminx="101.004" data-rowminy="288.083" data-role="obs">
+       <th data-role="obslabel">Site 2</th>
+       <td class="cell" data-cellminx="287.927" data-cellminy="288.083">128, 30.9</td>
+       <td class="cell" data-cellminx="375.671" data-cellminy="288.083">115, 27.6</td>
+       <td class="cell" data-cellminx="488.933" data-cellminy="288.083">97, 23.5</td>
+       <td data-role="supp-obs" class="cell">128</td>
+       <td data-role="supp-obs" class="cell">30.9</td>
+       <td data-role="supp-obs" class="cell">115</td>
+       <td data-role="supp-obs" class="cell">27.6</td>
+       <td data-role="supp-obs" class="cell">97</td>
+       <td data-role="supp-obs" class="cell">23.5</td>
+      </tr>
+      <tr data-rowminx="101.004" data-rowminy="299.059" data-role="obs">
+       <th data-role="obslabel">Site 3</th>
+       <td class="cell" data-cellminx="287.927" data-cellminy="299.059">155, 37.4</td>
+       <td class="cell" data-cellminx="375.671" data-cellminy="299.059">160, 38.5</td>
+       <td class="cell" data-cellminx="484.281" data-cellminy="299.059">160, 38.7</td>
+       <td data-role="supp-obs" class="cell">155</td>
+       <td data-role="supp-obs" class="cell">37.4</td>
+       <td data-role="supp-obs" class="cell">160</td>
+       <td data-role="supp-obs" class="cell">38.5</td>
+       <td data-role="supp-obs" class="cell">160</td>
+       <td data-role="supp-obs" class="cell">38.7</td>
+      </tr>
+     </tbody>
+     <tr data-rowminx="93.021" data-rowminy="310.035">
+      <th data-role="obslabel">Current unemployment in months (M,SD)</th>
+      <td class="cell" data-cellminx="290.506" data-cellminy="310.035">5.0, 16.9</td>
+      <td class="cell" data-cellminx="378.250" data-cellminy="310.035">4.5, 16.2</td>
+      <td class="cell" data-cellminx="486.860" data-cellminy="310.035">3.9, 10.8</td>
+      <td data-role="supp-obs" class="cell">5.0</td>
+      <td data-role="supp-obs" class="cell">16.9</td>
+      <td data-role="supp-obs" class="cell">4.5</td>
+      <td data-role="supp-obs" class="cell">16.2</td>
+      <td data-role="supp-obs" class="cell">3.9</td>
+      <td data-role="supp-obs" class="cell">10.8</td>
+     </tr>
+     <tbody class="subtable">
+      <tr data-rowminx="85.039" data-rowminy="331.987" data-tblseg="subtabletitle">
+       <th>Motivation to change (n, %)</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="93.021" data-rowminy="342.962" data-role="obs">
+       <th data-role="obslabel">Pre-contemplation</th>
+       <td class="cell" data-cellminx="287.927" data-cellminy="342.962">308, 74.4</td>
+       <td class="cell" data-cellminx="375.672" data-cellminy="342.962">318, 76.4</td>
+       <td class="cell" data-cellminx="484.282" data-cellminy="342.962">321, 77.7</td>
+       <td data-role="supp-obs" class="cell">308</td>
+       <td data-role="supp-obs" class="cell">74.4</td>
+       <td data-role="supp-obs" class="cell">318</td>
+       <td data-role="supp-obs" class="cell">76.4</td>
+       <td data-role="supp-obs" class="cell">321</td>
+       <td data-role="supp-obs" class="cell">77.7</td>
+      </tr>
+      <tr data-rowminx="93.021" data-rowminy="353.938" data-role="obs">
+       <th data-role="obslabel">Contemplation</th>
+       <td class="cell" data-cellminx="292.579" data-cellminy="353.938">47, 11.4</td>
+       <td class="cell" data-cellminx="380.323" data-cellminy="353.938">44, 10.6</td>
+       <td class="cell" data-cellminx="488.933" data-cellminy="353.938">41, 9.9</td>
+       <td data-role="supp-obs" class="cell">47</td>
+       <td data-role="supp-obs" class="cell">11.4</td>
+       <td data-role="supp-obs" class="cell">44</td>
+       <td data-role="supp-obs" class="cell">10.6</td>
+       <td data-role="supp-obs" class="cell">41</td>
+       <td data-role="supp-obs" class="cell">9.9</td>
+      </tr>
+      <tr data-rowminx="93.021" data-rowminy="364.914" data-role="obs">
+       <th data-role="obslabel">Preparation</th>
+       <td class="cell" data-cellminx="297.230" data-cellminy="364.914">8, 1.9</td>
+       <td class="cell" data-cellminx="380.322" data-cellminy="364.914">12, 2.9</td>
+       <td class="cell" data-cellminx="493.584" data-cellminy="364.914">7, 1.7</td>
+       <td data-role="supp-obs" class="cell">8</td>
+       <td data-role="supp-obs" class="cell">1.9</td>
+       <td data-role="supp-obs" class="cell">12</td>
+       <td data-role="supp-obs" class="cell">2.9</td>
+       <td data-role="supp-obs" class="cell">7</td>
+       <td data-role="supp-obs" class="cell">1.7</td>
+      </tr>
+      <tr data-rowminx="93.021" data-rowminy="375.890" data-role="obs">
+       <th data-role="obslabel">Action</th>
+       <td class="cell" data-cellminx="292.579" data-cellminy="375.890">51, 12.3</td>
+       <td class="cell" data-cellminx="380.323" data-cellminy="375.890">42, 10.1</td>
+       <td class="cell" data-cellminx="488.933" data-cellminy="375.890">44, 10.7</td>
+       <td data-role="supp-obs" class="cell">51</td>
+       <td data-role="supp-obs" class="cell">12.3</td>
+       <td data-role="supp-obs" class="cell">42</td>
+       <td data-role="supp-obs" class="cell">10.1</td>
+       <td data-role="supp-obs" class="cell">44</td>
+       <td data-role="supp-obs" class="cell">10.7</td>
+      </tr>
+     </tbody>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="4">AUD = alcohol use disorder; AUDIT = Alcohol Use Disorder Identification Test; n = number of cases; M = mean; SD = standard deviation. Including those^{a} still in school. </td>
+     </tr>
+    </tfoot>
+   </table>
+   <p>corpus-oa-uclii-01/10.1111.add.12677/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table" />
+   <p>corpus-oa-uclii-01/10.1111.add.12677/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

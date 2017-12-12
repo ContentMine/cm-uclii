@@ -1608,16 +1608,16 @@
  </g>
  <g class="header.boxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
   <rect stroke="black" stroke-width="1.0" x="185.0" y="75.599" width="58.0" height="15.25" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/MUSIC</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="249.0" y="75.599" width="58.0" height="15.25" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/CBTE</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="313.0" y="75.599" width="58.0" height="15.25" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/CBTT</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="377.0" y="75.599" width="58.0" height="15.25" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Total</title>
   </rect>
  </g>
  <g class="body.subtableBoxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)"/>

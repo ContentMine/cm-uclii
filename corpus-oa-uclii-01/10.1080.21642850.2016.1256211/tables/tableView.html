@@ -1,0 +1,232 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<meta charset="UTF-8" /><style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: none;
+    background-color: #f1f1f1;
+		margin: 20px 0;
+		width: auto;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+		text-decoration: none;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+		text-decoration: none;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+		text-decoration: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+}
+</style><style>
+/* Make individual cells more visible and highlight cells marked as 'empty' */
+
+body, html {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+td, th {
+	width: 130px;
+	min-width: 130px;
+	text-align: left;
+}
+
+/* Default colour for row header cells -- only wraps with no allocated role will stay this colour */
+tbody th {
+	color: black;
+}
+
+
+td.cell, th {
+	border: #eee 1px solid;
+}
+
+td.empty {
+	border: yellow 1px dotted;
+}
+
+th[data-role="obslabel"] {
+	color: red;
+	text-align: left;
+}
+
+/* Supplemental data values created by decomposing compound columns */
+
+td[data-role="supp-obs"] {
+	color: blue;
+	background: #ff2;
+}
+
+.subtable td[data-role="supp-obs"] {
+	color: blue;
+	background: #cf4;
+}
+
+/* Semantic markup for transformed structures */
+
+/* Subtable body, apply green background */
+
+.subtable {
+	background-color: #bbffbb;
+}
+
+/* Indent subtable rows of observation data, highlighted orange */
+
+.subtable th[data-role="obslabel"] {
+	color: #dd5533;
+}
+
+
+.subtable tr[data-role="obs"] {
+	color: purple;
+	border: dashed 1px black; padding-left: 0;
+}
+
+th[colspan] {
+	border-bottom: 3px solid black;
+}
+
+tr[data-tblrole="columnheaderrow"] th {
+	color: black;
+}
+
+thead {
+	border-bottom: 4px solid red;
+}
+
+/* Subtable title is not indented, highlighted red */
+
+tr[data-tblseg="subtabletitle"] th {
+	background-color: #00ff22;
+	padding-left: -10px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.subtable tr:not([data-tblseg="subtabletitle"]) th[data-role="obslabel"] {
+	padding-left: 10px;
+}
+
+tbody:not[class="subtable"] th[data-role="obslabel"] {
+	color: blue;
+	padding-left: -10px;
+	margin-left: -10px;
+}
+
+caption {
+	margin: 15px 0 25px 0;
+}
+
+tfoot tr td {
+	padding: 20px 0 0 0;
+}
+</style></head><body><h1>10.1080.21642850.2016.1256211</h1><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 1. Means and standard deviations by group for F&amp;V and snack intake at baseline and follow-up. </caption>
+    <thead>
+     <tr>
+      <th class="empty" />
+      <th class="cell" colspan="2" data-startheadercol="1" data-endheadercol="2">Passive control</th>
+      <th class="cell" colspan="2" data-startheadercol="3" data-endheadercol="4">Active control</th>
+      <th class="cell" colspan="2" data-startheadercol="5" data-endheadercol="6">Intervention</th>
+     </tr>
+     <tr data-tblrole="columnheaderrow">
+      <th />
+      <th class="cell" data-cellminx="130.000" data-cellmaxx="147.000">Mean </th>
+      <th class="cell" data-cellminx="192.000" data-cellmaxx="200.000">SD </th>
+      <th class="cell" data-cellminx="245.000" data-cellmaxx="262.000">Mean </th>
+      <th class="cell" data-cellminx="307.000" data-cellmaxx="315.000">SD </th>
+      <th class="cell" data-cellminx="360.000" data-cellmaxx="377.000">Mean </th>
+      <th class="cell" data-cellminx="422.000" data-cellmaxx="431.000">SD </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="59.981" data-rowminy="88.236">
+      <th data-role="obslabel">BL F&amp;V</th>
+      <td class="cell" data-cellminx="132.888" data-cellminy="88.236">3.54</td>
+      <td class="cell" data-cellminx="190.374" data-cellminy="88.236">1.44</td>
+      <td class="cell" data-cellminx="247.918" data-cellminy="88.236">3.78</td>
+      <td class="cell" data-cellminx="305.404" data-cellminy="88.236">1.56</td>
+      <td class="cell" data-cellminx="362.948" data-cellminy="88.236">3.24</td>
+      <td class="cell" data-cellminx="420.434" data-cellminy="88.236">1.50</td>
+     </tr>
+     <tr data-rowminx="59.981" data-rowminy="97.193">
+      <th data-role="obslabel">FU F&amp;V</th>
+      <td class="cell" data-cellminx="132.887" data-cellminy="97.193">4.11</td>
+      <td class="cell" data-cellminx="190.374" data-cellminy="97.193">1.39</td>
+      <td class="cell" data-cellminx="247.917" data-cellminy="97.193">3.72</td>
+      <td class="cell" data-cellminx="305.403" data-cellminy="97.193">1.49</td>
+      <td class="cell" data-cellminx="362.947" data-cellminy="97.193">3.28</td>
+      <td class="cell" data-cellminx="420.433" data-cellminy="97.193">1.50</td>
+     </tr>
+     <tr data-rowminx="59.981" data-rowminy="106.208">
+      <th data-role="obslabel">BL Snack</th>
+      <td class="cell" data-cellminx="132.888" data-cellminy="106.208">4.24</td>
+      <td class="cell" data-cellminx="190.374" data-cellminy="106.208">2.03</td>
+      <td class="cell" data-cellminx="247.918" data-cellminy="106.208">4.98</td>
+      <td class="cell" data-cellminx="305.404" data-cellminy="106.208">1.76</td>
+      <td class="cell" data-cellminx="362.948" data-cellminy="106.208">5.05</td>
+      <td class="cell" data-cellminx="420.434" data-cellminy="106.208">2.10</td>
+     </tr>
+     <tr data-rowminx="59.981" data-rowminy="115.222">
+      <th data-role="obslabel">FU Snack</th>
+      <td class="cell" data-cellminx="132.888" data-cellminy="115.222">4.42</td>
+      <td class="cell" data-cellminx="190.374" data-cellminy="115.222">2.10</td>
+      <td class="cell" data-cellminx="247.918" data-cellminy="115.222">4.80</td>
+      <td class="cell" data-cellminx="305.404" data-cellminy="115.222">1.80</td>
+      <td class="cell" data-cellminx="362.948" data-cellminy="115.222">4.91</td>
+      <td class="cell" data-cellminx="420.434" data-cellminy="115.222">2.11</td>
+     </tr>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="7">Notes: BL, baseline; FU, follow-up; Snack, weekly snack intake; F&amp;V, daily fruit and vegetable intake; SD, standard deviation. </td>
+     </tr>
+    </tfoot>
+   </table>
+   <p>corpus-oa-uclii-01/10.1080.21642850.2016.1256211/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>
