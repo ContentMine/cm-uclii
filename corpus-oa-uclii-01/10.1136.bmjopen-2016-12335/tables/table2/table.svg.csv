@@ -1,25 +1,28 @@
-"","Feasibility study ","Control ","Intervention "
-N schools,1,1,2
-N participants,234,138,458
-invited*,,,
-N parent opt out,9,6,23
-N student opt out,13,0,8
-N non-attendance,29,17,82
-N assented,183,115,345
-N 2 waves,160*,115,285
-measured,,,
-N 2 waves AG,57,68,152
-N 2 waves ≥3d,52,43,112
-AG,,,
-Age,13.7 (0.4),13.1,13.2 (0.4)
-"",,(0.3),
-Sex N (% male),71 (43.3%),50,164 (47.7%)
-"",,(43.5),
-Height (cm),165.8 (8.8),161.8,162.6 (8.5)
-"",,(7.0),
-Weight (kg),58.7 (12.7),53.0,53.4 (10.6)
-"",,(10.6),
-BMI z-score,0.63 (1.2),0.52,0.44 (1.1)
-"",,(1.1),
-Per cent of,26.9,22.7,24.1
-overweight/obese,,,
+"",,Pilot CRCT,,,Pilot CRCT
+1,1,2,1,1,2,2
+234,138,458,234,234,458,458
+9,6,23,9,9,23,23
+13,0,8,13,13,8,8
+29,17,82,29,29,82,82
+183,115,345,183,183,345,345
+160*,115,285,160,160,285,285
+57,68,152,57,57,152,152
+52,43,112,52,52,112,112
+13.7 (0.4),13.1,13.2 (0.4),13.7,0.4,13.2,0.4
+"",(0.3),,,,,
+71 (43.3%),50,164 (47.7%),71,43.3,164,47.7
+"",(43.5),,,,,
+165.8 (8.8),161.8,162.6 (8.5),165.8,8.8,162.6,8.5
+"",(7.0),,,,,
+58.7 (12.7),53.0,53.4 (10.6),58.7,12.7,53.4,10.6
+"",(10.6),,,,,
+0.63 (1.2),0.52,0.44 (1.1),0.63,1.2,0.44,1.1
+"",(1.1),,,,,
+26.9,22.7,24.1,26.9,26.9,24.1,24.1
+"",,,,,,
+"Mean (SD) unless otherwise stated.
+*Not all participants given accelerometer; 113 participants at
+baseline, 123 at follow-up and 87 at both baseline and follow-up.
+AG, actigraph; BMI, body mass index; CRCT, cluster-randomised
+controlled trial.
+"

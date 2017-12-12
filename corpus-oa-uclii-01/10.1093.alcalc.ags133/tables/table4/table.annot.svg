@@ -1004,10 +1004,10 @@
  </g>
  <g class="header.boxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
   <rect stroke="black" stroke-width="1.0" x="221.0" y="439.745" width="153.0" height="14.718000000000018" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/1-month follow-up</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="413.0" y="439.745" width="153.0" height="14.718000000000018" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/6-month follow-up</title>
   </rect>
  </g>
  <g class="body.subtableBoxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">

@@ -650,7 +650,7 @@
  </g>
  <g class="header.boxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
   <rect stroke="black" stroke-width="1.0" x="291.0" y="96.599" width="144.0" height="15.25" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Bootstrap estimates</title>
   </rect>
  </g>
  <g class="body.subtableBoxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">

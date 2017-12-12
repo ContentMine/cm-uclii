@@ -778,10 +778,10 @@
  </g>
  <g class="header.boxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
   <rect stroke="black" stroke-width="1.0" x="161.0" y="73.623" width="76.0" height="14.716999999999999" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Intervention</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="282.0" y="73.623" width="76.0" height="14.716999999999999" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Control</title>
   </rect>
  </g>
  <g class="body.subtableBoxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">

@@ -1,0 +1,1210 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<meta charset="UTF-8" /><style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: none;
+    background-color: #f1f1f1;
+		margin: 20px 0;
+		width: auto;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+		text-decoration: none;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+		text-decoration: none;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+		text-decoration: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+}
+</style><style>
+/* Make individual cells more visible and highlight cells marked as 'empty' */
+
+body, html {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+td, th {
+	width: 130px;
+	min-width: 130px;
+	text-align: left;
+}
+
+/* Default colour for row header cells -- only wraps with no allocated role will stay this colour */
+tbody th {
+	color: black;
+}
+
+
+td.cell, th {
+	border: #eee 1px solid;
+}
+
+td.empty {
+	border: yellow 1px dotted;
+}
+
+th[data-role="obslabel"] {
+	color: red;
+	text-align: left;
+}
+
+/* Supplemental data values created by decomposing compound columns */
+
+td[data-role="supp-obs"] {
+	color: blue;
+	background: #ff2;
+}
+
+.subtable td[data-role="supp-obs"] {
+	color: blue;
+	background: #cf4;
+}
+
+/* Semantic markup for transformed structures */
+
+/* Subtable body, apply green background */
+
+.subtable {
+	background-color: #bbffbb;
+}
+
+/* Indent subtable rows of observation data, highlighted orange */
+
+.subtable th[data-role="obslabel"] {
+	color: #dd5533;
+}
+
+
+.subtable tr[data-role="obs"] {
+	color: purple;
+	border: dashed 1px black; padding-left: 0;
+}
+
+th[colspan] {
+	border-bottom: 3px solid black;
+}
+
+tr[data-tblrole="columnheaderrow"] th {
+	color: black;
+}
+
+thead {
+	border-bottom: 4px solid red;
+}
+
+/* Subtable title is not indented, highlighted red */
+
+tr[data-tblseg="subtabletitle"] th {
+	background-color: #00ff22;
+	padding-left: -10px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.subtable tr:not([data-tblseg="subtabletitle"]) th[data-role="obslabel"] {
+	padding-left: 10px;
+}
+
+tbody:not[class="subtable"] th[data-role="obslabel"] {
+	color: blue;
+	padding-left: -10px;
+	margin-left: -10px;
+}
+
+caption {
+	margin: 15px 0 25px 0;
+}
+
+tfoot tr td {
+	padding: 20px 0 0 0;
+}
+</style></head><body><h1>10.1186.1471-2458-14-563</h1><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button><button title="table4" class="tablinks" onClick="openTab(event, 'table4', 'tabcontent')">table4</button><button title="table5" class="tablinks" onClick="openTab(event, 'table5', 'tabcontent')">table5</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 1 Baseline characteristics of the sample </caption>
+    <thead>
+     <tr>
+      <th class="empty" />
+      <th class="cell" colspan="3" data-startheadercol="1" data-endheadercol="3">Control</th>
+      <th class="cell" colspan="3" data-startheadercol="4" data-endheadercol="6">Intervention</th>
+     </tr>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="56.000" data-cellmaxx="83.000">Variable </th>
+      <th class="cell" data-cellminx="286.000" data-cellmaxx="322.000">% or mean </th>
+      <th class="cell" data-cellminx="352.000" data-cellmaxx="361.000">SD </th>
+      <th class="cell" data-cellminx="393.000" data-cellmaxx="398.000">N </th>
+      <th class="cell" data-cellminx="423.000" data-cellmaxx="460.000">% or mean </th>
+      <th class="cell" data-cellminx="489.000" data-cellmaxx="498.000">SD </th>
+      <th class="cell" data-cellminx="530.000" data-cellmaxx="535.000">N </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="56.693" data-rowminy="127.249">
+      <th>Demographic</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+     </tr>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="141.252" data-tblseg="subtabletitle">
+       <th>Nationality</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="155.255" data-role="obs">
+       <th data-role="obslabel">UK</th>
+       <td class="cell" data-cellminx="296.759" data-cellminy="155.255">75.74</td>
+       <td class="cell" data-cellminx="355.470" data-cellminy="155.255">-</td>
+       <td class="cell" data-cellminx="390.336" data-cellminy="155.255">537</td>
+       <td class="cell" data-cellminx="433.871" data-cellminy="155.255">74.46</td>
+       <td class="cell" data-cellminx="492.586" data-cellminy="155.255">-</td>
+       <td class="cell" data-cellminx="527.452" data-cellminy="155.255">548</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="169.258" data-role="obs">
+       <th data-role="obslabel">Non UK</th>
+       <td class="cell" data-cellminx="296.751" data-cellminy="169.258">24.26</td>
+       <td class="cell" data-cellminx="355.478" data-cellminy="169.258">-</td>
+       <td class="cell" data-cellminx="390.344" data-cellminy="169.258">172</td>
+       <td class="cell" data-cellminx="433.883" data-cellminy="169.258">25.54</td>
+       <td class="cell" data-cellminx="492.611" data-cellminy="169.258">-</td>
+       <td class="cell" data-cellminx="527.477" data-cellminy="169.258">188</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="183.261" data-tblseg="subtabletitle">
+       <th>Ethnicity</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="197.264" data-role="obs">
+       <th data-role="obslabel">White British</th>
+       <td class="cell" data-cellminx="296.719" data-cellminy="197.264">67.42</td>
+       <td class="cell" data-cellminx="355.464" data-cellminy="197.264">-</td>
+       <td class="cell" data-cellminx="390.330" data-cellminy="197.264">476</td>
+       <td class="cell" data-cellminx="433.876" data-cellminy="197.264">65.98</td>
+       <td class="cell" data-cellminx="492.613" data-cellminy="197.264">-</td>
+       <td class="cell" data-cellminx="527.479" data-cellminy="197.264">483</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="211.267" data-role="obs">
+       <th data-role="obslabel">White other</th>
+       <td class="cell" data-cellminx="298.543" data-cellminy="211.267">5.95</td>
+       <td class="cell" data-cellminx="355.464" data-cellminy="211.267">-</td>
+       <td class="cell" data-cellminx="392.144" data-cellminy="211.267">42</td>
+       <td class="cell" data-cellminx="435.683" data-cellminy="211.267">6.97</td>
+       <td class="cell" data-cellminx="492.598" data-cellminy="211.267">-</td>
+       <td class="cell" data-cellminx="529.278" data-cellminy="211.267">51</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="225.270" data-role="obs">
+       <th data-role="obslabel">Mixed</th>
+       <td class="cell" data-cellminx="298.535" data-cellminy="225.270">3.97</td>
+       <td class="cell" data-cellminx="355.451" data-cellminy="225.270">-</td>
+       <td class="cell" data-cellminx="392.131" data-cellminy="225.270">28</td>
+       <td class="cell" data-cellminx="435.676" data-cellminy="225.270">2.46</td>
+       <td class="cell" data-cellminx="492.596" data-cellminy="225.270">-</td>
+       <td class="cell" data-cellminx="529.276" data-cellminy="225.270">18</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="239.273" data-role="obs">
+       <th data-role="obslabel">Asian and Asian British</th>
+       <td class="cell" data-cellminx="298.576" data-cellminy="239.273">8.64</td>
+       <td class="cell" data-cellminx="355.491" data-cellminy="239.273">-</td>
+       <td class="cell" data-cellminx="392.171" data-cellminy="239.273">61</td>
+       <td class="cell" data-cellminx="435.710" data-cellminy="239.273">8.61</td>
+       <td class="cell" data-cellminx="492.604" data-cellminy="239.273">-</td>
+       <td class="cell" data-cellminx="529.284" data-cellminy="239.273">63</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="253.276" data-role="obs">
+       <th data-role="obslabel">Black and Black British</th>
+       <td class="cell" data-cellminx="298.522" data-cellminy="253.276">2.27</td>
+       <td class="cell" data-cellminx="355.450" data-cellminy="253.276">-</td>
+       <td class="cell" data-cellminx="392.130" data-cellminy="253.276">16</td>
+       <td class="cell" data-cellminx="435.670" data-cellminy="253.276">2.46</td>
+       <td class="cell" data-cellminx="492.588" data-cellminy="253.276">-</td>
+       <td class="cell" data-cellminx="529.268" data-cellminy="253.276">18</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="267.222" data-role="obs">
+       <th data-role="obslabel">Chinese</th>
+       <td class="cell" data-cellminx="296.714" data-cellminy="267.222">10.48</td>
+       <td class="cell" data-cellminx="355.453" data-cellminy="267.222">-</td>
+       <td class="cell" data-cellminx="392.133" data-cellminy="267.222">74</td>
+       <td class="cell" data-cellminx="433.859" data-cellminy="267.222">12.16</td>
+       <td class="cell" data-cellminx="492.597" data-cellminy="267.222">-</td>
+       <td class="cell" data-cellminx="529.277" data-cellminy="267.222">89</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="281.225" data-role="obs">
+       <th data-role="obslabel">Other</th>
+       <td class="cell" data-cellminx="298.576" data-cellminy="281.225">1.27</td>
+       <td class="cell" data-cellminx="355.484" data-cellminy="281.225">-</td>
+       <td class="cell" data-cellminx="393.978" data-cellminy="281.225">9</td>
+       <td class="cell" data-cellminx="435.704" data-cellminy="281.225">1.37</td>
+       <td class="cell" data-cellminx="492.611" data-cellminy="281.225">-</td>
+       <td class="cell" data-cellminx="529.291" data-cellminy="281.225">10</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="295.229" data-tblseg="subtabletitle">
+       <th>Gender</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="309.232" data-role="obs">
+       <th data-role="obslabel">Female</th>
+       <td class="cell" data-cellminx="296.718" data-cellminy="309.232">55.15</td>
+       <td class="cell" data-cellminx="355.460" data-cellminy="309.232">-</td>
+       <td class="cell" data-cellminx="390.326" data-cellminy="309.232">391</td>
+       <td class="cell" data-cellminx="433.871" data-cellminy="309.232">61.55</td>
+       <td class="cell" data-cellminx="492.607" data-cellminy="309.232">-</td>
+       <td class="cell" data-cellminx="527.473" data-cellminy="309.232">453</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="323.235" data-role="obs">
+       <th data-role="obslabel">Male</th>
+       <td class="cell" data-cellminx="296.711" data-cellminy="323.235">44.85</td>
+       <td class="cell" data-cellminx="355.455" data-cellminy="323.235">-</td>
+       <td class="cell" data-cellminx="390.321" data-cellminy="323.235">318</td>
+       <td class="cell" data-cellminx="433.867" data-cellminy="323.235">38.45</td>
+       <td class="cell" data-cellminx="492.604" data-cellminy="323.235">-</td>
+       <td class="cell" data-cellminx="527.470" data-cellminy="323.235">283</td>
+      </tr>
+     </tbody>
+     <tr data-rowminx="56.693" data-rowminy="337.238">
+      <th data-role="obslabel">Age</th>
+      <td class="cell" data-cellminx="296.703" data-cellminy="337.238">19.04</td>
+      <td class="cell" data-cellminx="350.444" data-cellminy="337.238">2.91</td>
+      <td class="cell" data-cellminx="390.304" data-cellminy="337.238">709</td>
+      <td class="cell" data-cellminx="433.847" data-cellminy="337.238">18.76</td>
+      <td class="cell" data-cellminx="487.587" data-cellminy="337.238">1.99</td>
+      <td class="cell" data-cellminx="527.444" data-cellminy="337.238">736</td>
+     </tr>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="351.241" data-tblseg="subtabletitle">
+       <th>Fruit and vegetable intake</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="365.244" data-role="obs">
+       <th data-role="obslabel">Mean portions</th>
+       <td class="cell" data-cellminx="298.523" data-cellminy="365.244">6.36</td>
+       <td class="cell" data-cellminx="350.461" data-cellminy="365.244">4.96</td>
+       <td class="cell" data-cellminx="390.333" data-cellminy="365.244">669</td>
+       <td class="cell" data-cellminx="435.695" data-cellminy="365.244">6.67</td>
+       <td class="cell" data-cellminx="487.624" data-cellminy="365.244">5.17</td>
+       <td class="cell" data-cellminx="527.486" data-cellminy="365.244">701</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="379.247" data-tblseg="subtabletitle">
+       <th>Physical activity</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="393.250" data-role="obs">
+       <th data-role="obslabel">METS</th>
+       <td class="cell" data-cellminx="293.108" data-cellminy="393.250">3402.37</td>
+       <td class="cell" data-cellminx="345.040" data-cellminy="393.250">5101.72</td>
+       <td class="cell" data-cellminx="390.330" data-cellminy="393.250">688</td>
+       <td class="cell" data-cellminx="430.241" data-cellminy="393.250">3140.11</td>
+       <td class="cell" data-cellminx="482.173" data-cellminy="393.250">3861.42</td>
+       <td class="cell" data-cellminx="527.463" data-cellminy="393.250">709</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="407.253" data-role="obs">
+       <th data-role="obslabel">Mean hours sitting</th>
+       <td class="cell" data-cellminx="294.865" data-cellminy="407.253">344.36</td>
+       <td class="cell" data-cellminx="346.807" data-cellminy="407.253">179.09</td>
+       <td class="cell" data-cellminx="390.292" data-cellminy="407.253">609</td>
+       <td class="cell" data-cellminx="432.017" data-cellminy="407.253">336.17</td>
+       <td class="cell" data-cellminx="483.959" data-cellminy="407.253">171.42</td>
+       <td class="cell" data-cellminx="527.444" data-cellminy="407.253">641</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="421.256" data-tblseg="subtabletitle">
+       <th>Alcohol consumption</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="435.259" data-role="obs">
+       <th data-role="obslabel">Mean total units in last 7 days</th>
+       <td class="cell" data-cellminx="296.643" data-cellminy="435.259">11.88</td>
+       <td class="cell" data-cellminx="348.582" data-cellminy="435.259">18.54</td>
+       <td class="cell" data-cellminx="390.269" data-cellminy="435.259">708</td>
+       <td class="cell" data-cellminx="433.808" data-cellminy="435.259">11.17</td>
+       <td class="cell" data-cellminx="485.756" data-cellminy="435.259">18.72</td>
+       <td class="cell" data-cellminx="527.433" data-cellminy="435.259">736</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="449.262" data-role="obs">
+       <th data-role="obslabel">Mean number of days binge drinking in last 7 days (drinkers only)</th>
+       <td class="cell" data-cellminx="298.495" data-cellminy="449.262">1.00</td>
+       <td class="cell" data-cellminx="350.424" data-cellminy="449.262">1.04</td>
+       <td class="cell" data-cellminx="390.278" data-cellminy="449.262">447</td>
+       <td class="cell" data-cellminx="435.632" data-cellminy="449.262">1.04</td>
+       <td class="cell" data-cellminx="487.568" data-cellminy="449.262">1.14</td>
+       <td class="cell" data-cellminx="527.430" data-cellminy="449.262">425</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="463.265" data-role="obs">
+       <th data-role="obslabel">Mean alcohol objective (FAEE)</th>
+       <td class="cell" data-cellminx="298.524" data-cellminy="463.265">2.07</td>
+       <td class="cell" data-cellminx="350.447" data-cellminy="463.265">2.02</td>
+       <td class="cell" data-cellminx="392.118" data-cellminy="463.265">54</td>
+       <td class="cell" data-cellminx="435.659" data-cellminy="463.265">2.08</td>
+       <td class="cell" data-cellminx="487.583" data-cellminy="463.265">2.56</td>
+       <td class="cell" data-cellminx="529.253" data-cellminy="463.265">54</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="477.268" data-tblseg="subtabletitle">
+       <th>Smoking</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="491.271" data-role="obs">
+       <th data-role="obslabel">Has smoked</th>
+       <td class="cell" data-cellminx="296.734" data-cellminy="491.271">37.24</td>
+       <td class="cell" data-cellminx="355.465" data-cellminy="491.271">-</td>
+       <td class="cell" data-cellminx="390.331" data-cellminy="491.271">264</td>
+       <td class="cell" data-cellminx="433.869" data-cellminy="491.271">37.23</td>
+       <td class="cell" data-cellminx="492.602" data-cellminy="491.271">-</td>
+       <td class="cell" data-cellminx="527.468" data-cellminy="491.271">274</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="505.274" data-role="obs">
+       <th data-role="obslabel">Has never smoked</th>
+       <td class="cell" data-cellminx="296.707" data-cellminy="505.274">62.76</td>
+       <td class="cell" data-cellminx="355.447" data-cellminy="505.274">-</td>
+       <td class="cell" data-cellminx="390.313" data-cellminy="505.274">445</td>
+       <td class="cell" data-cellminx="433.858" data-cellminy="505.274">62.77</td>
+       <td class="cell" data-cellminx="492.591" data-cellminy="505.274">-</td>
+       <td class="cell" data-cellminx="527.457" data-cellminy="505.274">462</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="519.220" data-role="obs">
+       <th data-role="obslabel">Current smokers</th>
+       <td class="cell" data-cellminx="296.723" data-cellminy="519.220">11.99</td>
+       <td class="cell" data-cellminx="355.463" data-cellminy="519.220">-</td>
+       <td class="cell" data-cellminx="392.143" data-cellminy="519.220">85</td>
+       <td class="cell" data-cellminx="433.874" data-cellminy="519.220">11.28</td>
+       <td class="cell" data-cellminx="492.613" data-cellminy="519.220">-</td>
+       <td class="cell" data-cellminx="529.293" data-cellminy="519.220">83</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="533.223" data-role="obs">
+       <th data-role="obslabel">Not a current smoker</th>
+       <td class="cell" data-cellminx="296.761" data-cellminy="533.223">88.01</td>
+       <td class="cell" data-cellminx="355.494" data-cellminy="533.223">-</td>
+       <td class="cell" data-cellminx="390.360" data-cellminy="533.223">624</td>
+       <td class="cell" data-cellminx="433.899" data-cellminy="533.223">88.72</td>
+       <td class="cell" data-cellminx="492.620" data-cellminy="533.223">-</td>
+       <td class="cell" data-cellminx="527.486" data-cellminy="533.223">653</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="547.226" data-role="obs">
+       <th data-role="obslabel">Cigarettes smoked per week</th>
+       <td class="cell" data-cellminx="298.575" data-cellminy="547.226">3.19</td>
+       <td class="cell" data-cellminx="348.687" data-cellminy="547.226">14.12</td>
+       <td class="cell" data-cellminx="390.354" data-cellminy="547.226">496</td>
+       <td class="cell" data-cellminx="435.704" data-cellminy="547.226">1.88</td>
+       <td class="cell" data-cellminx="485.815" data-cellminy="547.226">10.95</td>
+       <td class="cell" data-cellminx="527.484" data-cellminy="547.226">483</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="561.229" data-role="obs">
+       <th data-role="obslabel">Smoking objective (cotinine)</th>
+       <td class="cell" data-cellminx="300.318" data-cellminy="561.229">.48</td>
+       <td class="cell" data-cellminx="352.244" data-cellminy="561.229">.49</td>
+       <td class="cell" data-cellminx="392.102" data-cellminy="561.229">54</td>
+       <td class="cell" data-cellminx="437.459" data-cellminy="561.229">.45</td>
+       <td class="cell" data-cellminx="489.386" data-cellminy="561.229">.42</td>
+       <td class="cell" data-cellminx="529.244" data-cellminy="561.229">54</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="575.232" data-role="obs">
+       <th data-role="obslabel">Smoking objective (nicotine)</th>
+       <td class="cell" data-cellminx="298.469" data-cellminy="575.232">7.19</td>
+       <td class="cell" data-cellminx="348.591" data-cellminy="575.232">18.67</td>
+       <td class="cell" data-cellminx="392.087" data-cellminy="575.232">54</td>
+       <td class="cell" data-cellminx="435.627" data-cellminy="575.232">9.49</td>
+       <td class="cell" data-cellminx="485.740" data-cellminy="575.232">19.16</td>
+       <td class="cell" data-cellminx="529.230" data-cellminy="575.232">54</td>
+      </tr>
+     </tbody>
+     <tr data-rowminx="56.693" data-rowminy="589.235">
+      <th>Other outcomes</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+     </tr>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="603.238" data-tblseg="subtabletitle">
+       <th>EQ-5D-3L</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="617.241" data-role="obs">
+       <th data-role="obslabel">Mean health index scores from EQ-5D-3L (VAS)</th>
+       <td class="cell" data-cellminx="300.412" data-cellminy="617.241">.90</td>
+       <td class="cell" data-cellminx="352.380" data-cellminy="617.241">.14</td>
+       <td class="cell" data-cellminx="390.445" data-cellminy="617.241">708</td>
+       <td class="cell" data-cellminx="437.603" data-cellminy="617.241">.91</td>
+       <td class="cell" data-cellminx="489.557" data-cellminy="617.241">.14</td>
+       <td class="cell" data-cellminx="527.579" data-cellminy="617.241">735</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="631.244" data-role="obs">
+       <th data-role="obslabel">Mean health index score from EQ-5D-3L (TTO)</th>
+       <td class="cell" data-cellminx="300.339" data-cellminy="631.244">.92</td>
+       <td class="cell" data-cellminx="352.276" data-cellminy="631.244">.13</td>
+       <td class="cell" data-cellminx="390.316" data-cellminy="631.244">708</td>
+       <td class="cell" data-cellminx="437.483" data-cellminy="631.244">.92</td>
+       <td class="cell" data-cellminx="489.418" data-cellminy="631.244">.14</td>
+       <td class="cell" data-cellminx="527.466" data-cellminy="631.244">735</td>
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="645.247" data-role="obs">
+       <th data-role="obslabel">Mean EQ-5D-3L visual analogue scale</th>
+       <td class="cell" data-cellminx="296.808" data-cellminy="645.247">78.21</td>
+       <td class="cell" data-cellminx="348.733" data-cellminy="645.247">13.61</td>
+       <td class="cell" data-cellminx="390.417" data-cellminy="645.247">706</td>
+       <td class="cell" data-cellminx="433.921" data-cellminy="645.247">78.11</td>
+       <td class="cell" data-cellminx="485.867" data-cellminy="645.247">15.85</td>
+       <td class="cell" data-cellminx="527.530" data-cellminy="645.247">730</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="56.693" data-rowminy="659.250" data-tblseg="subtabletitle">
+       <th>Recreational drugs</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+      </tr>
+      <tr data-rowminx="64.686" data-rowminy="672.031" data-role="obs">
+       <th data-role="obslabel">Have taken recreational drugs (SSC measure)^{1}</th>
+       <td class="cell" data-cellminx="296.731" data-cellminy="673.258">18.73</td>
+       <td class="cell" data-cellminx="347.130" data-cellminy="673.258">± 9.54</td>
+       <td class="cell" data-cellminx="390.329" data-cellminy="673.258">132</td>
+       <td class="cell" data-cellminx="433.868" data-cellminy="673.258">16.49</td>
+       <td class="cell" data-cellminx="484.267" data-cellminy="673.258">± 9.56</td>
+       <td class="cell" data-cellminx="527.466" data-cellminy="673.258">121</td>
+      </tr>
+      <tr data-rowminx="64.688" data-rowminy="687.261" data-role="obs">
+       <th data-role="obslabel">Have not taken recreational drugs (SSC measure)</th>
+       <td class="cell" data-cellminx="296.685" data-cellminy="687.261">81.27</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="390.297" data-cellminy="687.261">575</td>
+       <td class="cell" data-cellminx="433.847" data-cellminy="687.261">83.51</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="527.458" data-cellminy="687.261">613</td>
+      </tr>
+      <tr data-rowminx="64.688" data-rowminy="701.264" data-role="obs">
+       <th data-role="obslabel">Have taken recreational drugs (biochemical measure)</th>
+       <td class="cell" data-cellminx="296.743" data-cellminy="701.264">39.53</td>
+       <td class="cell" data-cellminx="355.501" data-cellminy="701.264">-</td>
+       <td class="cell" data-cellminx="392.182" data-cellminy="701.264">17</td>
+       <td class="cell" data-cellminx="433.919" data-cellminy="701.264">45.71</td>
+       <td class="cell" data-cellminx="492.677" data-cellminy="701.264">-</td>
+       <td class="cell" data-cellminx="529.358" data-cellminy="701.264">16</td>
+      </tr>
+      <tr data-rowminx="64.688" data-rowminy="715.267" data-role="obs">
+       <th data-role="obslabel">Have not taken recreational drugs (biochemical measure)</th>
+       <td class="cell" data-cellminx="296.674" data-cellminy="715.267">60.47</td>
+       <td class="cell" data-cellminx="355.423" data-cellminy="715.267">-</td>
+       <td class="cell" data-cellminx="392.103" data-cellminy="715.267">26</td>
+       <td class="cell" data-cellminx="433.837" data-cellminy="715.267">54.29</td>
+       <td class="cell" data-cellminx="492.586" data-cellminy="715.267">-</td>
+       <td class="cell" data-cellminx="529.266" data-cellminy="715.267">19</td>
+      </tr>
+     </tbody>
+    </tbody>
+   </table>
+   <p>corpus-oa-uclii-01/10.1186.1471-2458-14-563/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table" />
+   <p>corpus-oa-uclii-01/10.1186.1471-2458-14-563/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 2 Estimated marginal means, percentages, sample sizes, standard deviations, differences, p values and effect sizes for primary and secondary outcomes </caption>
+    <thead>
+     <tr>
+      <th class="empty" />
+      <th class="cell" colspan="8" data-startheadercol="1" data-endheadercol="8">1-month follow-up</th>
+      <th class="empty" />
+      <th class="cell" colspan="8" data-startheadercol="10" data-endheadercol="17">6-month follow-up</th>
+      <th class="empty" />
+     </tr>
+     <tr>
+      <th class="empty" />
+      <th class="cell" colspan="3" data-startheadercol="1" data-endheadercol="3">Control</th>
+      <th class="cell" colspan="3" data-startheadercol="4" data-endheadercol="6">Intervention</th>
+      <th class="empty" />
+      <th class="empty" />
+      <th class="empty" />
+      <th class="cell" colspan="3" data-startheadercol="10" data-endheadercol="12">Control</th>
+      <th class="cell" colspan="3" data-startheadercol="13" data-endheadercol="15">Intervention</th>
+      <th class="empty" />
+      <th class="empty" />
+      <th class="empty" />
+     </tr>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="61.000" data-cellmaxx="89.000">Variable </th>
+      <th class="cell" data-cellminx="217.000" data-cellmaxx="236.000">% or Mean </th>
+      <th class="cell" data-cellminx="254.000" data-cellmaxx="263.000">SD </th>
+      <th class="cell" data-cellminx="281.000" data-cellmaxx="286.000">n </th>
+      <th class="cell" data-cellminx="299.000" data-cellmaxx="318.000">% or Mean </th>
+      <th class="cell" data-cellminx="336.000" data-cellmaxx="345.000">SD </th>
+      <th class="cell" data-cellminx="364.000" data-cellmaxx="368.000">n </th>
+      <th class="cell" data-cellminx="383.000" data-cellmaxx="395.000">Diff </th>
+      <th class="cell" data-cellminx="414.000" data-cellmaxx="418.000">p </th>
+      <th class="cell" data-cellminx="442.000" data-cellmaxx="446.000">d </th>
+      <th class="cell" data-cellminx="466.000" data-cellmaxx="486.000">% or Mean </th>
+      <th class="cell" data-cellminx="503.000" data-cellmaxx="512.000">SD </th>
+      <th class="cell" data-cellminx="531.000" data-cellmaxx="535.000">n </th>
+      <th class="cell" data-cellminx="549.000" data-cellmaxx="568.000">% or Mean </th>
+      <th class="cell" data-cellminx="586.000" data-cellmaxx="595.000">SD </th>
+      <th class="cell" data-cellminx="613.000" data-cellmaxx="618.000">n </th>
+      <th class="cell" data-cellminx="632.000" data-cellmaxx="644.000">Diff </th>
+      <th class="cell" data-cellminx="662.000" data-cellmaxx="666.000">p </th>
+      <th class="cell" data-cellminx="690.000" data-cellmaxx="694.000">d </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="61.001" data-rowminy="116.278">
+      <th>Fruit and vegetable intake</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="130.168">
+      <th data-role="obslabel">Mean portions Physical activity</th>
+      <td class="cell" data-cellminx="220.591" data-cellminy="130.281">5.47</td>
+      <td class="cell" data-cellminx="252.282" data-cellminy="130.281">4.26</td>
+      <td class="cell" data-cellminx="278.304" data-cellminy="130.281">453</td>
+      <td class="cell" data-cellminx="302.966" data-cellminy="130.281">6.02</td>
+      <td class="cell" data-cellminx="334.657" data-cellminy="130.281">4.18</td>
+      <td class="cell" data-cellminx="360.622" data-cellminy="130.281">436</td>
+      <td class="cell" data-cellminx="385.284" data-cellminy="130.281">.55</td>
+      <td class="cell" data-cellminx="409.831" data-cellminy="130.281">.053</td>
+      <td class="cell" data-cellminx="438.291" data-cellminy="130.281">0.13</td>
+      <td class="cell" data-cellminx="470.152" data-cellminy="130.281">5.72</td>
+      <td class="cell" data-cellminx="501.844" data-cellminy="130.281">4.98</td>
+      <td class="cell" data-cellminx="527.809" data-cellminy="130.281">512</td>
+      <td class="cell" data-cellminx="552.470" data-cellminy="130.281">5.61</td>
+      <td class="cell" data-cellminx="584.218" data-cellminy="130.281">4.89</td>
+      <td class="cell" data-cellminx="610.183" data-cellminy="130.281">495</td>
+      <td class="cell" data-cellminx="632.917" data-cellminy="130.281">-.11</td>
+      <td class="cell" data-cellminx="657.862" data-cellminy="130.281">.708</td>
+      <td class="cell" data-cellminx="685.188" data-cellminy="130.281">-0.02</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="158.287">
+      <th data-role="obslabel">Mean METS</th>
+      <td class="cell" data-cellminx="214.865" data-cellminy="158.287">2563.39</td>
+      <td class="cell" data-cellminx="246.556" data-cellminy="158.287">2162.88</td>
+      <td class="cell" data-cellminx="278.304" data-cellminy="158.287">471</td>
+      <td class="cell" data-cellminx="297.183" data-cellminy="158.287">2755.63</td>
+      <td class="cell" data-cellminx="328.931" data-cellminy="158.287">2169.40</td>
+      <td class="cell" data-cellminx="360.622" data-cellminy="158.287">452</td>
+      <td class="cell" data-cellminx="379.557" data-cellminy="158.287">192.24</td>
+      <td class="cell" data-cellminx="409.831" data-cellminy="158.287">.179</td>
+      <td class="cell" data-cellminx="438.291" data-cellminy="158.287">0.09</td>
+      <td class="cell" data-cellminx="464.370" data-cellminy="158.287">3316.10</td>
+      <td class="cell" data-cellminx="496.118" data-cellminy="158.287">5143.79</td>
+      <td class="cell" data-cellminx="527.809" data-cellminy="158.287">526</td>
+      <td class="cell" data-cellminx="546.745" data-cellminy="158.287">3350.52</td>
+      <td class="cell" data-cellminx="578.436" data-cellminy="158.287">5144.16</td>
+      <td class="cell" data-cellminx="610.185" data-cellminy="158.287">513</td>
+      <td class="cell" data-cellminx="630.254" data-cellminy="158.287">34.42</td>
+      <td class="cell" data-cellminx="657.864" data-cellminy="158.287">.914</td>
+      <td class="cell" data-cellminx="686.323" data-cellminy="158.287">0.01</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="172.290">
+      <th data-role="obslabel">Mean hours sitting</th>
+      <td class="cell" data-cellminx="216.792" data-cellminy="172.290">400.55</td>
+      <td class="cell" data-cellminx="248.483" data-cellminy="172.290">150.49</td>
+      <td class="cell" data-cellminx="278.304" data-cellminy="172.290">388</td>
+      <td class="cell" data-cellminx="299.110" data-cellminy="172.290">396.19</td>
+      <td class="cell" data-cellminx="330.858" data-cellminy="172.290">150.44</td>
+      <td class="cell" data-cellminx="360.622" data-cellminy="172.290">372</td>
+      <td class="cell" data-cellminx="382.221" data-cellminy="172.290">-4.36</td>
+      <td class="cell" data-cellminx="409.831" data-cellminy="172.290">.890</td>
+      <td class="cell" data-cellminx="438.290" data-cellminy="172.290">0.03</td>
+      <td class="cell" data-cellminx="466.296" data-cellminy="172.290">408.12</td>
+      <td class="cell" data-cellminx="498.044" data-cellminy="172.290">158.25</td>
+      <td class="cell" data-cellminx="527.808" data-cellminy="172.290">450</td>
+      <td class="cell" data-cellminx="548.671" data-cellminy="172.290">412.24</td>
+      <td class="cell" data-cellminx="580.363" data-cellminy="172.290">158.30</td>
+      <td class="cell" data-cellminx="610.183" data-cellminy="172.290">435</td>
+      <td class="cell" data-cellminx="632.180" data-cellminy="172.290">4.12</td>
+      <td class="cell" data-cellminx="657.862" data-cellminy="172.290">.699</td>
+      <td class="cell" data-cellminx="685.188" data-cellminy="172.290">-0.03</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="186.293">
+      <th data-role="obslabel">Member of Sport Sheffield</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="cell" data-cellminx="468.224" data-cellminy="186.293">56.52</td>
+      <td class="cell" data-cellminx="507.059" data-cellminy="186.293">-</td>
+      <td class="cell" data-cellminx="527.808" data-cellminy="186.293">325</td>
+      <td class="cell" data-cellminx="550.543" data-cellminy="186.293">54.92</td>
+      <td class="cell" data-cellminx="589.434" data-cellminy="186.293">-</td>
+      <td class="cell" data-cellminx="610.184" data-cellminy="186.293">318</td>
+      <td class="cell" data-cellminx="630.990" data-cellminy="186.293">-1.60</td>
+      <td class="cell" data-cellminx="657.862" data-cellminy="186.293">.392</td>
+      <td class="cell" data-cellminx="685.188" data-cellminy="186.293">-0.04</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="200.296">
+      <th data-role="obslabel">Not a member of Sport Sheffield</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="cell" data-cellminx="468.224" data-cellminy="200.296">43.48</td>
+      <td class="cell" data-cellminx="507.059" data-cellminy="200.296">-</td>
+      <td class="cell" data-cellminx="527.808" data-cellminy="200.296">250</td>
+      <td class="cell" data-cellminx="550.543" data-cellminy="200.296">45.08</td>
+      <td class="cell" data-cellminx="589.434" data-cellminy="200.296">-</td>
+      <td class="cell" data-cellminx="610.184" data-cellminy="200.296">261</td>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="cell" data-cellminx="680.483" data-cellminy="200.296">OR 1.11</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="214.299">
+      <th data-role="obslabel">Mean Sport Sheffield attendance Alcohol consumption</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="cell" data-cellminx="470.152" data-cellminy="214.299">8.15</td>
+      <td class="cell" data-cellminx="499.915" data-cellminy="214.299">15.50</td>
+      <td class="cell" data-cellminx="527.808" data-cellminy="214.299">325</td>
+      <td class="cell" data-cellminx="552.470" data-cellminy="214.299">9.92</td>
+      <td class="cell" data-cellminx="582.290" data-cellminy="214.299">15.34</td>
+      <td class="cell" data-cellminx="610.184" data-cellminy="214.299">318</td>
+      <td class="cell" data-cellminx="632.180" data-cellminy="214.299">1.77</td>
+      <td class="cell" data-cellminx="657.862" data-cellminy="214.299">.149</td>
+      <td class="cell" data-cellminx="686.322" data-cellminy="214.299">0.15</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="242.305">
+      <th data-role="obslabel">Mean units in last 7 days</th>
+      <td class="cell" data-cellminx="218.664" data-cellminy="242.305">13.86</td>
+      <td class="cell" data-cellminx="250.411" data-cellminy="242.305">16.89</td>
+      <td class="cell" data-cellminx="278.304" data-cellminy="242.305">507</td>
+      <td class="cell" data-cellminx="301.037" data-cellminy="242.305">12.55</td>
+      <td class="cell" data-cellminx="332.728" data-cellminy="242.305">17.06</td>
+      <td class="cell" data-cellminx="360.621" data-cellminy="242.305">491</td>
+      <td class="cell" data-cellminx="385.282" data-cellminy="242.305">.02</td>
+      <td class="cell" data-cellminx="409.830" data-cellminy="242.305">.222</td>
+      <td class="cell" data-cellminx="438.289" data-cellminy="242.305">0.08</td>
+      <td class="cell" data-cellminx="468.223" data-cellminy="242.305">13.41</td>
+      <td class="cell" data-cellminx="499.914" data-cellminy="242.305">19.65</td>
+      <td class="cell" data-cellminx="527.807" data-cellminy="242.305">547</td>
+      <td class="cell" data-cellminx="550.542" data-cellminy="242.305">13.01</td>
+      <td class="cell" data-cellminx="582.290" data-cellminy="242.305">19.75</td>
+      <td class="cell" data-cellminx="610.183" data-cellminy="242.305">540</td>
+      <td class="cell" data-cellminx="632.918" data-cellminy="242.305">-.40</td>
+      <td class="cell" data-cellminx="657.862" data-cellminy="242.305">.737</td>
+      <td class="cell" data-cellminx="686.322" data-cellminy="242.305">0.02</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="256.252">
+      <th data-role="obslabel">Mean number of days binge drinking in last 7 days (drinkers only) AUDIT</th>
+      <td class="cell" data-cellminx="220.591" data-cellminy="256.252">1.33</td>
+      <td class="cell" data-cellminx="254.210" data-cellminy="256.252">.99</td>
+      <td class="cell" data-cellminx="278.304" data-cellminy="256.252">271</td>
+      <td class="cell" data-cellminx="302.965" data-cellminy="256.252">1.31</td>
+      <td class="cell" data-cellminx="336.584" data-cellminy="256.252">.92</td>
+      <td class="cell" data-cellminx="360.622" data-cellminy="256.252">234</td>
+      <td class="cell" data-cellminx="384.149" data-cellminy="256.252">-.02</td>
+      <td class="cell" data-cellminx="409.831" data-cellminy="256.252">.901</td>
+      <td class="cell" data-cellminx="438.291" data-cellminy="256.252">0.02</td>
+      <td class="cell" data-cellminx="470.152" data-cellminy="256.252">1.16</td>
+      <td class="cell" data-cellminx="503.771" data-cellminy="256.252">.89</td>
+      <td class="cell" data-cellminx="527.809" data-cellminy="256.252">319</td>
+      <td class="cell" data-cellminx="552.470" data-cellminy="256.252">1.16</td>
+      <td class="cell" data-cellminx="586.089" data-cellminy="256.252">.85</td>
+      <td class="cell" data-cellminx="610.183" data-cellminy="256.252">288</td>
+      <td class="cell" data-cellminx="634.108" data-cellminy="256.252">.00</td>
+      <td class="cell" data-cellminx="657.862" data-cellminy="256.252">.973</td>
+      <td class="cell" data-cellminx="686.322" data-cellminy="256.252">0.00</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="293.272">
+      <th data-role="obslabel">Mean consumption</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="cell" data-cellminx="470.152" data-cellminy="293.272">6.45</td>
+      <td class="cell" data-cellminx="501.843" data-cellminy="293.272">2.60</td>
+      <td class="cell" data-cellminx="527.808" data-cellminy="293.272">400</td>
+      <td class="cell" data-cellminx="552.470" data-cellminy="293.272">6.32</td>
+      <td class="cell" data-cellminx="584.217" data-cellminy="293.272">2.52</td>
+      <td class="cell" data-cellminx="610.183" data-cellminy="293.272">376</td>
+      <td class="cell" data-cellminx="632.917" data-cellminy="293.272">-.13</td>
+      <td class="cell" data-cellminx="657.861" data-cellminy="293.272">.480</td>
+      <td class="cell" data-cellminx="686.321" data-cellminy="293.272">0.05</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="307.275">
+      <th data-role="obslabel">Mean dependency</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="cell" data-cellminx="472.023" data-cellminy="307.275">.93</td>
+      <td class="cell" data-cellminx="501.843" data-cellminy="307.275">1.39</td>
+      <td class="cell" data-cellminx="527.808" data-cellminy="307.275">393</td>
+      <td class="cell" data-cellminx="554.398" data-cellminy="307.275">.88</td>
+      <td class="cell" data-cellminx="584.218" data-cellminy="307.275">1.34</td>
+      <td class="cell" data-cellminx="610.184" data-cellminy="307.275">366</td>
+      <td class="cell" data-cellminx="632.918" data-cellminy="307.275">-.05</td>
+      <td class="cell" data-cellminx="657.862" data-cellminy="307.275">.597</td>
+      <td class="cell" data-cellminx="686.322" data-cellminy="307.275">0.04</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="321.278">
+      <th data-role="obslabel">Mean problems</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="cell" data-cellminx="470.152" data-cellminy="321.278">2.26</td>
+      <td class="cell" data-cellminx="501.843" data-cellminy="321.278">2.60</td>
+      <td class="cell" data-cellminx="527.808" data-cellminy="321.278">393</td>
+      <td class="cell" data-cellminx="552.470" data-cellminy="321.278">2.05</td>
+      <td class="cell" data-cellminx="584.217" data-cellminy="321.278">2.49</td>
+      <td class="cell" data-cellminx="610.183" data-cellminy="321.278">366</td>
+      <td class="cell" data-cellminx="632.917" data-cellminy="321.278">-.21</td>
+      <td class="cell" data-cellminx="657.861" data-cellminy="321.278">.256</td>
+      <td class="cell" data-cellminx="686.321" data-cellminy="321.278">0.08</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="335.281">
+      <th data-role="obslabel">Mean alcohol objective (FAEE) Smoking</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="cell" data-cellminx="470.152" data-cellminy="335.281">2.55</td>
+      <td class="cell" data-cellminx="501.843" data-cellminy="335.281">4.59</td>
+      <td class="cell" data-cellminx="529.736" data-cellminy="335.281">43</td>
+      <td class="cell" data-cellminx="552.470" data-cellminy="335.281">2.80</td>
+      <td class="cell" data-cellminx="584.217" data-cellminy="335.281">4.61</td>
+      <td class="cell" data-cellminx="612.110" data-cellminy="335.281">34</td>
+      <td class="cell" data-cellminx="634.107" data-cellminy="335.281">.25</td>
+      <td class="cell" data-cellminx="657.861" data-cellminy="335.281">.816</td>
+      <td class="cell" data-cellminx="685.187" data-cellminy="335.281">-0.05</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="363.287">
+      <th data-role="obslabel">Has smoked</th>
+      <td class="cell" data-cellminx="218.663" data-cellminy="363.287">42.37</td>
+      <td class="cell" data-cellminx="257.554" data-cellminy="363.287">-</td>
+      <td class="cell" data-cellminx="278.304" data-cellminy="363.287">211</td>
+      <td class="cell" data-cellminx="301.037" data-cellminy="363.287">40.41</td>
+      <td class="cell" data-cellminx="339.872" data-cellminy="363.287">-</td>
+      <td class="cell" data-cellminx="360.621" data-cellminy="363.287">196</td>
+      <td class="cell" data-cellminx="382.221" data-cellminy="363.287">-1.96</td>
+      <td class="cell" data-cellminx="409.830" data-cellminy="363.287">.849</td>
+      <td class="cell" data-cellminx="438.289" data-cellminy="363.287">0.04</td>
+      <td class="cell" data-cellminx="468.223" data-cellminy="363.287">47.74</td>
+      <td class="cell" data-cellminx="507.058" data-cellminy="363.287">-</td>
+      <td class="cell" data-cellminx="527.807" data-cellminy="363.287">264</td>
+      <td class="cell" data-cellminx="550.542" data-cellminy="363.287">46.30</td>
+      <td class="cell" data-cellminx="589.433" data-cellminy="363.287">-</td>
+      <td class="cell" data-cellminx="610.183" data-cellminy="363.287">250</td>
+      <td class="cell" data-cellminx="630.989" data-cellminy="363.287">-1.44</td>
+      <td class="cell" data-cellminx="657.861" data-cellminy="363.287">.776</td>
+      <td class="cell" data-cellminx="686.321" data-cellminy="363.287">0.03</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="377.290">
+      <th data-role="obslabel">Has never smoked</th>
+      <td class="cell" data-cellminx="218.663" data-cellminy="377.290">57.63</td>
+      <td class="cell" data-cellminx="257.554" data-cellminy="377.290">-</td>
+      <td class="cell" data-cellminx="278.304" data-cellminy="377.290">287</td>
+      <td class="cell" data-cellminx="301.037" data-cellminy="377.290">59.59</td>
+      <td class="cell" data-cellminx="339.872" data-cellminy="377.290">-</td>
+      <td class="cell" data-cellminx="360.621" data-cellminy="377.290">289</td>
+      <td class="cell" data-cellminx="383.355" data-cellminy="377.290">1.96</td>
+      <td class="empty" />
+      <td class="cell" data-cellminx="432.451" data-cellminy="377.290">OR 1.04</td>
+      <td class="cell" data-cellminx="468.224" data-cellminy="377.290">52.26</td>
+      <td class="cell" data-cellminx="507.059" data-cellminy="377.290">-</td>
+      <td class="cell" data-cellminx="527.808" data-cellminy="377.290">289</td>
+      <td class="cell" data-cellminx="550.542" data-cellminy="377.290">53.70</td>
+      <td class="cell" data-cellminx="589.434" data-cellminy="377.290">-</td>
+      <td class="cell" data-cellminx="610.183" data-cellminy="377.290">290</td>
+      <td class="cell" data-cellminx="632.180" data-cellminy="377.290">1.44</td>
+      <td class="empty" />
+      <td class="cell" data-cellminx="680.483" data-cellminy="377.290">OR 1.05</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="391.293">
+      <th data-role="obslabel">Smoked since attending University</th>
+      <td class="cell" data-cellminx="218.663" data-cellminy="391.293">25.96</td>
+      <td class="cell" data-cellminx="257.554" data-cellminy="391.293">-</td>
+      <td class="cell" data-cellminx="278.304" data-cellminy="391.293">129</td>
+      <td class="cell" data-cellminx="301.037" data-cellminy="391.293">24.33</td>
+      <td class="cell" data-cellminx="339.872" data-cellminy="391.293">-</td>
+      <td class="cell" data-cellminx="360.621" data-cellminy="391.293">118</td>
+      <td class="cell" data-cellminx="382.221" data-cellminy="391.293">-1.63</td>
+      <td class="cell" data-cellminx="409.830" data-cellminy="391.293">.578</td>
+      <td class="cell" data-cellminx="438.289" data-cellminy="391.293">0.05</td>
+      <td class="cell" data-cellminx="468.223" data-cellminy="391.293">35.51</td>
+      <td class="cell" data-cellminx="507.058" data-cellminy="391.293">-</td>
+      <td class="cell" data-cellminx="527.807" data-cellminy="391.293">196</td>
+      <td class="cell" data-cellminx="550.542" data-cellminy="391.293">35.93</td>
+      <td class="cell" data-cellminx="589.433" data-cellminy="391.293">-</td>
+      <td class="cell" data-cellminx="610.183" data-cellminy="391.293">194</td>
+      <td class="cell" data-cellminx="634.107" data-cellminy="391.293">.42</td>
+      <td class="cell" data-cellminx="657.861" data-cellminy="391.293">.878</td>
+      <td class="cell" data-cellminx="685.187" data-cellminy="391.293">-0.01</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="405.296">
+      <th data-role="obslabel">Not smoked since starting University</th>
+      <td class="cell" data-cellminx="218.664" data-cellminy="405.296">74.04</td>
+      <td class="cell" data-cellminx="257.555" data-cellminy="405.296">-</td>
+      <td class="cell" data-cellminx="278.304" data-cellminy="405.296">368</td>
+      <td class="cell" data-cellminx="301.038" data-cellminy="405.296">75.67</td>
+      <td class="cell" data-cellminx="339.872" data-cellminy="405.296">-</td>
+      <td class="cell" data-cellminx="360.622" data-cellminy="405.296">367</td>
+      <td class="cell" data-cellminx="383.356" data-cellminy="405.296">1.63</td>
+      <td class="empty" />
+      <td class="cell" data-cellminx="432.452" data-cellminy="405.296">OR 1.09</td>
+      <td class="cell" data-cellminx="468.225" data-cellminy="405.296">64.49</td>
+      <td class="cell" data-cellminx="507.060" data-cellminy="405.296">-</td>
+      <td class="cell" data-cellminx="527.809" data-cellminy="405.296">356</td>
+      <td class="cell" data-cellminx="550.543" data-cellminy="405.296">64.07</td>
+      <td class="cell" data-cellminx="589.435" data-cellminy="405.296">-</td>
+      <td class="cell" data-cellminx="610.184" data-cellminy="405.296">346</td>
+      <td class="cell" data-cellminx="632.918" data-cellminy="405.296">-.42</td>
+      <td class="empty" />
+      <td class="cell" data-cellminx="680.483" data-cellminy="405.296">OR 0.98</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="419.299">
+      <th data-role="obslabel">Current smoker</th>
+      <td class="cell" data-cellminx="218.664" data-cellminy="419.299">11.45</td>
+      <td class="cell" data-cellminx="257.555" data-cellminy="419.299">-</td>
+      <td class="cell" data-cellminx="280.176" data-cellminy="419.299">57</td>
+      <td class="cell" data-cellminx="302.966" data-cellminy="419.299">9.07</td>
+      <td class="cell" data-cellminx="339.872" data-cellminy="419.299">-</td>
+      <td class="cell" data-cellminx="362.550" data-cellminy="419.299">44</td>
+      <td class="cell" data-cellminx="382.222" data-cellminy="419.299">-2.38</td>
+      <td class="cell" data-cellminx="409.831" data-cellminy="419.299">.333</td>
+      <td class="cell" data-cellminx="438.291" data-cellminy="419.299">0.14</td>
+      <td class="cell" data-cellminx="468.225" data-cellminy="419.299">13.02</td>
+      <td class="cell" data-cellminx="507.060" data-cellminy="419.299">-</td>
+      <td class="cell" data-cellminx="529.737" data-cellminy="419.299">72</td>
+      <td class="cell" data-cellminx="552.471" data-cellminy="419.299">8.70</td>
+      <td class="cell" data-cellminx="589.435" data-cellminy="419.299">-</td>
+      <td class="cell" data-cellminx="612.112" data-cellminy="419.299">47</td>
+      <td class="cell" data-cellminx="630.991" data-cellminy="419.299">-4.32</td>
+      <td class="cell" data-cellminx="657.864" data-cellminy="419.299">.010</td>
+      <td class="cell" data-cellminx="686.323" data-cellminy="419.299">0.25</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="433.302">
+      <th data-role="obslabel">Not a current smoker</th>
+      <td class="cell" data-cellminx="218.664" data-cellminy="433.302">88.55</td>
+      <td class="cell" data-cellminx="257.555" data-cellminy="433.302">-</td>
+      <td class="cell" data-cellminx="278.304" data-cellminy="433.302">441</td>
+      <td class="cell" data-cellminx="301.038" data-cellminy="433.302">90.93</td>
+      <td class="cell" data-cellminx="339.872" data-cellminy="433.302">-</td>
+      <td class="cell" data-cellminx="360.622" data-cellminy="433.302">441</td>
+      <td class="cell" data-cellminx="383.356" data-cellminy="433.302">2.38</td>
+      <td class="empty" />
+      <td class="cell" data-cellminx="432.452" data-cellminy="433.302">OR 1.36</td>
+      <td class="cell" data-cellminx="468.225" data-cellminy="433.302">86.98</td>
+      <td class="cell" data-cellminx="507.060" data-cellminy="433.302">-</td>
+      <td class="cell" data-cellminx="527.809" data-cellminy="433.302">481</td>
+      <td class="cell" data-cellminx="550.543" data-cellminy="433.302">91.30</td>
+      <td class="cell" data-cellminx="589.435" data-cellminy="433.302">-</td>
+      <td class="cell" data-cellminx="610.184" data-cellminy="433.302">493</td>
+      <td class="cell" data-cellminx="632.181" data-cellminy="433.302">4.32</td>
+      <td class="empty" />
+      <td class="cell" data-cellminx="680.483" data-cellminy="433.302">OR 1.92</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="447.305">
+      <th data-role="obslabel">Mean cigarettes smoked per week</th>
+      <td class="cell" data-cellminx="220.618" data-cellminy="447.305">2.74</td>
+      <td class="cell" data-cellminx="252.307" data-cellminy="447.305">5.57</td>
+      <td class="cell" data-cellminx="278.327" data-cellminy="447.305">496</td>
+      <td class="cell" data-cellminx="302.987" data-cellminy="447.305">2.35</td>
+      <td class="cell" data-cellminx="334.679" data-cellminy="447.305">5.71</td>
+      <td class="cell" data-cellminx="360.642" data-cellminy="447.305">483</td>
+      <td class="cell" data-cellminx="384.168" data-cellminy="447.305">-.39</td>
+      <td class="cell" data-cellminx="409.847" data-cellminy="447.305">.286</td>
+      <td class="cell" data-cellminx="438.305" data-cellminy="447.305">0.07</td>
+      <td class="cell" data-cellminx="470.163" data-cellminy="447.305">3.24</td>
+      <td class="cell" data-cellminx="501.853" data-cellminy="447.305">6.81</td>
+      <td class="cell" data-cellminx="527.816" data-cellminy="447.305">552</td>
+      <td class="cell" data-cellminx="552.476" data-cellminy="447.305">2.70</td>
+      <td class="cell" data-cellminx="584.221" data-cellminy="447.305">6.73</td>
+      <td class="cell" data-cellminx="610.185" data-cellminy="447.305">538</td>
+      <td class="cell" data-cellminx="632.918" data-cellminy="447.305">-.54</td>
+      <td class="cell" data-cellminx="657.860" data-cellminy="447.305">.181</td>
+      <td class="cell" data-cellminx="686.317" data-cellminy="447.305">0.08</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="461.251">
+      <th data-role="obslabel">Mean smoking objective (cotinine)</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="cell" data-cellminx="472.023" data-cellminy="461.251">.37</td>
+      <td class="cell" data-cellminx="503.770" data-cellminy="461.251">.33</td>
+      <td class="cell" data-cellminx="529.736" data-cellminy="461.251">43</td>
+      <td class="cell" data-cellminx="554.397" data-cellminy="461.251">.51</td>
+      <td class="cell" data-cellminx="586.089" data-cellminy="461.251">.35</td>
+      <td class="cell" data-cellminx="612.111" data-cellminy="461.251">34</td>
+      <td class="cell" data-cellminx="634.107" data-cellminy="461.251">.14</td>
+      <td class="cell" data-cellminx="657.861" data-cellminy="461.251">.081</td>
+      <td class="cell" data-cellminx="685.188" data-cellminy="461.251">-0.41</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="475.254">
+      <th data-role="obslabel">Mean smoking objective (nicotine) Other outcomes EQ-5D-3L</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="cell" data-cellminx="470.152" data-cellminy="475.254">7.24</td>
+      <td class="cell" data-cellminx="499.915" data-cellminy="475.254">21.44</td>
+      <td class="cell" data-cellminx="529.736" data-cellminy="475.254">43</td>
+      <td class="cell" data-cellminx="550.542" data-cellminy="475.254">12.85</td>
+      <td class="cell" data-cellminx="582.290" data-cellminy="475.254">21.52</td>
+      <td class="cell" data-cellminx="612.111" data-cellminy="475.254">34</td>
+      <td class="cell" data-cellminx="632.180" data-cellminy="475.254">5.61</td>
+      <td class="cell" data-cellminx="657.862" data-cellminy="475.254">.266</td>
+      <td class="cell" data-cellminx="685.188" data-cellminy="475.254">-0.26</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="517.263">
+      <th data-role="obslabel">Mean health index scores from</th>
+      <td class="cell" data-cellminx="222.518" data-cellminy="517.263">.91</td>
+      <td class="cell" data-cellminx="254.209" data-cellminy="517.263">.22</td>
+      <td class="cell" data-cellminx="278.303" data-cellminy="517.263">495</td>
+      <td class="cell" data-cellminx="304.834" data-cellminy="517.263">.91</td>
+      <td class="cell" data-cellminx="336.582" data-cellminy="517.263">.22</td>
+      <td class="cell" data-cellminx="360.620" data-cellminy="517.263">482</td>
+      <td class="cell" data-cellminx="383.354" data-cellminy="517.263">0.00</td>
+      <td class="cell" data-cellminx="409.830" data-cellminy="517.263">.957</td>
+      <td class="cell" data-cellminx="438.289" data-cellminy="517.263">0.00</td>
+      <td class="cell" data-cellminx="472.022" data-cellminy="517.263">.90</td>
+      <td class="cell" data-cellminx="503.769" data-cellminy="517.263">.12</td>
+      <td class="cell" data-cellminx="527.807" data-cellminy="517.263">542</td>
+      <td class="cell" data-cellminx="554.397" data-cellminy="517.263">.91</td>
+      <td class="cell" data-cellminx="586.088" data-cellminy="517.263">.23</td>
+      <td class="cell" data-cellminx="610.182" data-cellminy="517.263">530</td>
+      <td class="cell" data-cellminx="634.107" data-cellminy="517.263">.01</td>
+      <td class="cell" data-cellminx="657.861" data-cellminy="517.263">.452</td>
+      <td class="cell" data-cellminx="686.321" data-cellminy="517.263">0.05</td>
+     </tr>
+     <tr data-rowminx="61.001" data-rowminy="526.278">
+      <th>EQ-5D-3L(VAS)</th>
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+      <td class="empty" />
+     </tr>
+    </tbody>
+   </table>
+   <p>corpus-oa-uclii-01/10.1186.1471-2458-14-563/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table4" id="table4" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 2 Estimated marginal means, percentages, sample sizes, standard deviations, differences, p values and effect sizes for primary and secondary outcomes (Continued) </caption>
+    <thead>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="60.000" data-cellmaxx="147.000">Mean injunctive norm Mean perceived control Mean self-efficacy Mean intention Mean plan Mean attitude Physical activity Mean descriptive norm Mean injunctive norm Mean perceived control Mean self-efficacy Mean intention Mean plan Mean attitude Binge drinking Mean descriptive norm Mean injunctive norm Mean perceived control Mean self-efficacy Mean intention Mean plan Mean attitude Smoking Mean descriptive norm Mean injunctive norm Mean perceived control Mean self-efficacy Mean intention Mean plan Mean attitude ^{1 Includes confidence interval.} </th>
+      <th class="cell" data-cellminx="220.000" data-cellmaxx="233.000">6.05 5.63 5.50 5.39 4.85 6.22 3.75 6.04 5.80 5.62 5.63 4.94 6.10 5.70 2.48 6.24 5.70 3.18 4.66 2.50 4.19 1.34 6.61 5.36 1.53 5.58 1.45 </th>
+      <th class="cell" data-cellminx="252.000" data-cellmaxx="265.000">1.10 1.33 1.55 1.10 1.55 .88 1.33 1.11 1.11 1.33 1.11 1.55 .89 1.11 1.33 1.11 1.55 1.11 1.99 .89 1.33 .88 1.10 1.77 .88 2.21 .66 </th>
+      <th class="cell" data-cellminx="278.000" data-cellmaxx="289.000">488 488 488 488 488 488 493 493 493 493 493 493 493 491 491 491 491 491 491 491 488 488 488 488 488 488 488 </th>
+      <th class="cell" data-cellminx="302.000" data-cellmaxx="315.000">5.93 5.65 5.49 5.31 4.78 6.20 3.78 5.99 5.93 5.82 5.64 5.04 6.18 5.59 2.47 6.13 5.66 3.16 4.45 2.52 4.05 1.35 6.58 5.28 1.51 5.30 1.47 </th>
+      <th class="cell" data-cellminx="334.000" data-cellmaxx="347.000">1.08 1.31 1.53 1.09 1.53 .87 1.31 1.31 1.10 1.31 1.10 1.53 .88 1.31 1.31 1.09 1.53 1.31 1.97 .88 1.31 .88 1.09 1.75 .88 2.19 .66 </th>
+      <th class="cell" data-cellminx="360.000" data-cellmaxx="372.000">478 478 478 478 478 478 480 480 480 480 480 480 480 479 479 479 479 479 479 479 479 479 479 479 479 479 479 </th>
+      <th class="cell" data-cellminx="384.000" data-cellmaxx="395.000">-.12 .02 -.01 -.08 -.07 -.22 .03 -.05 .13 .20 .01 .08 .08 -.11 -.01 -.11 -.04 -.02 -.21 .02 .14 .01 .03 -.08 -.02 -.28 .02 </th>
+      <th class="cell" data-cellminx="409.000" data-cellmaxx="422.000">.116 .785 .944 .270 .474 .652 .637 .550 .078 .020 .921 .338 .119 .177 .974 .171 .704 .824 .115 .819 .113 .751 .666 .490 .671 .050 .573 </th>
+      <th class="cell" data-cellminx="437.000" data-cellmaxx="452.000">-0.11 0.02 -0.01 -0.07 -0.05 -0.02 0.02 -0.04 0.12 0.15 0.01 0.06 0.09 0.09 0.01 -0.01 -0.03 0.02 -0.11 -0.02 0.11 -0.01 -0.03 -0.05 0.02 -0.13 -0.03 </th>
+      <th class="cell" data-cellminx="470.000" data-cellmaxx="482.000">3.18 5.66 5.58 5.52 5.09 6.65 5.71 4.10 5.83 5.78 5.67 5.14 6.63 2.79 5.10 6.27 5.81 3.13 4.89 1.83 1.73 3.63 6.55 5.12 1.61 5.57 1.32 </th>
+      <th class="cell" data-cellminx="501.000" data-cellmaxx="514.000">1.62 1.39 1.39 1.16 1.39 .69 1.39 1.63 1.16 1.39 1.16 1.63 .70 1.85 1.62 1.16 1.39 1.39 2.09 .93 1.39 1.62 1.16 1.62 .93 2.32 .70 </th>
+      <th class="cell" data-cellminx="527.000" data-cellmaxx="539.000">534 534 534 534 534 534 539 539 539 539 539 539 539 537 537 537 537 537 537 537 537 537 537 537 537 537 537 </th>
+      <th class="cell" data-cellminx="552.000" data-cellmaxx="565.000">3.43 5.85 5.72 5.47 5.13 6.59 5.65 4.20 5.96 5.83 5.74 5.13 6.62 3.00 4.93 6.14 5.69 3.07 4.50 1.91 1.87 3.57 6.51 5.37 1.53 5.19 1.35 </th>
+      <th class="cell" data-cellminx="584.000" data-cellmaxx="596.000">1.61 1.38 1.38 1.15 1.38 .69 1.38 1.61 1.15 1.38 1.15 1.61 .69 1.83 1.83 1.15 1.38 1.37 2.06 1.15 1.37 1.60 1.15 1.83 .92 2.29 .69 </th>
+      <th class="cell" data-cellminx="610.000" data-cellmaxx="621.000">527 527 527 527 527 527 527 527 527 527 527 527 527 525 525 525 525 525 525 525 525 525 525 525 525 525 525 </th>
+      <th class="cell" data-cellminx="632.000" data-cellmaxx="644.000">.25 .19 .14 -.05 .04 -.06 -.06 .10 .13 .05 .07 -.01 .01 .21 -.17 -.13 -.12 -.06 .39 .09 .14 -.06 -.04 .25 -.08 -.38 .03 </th>
+      <th class="cell" data-cellminx="657.000" data-cellmaxx="670.000">.017 .018 .106 .442 .628 .208 .530 .288 .069 .523 .306 .944 .948 .059 .110 .097 .194 .457 .003 .207 .105 .593 .518 .172 .164 .003 .491 </th>
+      <th class="cell" data-cellminx="685.000" data-cellmaxx="700.000">0.15 0.14 0.10 -0.04 0.03 -0.09 -0.04 0.06 0.11 0.04 0.06 -0.01 -0.01 -0.06 0.10 -0.10 -0.09 0.04 -0.19 -0.08 -0.10 0.04 -0.03 0.14 0.09 -0.16 -0.04 </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="60.945" data-rowminy="509.490">
+      <th>^{2 These do not include imputed data as only measured at 6 months.}</th>
+     </tr>
+     <tr data-rowminx="60.945" data-rowminy="519.061">
+      <th>Notes. METS = metabolic equivalent of task, AUDIT = alcohol use disorder identification test FAEE = fatty acid ethyl esters, VAS = visual analogue scale technique, TTO = time trade-off technique SSC = single sample</th>
+     </tr>
+     <tr data-rowminx="60.945" data-rowminy="527.565">
+      <th>count, OR = odds ratio, BMI = body mass index, GP = general practitioner, A&amp;E = accident and emergency</th>
+     </tr>
+    </tbody>
+   </table>
+   <p>corpus-oa-uclii-01/10.1186.1471-2458-14-563/tables/table4/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table5" id="table5" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table" />
+   <p>corpus-oa-uclii-01/10.1186.1471-2458-14-563/tables/table5/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

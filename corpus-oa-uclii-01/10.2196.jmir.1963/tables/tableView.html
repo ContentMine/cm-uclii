@@ -1,0 +1,288 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<meta charset="UTF-8" /><style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: none;
+    background-color: #f1f1f1;
+		margin: 20px 0;
+		width: auto;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+		text-decoration: none;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+		text-decoration: none;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+		text-decoration: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+}
+</style><style>
+/* Make individual cells more visible and highlight cells marked as 'empty' */
+
+body, html {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+td, th {
+	width: 130px;
+	min-width: 130px;
+	text-align: left;
+}
+
+/* Default colour for row header cells -- only wraps with no allocated role will stay this colour */
+tbody th {
+	color: black;
+}
+
+
+td.cell, th {
+	border: #eee 1px solid;
+}
+
+td.empty {
+	border: yellow 1px dotted;
+}
+
+th[data-role="obslabel"] {
+	color: red;
+	text-align: left;
+}
+
+/* Supplemental data values created by decomposing compound columns */
+
+td[data-role="supp-obs"] {
+	color: blue;
+	background: #ff2;
+}
+
+.subtable td[data-role="supp-obs"] {
+	color: blue;
+	background: #cf4;
+}
+
+/* Semantic markup for transformed structures */
+
+/* Subtable body, apply green background */
+
+.subtable {
+	background-color: #bbffbb;
+}
+
+/* Indent subtable rows of observation data, highlighted orange */
+
+.subtable th[data-role="obslabel"] {
+	color: #dd5533;
+}
+
+
+.subtable tr[data-role="obs"] {
+	color: purple;
+	border: dashed 1px black; padding-left: 0;
+}
+
+th[colspan] {
+	border-bottom: 3px solid black;
+}
+
+tr[data-tblrole="columnheaderrow"] th {
+	color: black;
+}
+
+thead {
+	border-bottom: 4px solid red;
+}
+
+/* Subtable title is not indented, highlighted red */
+
+tr[data-tblseg="subtabletitle"] th {
+	background-color: #00ff22;
+	padding-left: -10px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.subtable tr:not([data-tblseg="subtabletitle"]) th[data-role="obslabel"] {
+	padding-left: 10px;
+}
+
+tbody:not[class="subtable"] th[data-role="obslabel"] {
+	color: blue;
+	padding-left: -10px;
+	margin-left: -10px;
+}
+
+caption {
+	margin: 15px 0 25px 0;
+}
+
+tfoot tr td {
+	padding: 20px 0 0 0;
+}
+</style></head><body><h1>10.2196.jmir.1963</h1><div class="tab"><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button><button title="table4" class="tablinks" onClick="openTab(event, 'table4', 'tabcontent')">table4</button><button title="table5" class="tablinks" onClick="openTab(event, 'table5', 'tabcontent')">table5</button><button title="table6" class="tablinks" onClick="openTab(event, 'table6', 'tabcontent')">table6</button></div><div class="tabcontentdiv"><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>a Table2.Participantcharacteristicsatbaselineintheinterventionandcontrolgroups </caption>
+    <thead>
+     <tr>
+      <th class="cell" colspan="4" data-startheadercol="0" data-endheadercol="3">Total(n= 517)Control(n= 181)Intervention(n= 336)Characteristic</th>
+     </tr>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="46.000" data-cellmaxx="164.000">N umberofwomen(men) Age(years) Socioeconomicdeprivationscore Perceivedrisk H and-washingfrequency </th>
+      <th class="cell" data-cellminx="235.000" data-cellmaxx="282.000">213 (123) 49.17 (11.02) 9.04(6.13) 5.05(1.62) 4.08(1.05) </th>
+      <th class="cell" data-cellminx="367.000" data-cellmaxx="415.000">117 (64) 50.94(12.05) 9.39(6.88) 4.77 (1.64) 4.01(1.13) </th>
+      <th class="cell" data-cellminx="470.000" data-cellmaxx="517.000">330(187) 49.76 (11.40) 9.17 (6.41) 4.99(1.63) 4.06 (1.07) </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="42.520" data-rowminy="425.919" data-tblseg="subtabletitle">
+       <th>a</th>
+      </tr>
+      <tr data-rowminx="45.621" data-rowminy="428.221" data-role="obs">
+       <th>F iguresaremean(SD )exceptwherestated.</th>
+      </tr>
+     </tbody>
+    </tbody>
+   </table>
+   <p>corpus-oa-uclii-01/10.2196.jmir.1963/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>a Table3.B etween-group comparisonsofhand-washingfrequencyandhand-washingintentionsatbaseline, 4weeks, and12weeks </caption>
+    <thead>
+     <tr>
+      <th class="cell" colspan="7" data-startheadercol="0" data-endheadercol="6">E ffectsize, CohendCI )V ariablebean(SD )Mnean(SD )Mngroups, mean(95%D ifferencebetweenInterventiongroupControlgroup</th>
+     </tr>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="46.000" data-cellmaxx="143.000">H and-washingatbaseline H and-washingat4weeks H and-washingat12weeks Intentionsatbaseline Intentionsat4weeks Intentionsat12weeks </th>
+      <th class="cell" data-cellminx="174.000" data-cellmaxx="188.000">91 157 154 87 142 134 </th>
+      <th class="cell" data-cellminx="225.000" data-cellmaxx="264.000">4.01(1.13) 4.04(0.86) 4.12(1.10) 4.93 (1.67) 4.96 (1.71) 4.96 (1.68) </th>
+      <th class="cell" data-cellminx="276.000" data-cellmaxx="292.000">316 285 282 310 270 252 </th>
+      <th class="cell" data-cellminx="327.000" data-cellmaxx="366.000">4.08(1.05) 4.40(0.86) 4.45(0.82) 5.23 (1.57) 6.13 (1.18) 6.06 (1.21) </th>
+      <th class="cell" data-cellminx="403.000" data-cellmaxx="473.000">0.06 (–0.20to0.33) 0.36 (0.17 to0.55) 0.33 (0.13 to0.53) 0.30(–0.09to0.70) 1.17 (0.85to1.48) 1.11(0.79to1.43) </th>
+      <th class="cell" data-cellminx="480.000" data-cellmaxx="498.000">0.06 0.42 0.34 0.19 0.80 0.75 </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="42.520" data-rowminy="663.450" data-tblseg="subtabletitle">
+       <th>a</th>
+      </tr>
+      <tr data-rowminx="48.018" data-rowminy="665.752" data-role="obs">
+       <th>H and-washingwasscoredfrom1(0–2timesaday)to5 (≥10timesaday).Intentionswerescoredfrom1(stronglydisagree)to7 (stronglyagree).</th>
+      </tr>
+     </tbody>
+     <tr data-rowminx="42.520" data-rowminy="675.952">
+      <th>Sincetheseanalyseswerenotbaselineadjusted, samplesizevarieddependingonresponseratesatfollow-up.B aselinegroup comparisonswerenot</th>
+     </tr>
+     <tr data-rowminx="42.520" data-rowminy="686.160">
+      <th>significant.Allgroup comparisonsat4weeksand12weeksweresignificantatP &lt;.001.</th>
+     </tr>
+     <tbody class="subtable">
+      <tr data-rowminx="42.520" data-rowminy="696.820" data-tblseg="subtabletitle">
+       <th>b</th>
+      </tr>
+      <tr data-rowminx="48.145" data-rowminy="699.122" data-role="obs">
+       <th>Confidenceinterval.</th>
+      </tr>
+     </tbody>
+    </tbody>
+   </table>
+   <p>corpus-oa-uclii-01/10.2196.jmir.1963/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table4" id="table4" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>a Table4.Changeintheoryofplannedbehaviorcognitionsfrombaselineto4weeksinthecontrolandinterventiongroups </caption>
+    <thead>
+     <tr>
+      <th class="cell" colspan="5" data-startheadercol="0" data-endheadercol="4">InterventionControlInterventionControl4-weekfollow-up, mean(SD )B aseline, mean(SD )V ariable</th>
+     </tr>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="46.000" data-cellmaxx="150.000">Intentions Attitude Subjectivenorm Perceivedbehavioralcontrol </th>
+      <th class="cell" data-cellminx="240.000" data-cellmaxx="279.000">4.93 (1.67) 5.71(1.28) 4.99(1.77) 6.11(1.50) </th>
+      <th class="cell" data-cellminx="322.000" data-cellmaxx="361.000">5.23 (1.57) 5.73 (1.97) 5.15(1.60) 6.21(1.35) </th>
+      <th class="cell" data-cellminx="398.000" data-cellmaxx="438.000">5.05(1.68) 5.85(1.11) 5.27 (1.62) 6.47 (0.81) </th>
+      <th class="cell" data-cellminx="480.000" data-cellmaxx="519.000">6.00(1.23) 6.28(0.78) 5.66 (1.31) 6.45(1.09) </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="42.520" data-rowminy="210.095" data-tblseg="subtabletitle">
+       <th>a</th>
+      </tr>
+      <tr data-rowminx="48.026" data-rowminy="212.397" data-role="obs">
+       <th>T heseanalyseswerecarriedoutonlyinthosewhocompletedmeasuresofbaselineintentions(controln= 87;interventionn= 310).Allconstructs</th>
+      </tr>
+     </tbody>
+     <tr data-rowminx="42.520" data-rowminy="222.597">
+      <th>werescoredfrom1(stronglydisagree)to7 (stronglyagree).</th>
+     </tr>
+    </tbody>
+   </table>
+   <p>corpus-oa-uclii-01/10.2196.jmir.1963/tables/table4/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table5" id="table5" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table" />
+   <p>corpus-oa-uclii-01/10.2196.jmir.1963/tables/table5/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table6" id="table6" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table" />
+   <p>corpus-oa-uclii-01/10.2196.jmir.1963/tables/table6/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

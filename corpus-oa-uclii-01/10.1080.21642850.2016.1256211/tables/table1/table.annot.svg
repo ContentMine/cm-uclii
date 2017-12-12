@@ -425,13 +425,13 @@
  </g>
  <g class="header.boxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
   <rect stroke="black" stroke-width="1.0" x="129.0" y="63.007999999999996" width="76.0" height="11.260000000000005" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Passive control</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="244.0" y="63.007999999999996" width="76.0" height="11.260000000000005" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Active control</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="359.0" y="63.007999999999996" width="76.0" height="11.260000000000005" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Intervention</title>
   </rect>
  </g>
  <g class="body.subtableBoxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)"/>

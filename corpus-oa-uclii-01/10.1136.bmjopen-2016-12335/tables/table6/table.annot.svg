@@ -831,22 +831,22 @@
  </g>
  <g class="header.boxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
   <rect stroke="black" stroke-width="1.0" x="138.0" y="596.913" width="104.0" height="21.812999999999988" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Follow-upBaselineControl (SD)</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="138.0" y="596.913" width="104.0" height="21.812999999999988" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Follow-upBaselineControl (SD)</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="138.0" y="596.913" width="104.0" height="21.812999999999988" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Follow-upBaselineControl (SD)</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="255.0" y="596.913" width="105.0" height="21.812999999999988" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Follow-upBaselineIntervention (SD)</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="255.0" y="596.913" width="105.0" height="21.812999999999988" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Follow-upBaselineIntervention (SD)</title>
   </rect>
   <rect stroke="black" stroke-width="1.0" x="255.0" y="596.913" width="105.0" height="21.812999999999988" fill="green" opacity="0.2">
-   <title stroke="black" stroke-width="1.0">HEADERBOX: 0</title>
+   <title stroke="black" stroke-width="1.0">HEADERBOX: 0/Follow-upBaselineIntervention (SD)</title>
   </rect>
  </g>
  <g class="body.subtableBoxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)"/>
