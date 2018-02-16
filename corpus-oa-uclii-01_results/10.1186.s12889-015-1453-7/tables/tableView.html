@@ -1,0 +1,376 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<meta charset="UTF-8" /><style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: none;
+    background-color: #f1f1f1;
+		margin: 20px 0;
+		width: auto;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+		text-decoration: none;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+		text-decoration: none;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+		text-decoration: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+}
+</style><style>
+/* Make individual cells more visible and highlight cells marked as 'empty' */
+
+body, html {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+td, th {
+	width: 130px;
+	min-width: 130px;
+	text-align: left;
+}
+
+/* Default colour for row header cells -- only wraps with no allocated role will stay this colour */
+tbody th {
+	color: black;
+}
+
+
+td.cell, th {
+	border: #eee 1px solid;
+}
+
+td.empty {
+	border: yellow 1px dotted;
+}
+
+th[data-role="obslabel"] {
+	color: red;
+	text-align: left;
+}
+
+/* Supplemental data values created by decomposing compound columns */
+
+td[data-role="supp-obs"] {
+	color: blue;
+	background: #ff2;
+}
+
+.subtable td[data-role="supp-obs"] {
+	color: blue;
+	background: #cf4;
+}
+
+/* Semantic markup for transformed structures */
+
+/* Subtable body, apply green background */
+
+.subtable {
+	background-color: #bbffbb;
+}
+
+/* Indent subtable rows of observation data, highlighted orange */
+
+.subtable th[data-role="obslabel"] {
+	color: #dd5533;
+}
+
+
+.subtable tr[data-role="obs"] {
+	color: purple;
+	border: dashed 1px black; padding-left: 0;
+}
+
+th[colspan] {
+	border-bottom: 3px solid black;
+}
+
+tr[data-tblrole="columnheaderrow"] th {
+	color: black;
+}
+
+thead {
+	border-bottom: 4px solid red;
+}
+
+/* Subtable title is not indented, highlighted red */
+
+tr[data-tblseg="subtabletitle"] th {
+	background-color: #00ff22;
+	padding-left: -10px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.subtable tr:not([data-tblseg="subtabletitle"]) th[data-role="obslabel"] {
+	padding-left: 10px;
+}
+
+tbody:not[class="subtable"] th[data-role="obslabel"] {
+	color: blue;
+	padding-left: -10px;
+	margin-left: -10px;
+}
+
+caption {
+	margin: 15px 0 25px 0;
+}
+
+tfoot tr td {
+	padding: 20px 0 0 0;
+}
+</style></head><body><h1>10.1186.s12889-015-1453-7</h1><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 1 Pairwise comparisons with means (SD; range) between the two intervention groups at the different measurement points </caption>
+    <thead>
+     <tr data-tblrole="columnheaderrow">
+      <th class="cell" data-cellminx="56.000" data-cellmaxx="91.000">Outcomes </th>
+      <th class="cell" data-cellminx="163.000" data-cellmaxx="204.000">Time points </th>
+      <th class="cell" data-cellminx="267.000" data-cellmaxx="329.000">Mot-SelfR (n = 94) </th>
+      <th class="cell" data-cellminx="392.000" data-cellmaxx="457.000">SelfR-Mot (n = 112) </th>
+      <th class="cell" data-cellminx="521.000" data-cellmaxx="525.000">p </th>
+      <th data-role="supp-header">Mot-SelfR (n = 94) :0</th>
+      <th data-role="supp-header">Mot-SelfR (n = 94) :1</th>
+      <th data-role="supp-header">Mot-SelfR (n = 94) :2</th>
+      <th data-role="supp-header">Mot-SelfR (n = 94) :3</th>
+      <th data-role="supp-header">SelfR-Mot (n = 112) :0</th>
+      <th data-role="supp-header">SelfR-Mot (n = 112) :1</th>
+      <th data-role="supp-header">SelfR-Mot (n = 112) :2</th>
+      <th data-role="supp-header">SelfR-Mot (n = 112) :3</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="56.694" data-rowminy="556.924">
+      <th data-role="obslabel">Handwashing</th>
+      <td class="cell" data-cellminx="163.674" data-cellminy="556.924">Time 1</td>
+      <td class="cell" data-cellminx="267.875" data-cellminy="556.924">6.22 (1.99;3–11)</td>
+      <td class="cell" data-cellminx="392.316" data-cellminy="556.924">6.21 (1.56;3–11)</td>
+      <td class="cell" data-cellminx="521.065" data-cellminy="556.924">&gt;.05</td>
+      <td data-role="supp-obs" class="cell">6.22</td>
+      <td data-role="supp-obs" class="cell">1.99</td>
+      <td data-role="supp-obs" class="cell">3</td>
+      <td data-role="supp-obs" class="cell">11</td>
+      <td data-role="supp-obs" class="cell">6.21</td>
+      <td data-role="supp-obs" class="cell">1.56</td>
+      <td data-role="supp-obs" class="cell">3</td>
+      <td data-role="supp-obs" class="cell">11</td>
+     </tr>
+     <tr data-rowminx="56.695" data-rowminy="570.870">
+      <th data-role="obslabel">-</th>
+      <td class="cell" data-cellminx="163.674" data-cellminy="570.870">Time 2</td>
+      <td class="cell" data-cellminx="267.875" data-cellminy="570.870">7.25 (1.91;3–16)</td>
+      <td class="cell" data-cellminx="392.316" data-cellminy="570.870">8.68 (1.74;4–13)</td>
+      <td class="cell" data-cellminx="521.066" data-cellminy="570.870">&lt;.001</td>
+      <td data-role="supp-obs" class="cell">7.25</td>
+      <td data-role="supp-obs" class="cell">1.91</td>
+      <td data-role="supp-obs" class="cell">3</td>
+      <td data-role="supp-obs" class="cell">16</td>
+      <td data-role="supp-obs" class="cell">8.68</td>
+      <td data-role="supp-obs" class="cell">1.74</td>
+      <td data-role="supp-obs" class="cell">4</td>
+      <td data-role="supp-obs" class="cell">13</td>
+     </tr>
+     <tr data-rowminx="56.696" data-rowminy="584.874">
+      <th data-role="obslabel">-</th>
+      <td class="cell" data-cellminx="163.674" data-cellminy="584.874">Time 3</td>
+      <td class="cell" data-cellminx="267.875" data-cellminy="584.874">9.30 (2.36;3–14)</td>
+      <td class="cell" data-cellminx="392.317" data-cellminy="584.874">9.06 (2.72;3–15)</td>
+      <td class="cell" data-cellminx="521.067" data-cellminy="584.874">&gt;.05</td>
+      <td data-role="supp-obs" class="cell">9.30</td>
+      <td data-role="supp-obs" class="cell">2.36</td>
+      <td data-role="supp-obs" class="cell">3</td>
+      <td data-role="supp-obs" class="cell">14</td>
+      <td data-role="supp-obs" class="cell">9.06</td>
+      <td data-role="supp-obs" class="cell">2.72</td>
+      <td data-role="supp-obs" class="cell">3</td>
+      <td data-role="supp-obs" class="cell">15</td>
+     </tr>
+     <tr data-rowminx="56.697" data-rowminy="598.877">
+      <th data-role="obslabel">Intention</th>
+      <td class="cell" data-cellminx="163.676" data-cellminy="598.877">Time 1</td>
+      <td class="cell" data-cellminx="267.877" data-cellminy="598.877">2.02 (0.86;1–4)</td>
+      <td class="cell" data-cellminx="392.318" data-cellminy="598.877">1.95 (0.67;1–3.50)</td>
+      <td class="cell" data-cellminx="521.068" data-cellminy="598.877">&gt;.05</td>
+      <td data-role="supp-obs" class="cell">2.02</td>
+      <td data-role="supp-obs" class="cell">0.86</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4</td>
+      <td data-role="supp-obs" class="cell">1.95</td>
+      <td data-role="supp-obs" class="cell">0.67</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">3.50</td>
+     </tr>
+     <tr data-rowminx="56.697" data-rowminy="612.880">
+      <th data-role="obslabel">-</th>
+      <td class="cell" data-cellminx="163.676" data-cellminy="612.880">Time 2</td>
+      <td class="cell" data-cellminx="267.877" data-cellminy="612.880">2.86 (0.66;1–4)</td>
+      <td class="cell" data-cellminx="392.319" data-cellminy="612.880">2.65 (0.84;1–4)</td>
+      <td class="cell" data-cellminx="521.068" data-cellminy="612.880">=.06</td>
+      <td data-role="supp-obs" class="cell">2.86</td>
+      <td data-role="supp-obs" class="cell">0.66</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4</td>
+      <td data-role="supp-obs" class="cell">2.65</td>
+      <td data-role="supp-obs" class="cell">0.84</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4</td>
+     </tr>
+     <tr data-rowminx="56.698" data-rowminy="626.883">
+      <th data-role="obslabel">-</th>
+      <td class="cell" data-cellminx="163.677" data-cellminy="626.883">Time 3</td>
+      <td class="cell" data-cellminx="267.878" data-cellminy="626.883">2.59 (0.84;1–4)</td>
+      <td class="cell" data-cellminx="392.320" data-cellminy="626.883">3.18 (0.63;1–4)</td>
+      <td class="cell" data-cellminx="521.069" data-cellminy="626.883">&lt;.001</td>
+      <td data-role="supp-obs" class="cell">2.59</td>
+      <td data-role="supp-obs" class="cell">0.84</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4</td>
+      <td data-role="supp-obs" class="cell">3.18</td>
+      <td data-role="supp-obs" class="cell">0.63</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4</td>
+     </tr>
+     <tr data-rowminx="56.699" data-rowminy="640.886">
+      <th data-role="obslabel">Self-efficacy</th>
+      <td class="cell" data-cellminx="163.678" data-cellminy="640.886">Time 1</td>
+      <td class="cell" data-cellminx="267.879" data-cellminy="640.886">2.24 (0.65;1–4)</td>
+      <td class="cell" data-cellminx="392.320" data-cellminy="640.886">2.22 (0.37;1–3.33)</td>
+      <td class="cell" data-cellminx="521.070" data-cellminy="640.886">&gt;.05</td>
+      <td data-role="supp-obs" class="cell">2.24</td>
+      <td data-role="supp-obs" class="cell">0.65</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4</td>
+      <td data-role="supp-obs" class="cell">2.22</td>
+      <td data-role="supp-obs" class="cell">0.37</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">3.33</td>
+     </tr>
+     <tr data-rowminx="56.700" data-rowminy="654.889">
+      <th data-role="obslabel">-</th>
+      <td class="cell" data-cellminx="163.678" data-cellminy="654.889">Time 2</td>
+      <td class="cell" data-cellminx="267.879" data-cellminy="654.889">2.59 (0.42;1–4)</td>
+      <td class="cell" data-cellminx="392.321" data-cellminy="654.889">3.02 (0.58;1.33-4)</td>
+      <td class="cell" data-cellminx="521.070" data-cellminy="654.889">&lt;.001</td>
+      <td data-role="supp-obs" class="cell">2.59</td>
+      <td data-role="supp-obs" class="cell">0.42</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4</td>
+      <td data-role="supp-obs" class="cell">3.02</td>
+      <td data-role="supp-obs" class="cell">0.58</td>
+      <td data-role="supp-obs" class="cell">1.33</td>
+      <td data-role="supp-obs" class="cell">-4</td>
+     </tr>
+     <tr data-rowminx="56.701" data-rowminy="668.892">
+      <th data-role="obslabel">-</th>
+      <td class="cell" data-cellminx="163.679" data-cellminy="668.892">Time 3</td>
+      <td class="cell" data-cellminx="267.880" data-cellminy="668.892">3.07 (0.59;1–4)</td>
+      <td class="cell" data-cellminx="392.322" data-cellminy="668.892">3.16 (0.53;1.67-4)</td>
+      <td class="cell" data-cellminx="521.071" data-cellminy="668.892">&gt;.05</td>
+      <td data-role="supp-obs" class="cell">3.07</td>
+      <td data-role="supp-obs" class="cell">0.59</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4</td>
+      <td data-role="supp-obs" class="cell">3.16</td>
+      <td data-role="supp-obs" class="cell">0.53</td>
+      <td data-role="supp-obs" class="cell">1.67</td>
+      <td data-role="supp-obs" class="cell">-4</td>
+     </tr>
+     <tr data-rowminx="56.701" data-rowminy="682.895">
+      <th data-role="obslabel">Planning</th>
+      <td class="cell" data-cellminx="163.681" data-cellminy="682.895">Time 1</td>
+      <td class="cell" data-cellminx="267.882" data-cellminy="682.895">1.92 (0.62;1–3.33)</td>
+      <td class="cell" data-cellminx="392.323" data-cellminy="682.895">1.84 (0.31;1–2.67)</td>
+      <td class="cell" data-cellminx="521.072" data-cellminy="682.895">&gt;.05</td>
+      <td data-role="supp-obs" class="cell">1.92</td>
+      <td data-role="supp-obs" class="cell">0.62</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">3.33</td>
+      <td data-role="supp-obs" class="cell">1.84</td>
+      <td data-role="supp-obs" class="cell">0.31</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">2.67</td>
+     </tr>
+     <tr data-rowminx="56.702" data-rowminy="696.898">
+      <th data-role="obslabel">-</th>
+      <td class="cell" data-cellminx="163.681" data-cellminy="696.898">Time 2</td>
+      <td class="cell" data-cellminx="267.882" data-cellminy="696.898">1.83 (0.48;1–3.50)</td>
+      <td class="cell" data-cellminx="392.323" data-cellminy="696.898">2.79 (0.62;1–4)</td>
+      <td class="cell" data-cellminx="521.073" data-cellminy="696.898">&lt;.001</td>
+      <td data-role="supp-obs" class="cell">1.83</td>
+      <td data-role="supp-obs" class="cell">0.48</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">3.50</td>
+      <td data-role="supp-obs" class="cell">2.79</td>
+      <td data-role="supp-obs" class="cell">0.62</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4</td>
+     </tr>
+     <tr data-rowminx="56.703" data-rowminy="710.901">
+      <th data-role="obslabel">-</th>
+      <td class="cell" data-cellminx="163.682" data-cellminy="710.901">Time 3</td>
+      <td class="cell" data-cellminx="267.883" data-cellminy="710.901">2.94 (0.59;1–4)</td>
+      <td class="cell" data-cellminx="392.324" data-cellminy="710.901">2.75 (0.63;1–3.83)</td>
+      <td class="cell" data-cellminx="521.074" data-cellminy="710.901">&lt;.05</td>
+      <td data-role="supp-obs" class="cell">2.94</td>
+      <td data-role="supp-obs" class="cell">0.59</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">4</td>
+      <td data-role="supp-obs" class="cell">2.75</td>
+      <td data-role="supp-obs" class="cell">0.63</td>
+      <td data-role="supp-obs" class="cell">1</td>
+      <td data-role="supp-obs" class="cell">3.83</td>
+     </tr>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="5">Note: T2 took place 17 days after T1, and T3 34 days after T1. There were no baseline differences at T1 (p &gt; .05) between the two intervention groups. </td>
+     </tr>
+    </tfoot>
+   </table>
+   <p>corpus-oa-uclii-01/10.1186.s12889-015-1453-7/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

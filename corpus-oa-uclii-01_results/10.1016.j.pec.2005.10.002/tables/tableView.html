@@ -1,0 +1,1464 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<meta charset="UTF-8" /><style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: none;
+    background-color: #f1f1f1;
+		margin: 20px 0;
+		width: auto;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+		text-decoration: none;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+		text-decoration: none;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+		text-decoration: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+}
+</style><style>
+/* Make individual cells more visible and highlight cells marked as 'empty' */
+
+body, html {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+td, th {
+	width: 130px;
+	min-width: 130px;
+	text-align: left;
+}
+
+/* Default colour for row header cells -- only wraps with no allocated role will stay this colour */
+tbody th {
+	color: black;
+}
+
+
+td.cell, th {
+	border: #eee 1px solid;
+}
+
+td.empty {
+	border: yellow 1px dotted;
+}
+
+th[data-role="obslabel"] {
+	color: red;
+	text-align: left;
+}
+
+/* Supplemental data values created by decomposing compound columns */
+
+td[data-role="supp-obs"] {
+	color: blue;
+	background: #ff2;
+}
+
+.subtable td[data-role="supp-obs"] {
+	color: blue;
+	background: #cf4;
+}
+
+/* Semantic markup for transformed structures */
+
+/* Subtable body, apply green background */
+
+.subtable {
+	background-color: #bbffbb;
+}
+
+/* Indent subtable rows of observation data, highlighted orange */
+
+.subtable th[data-role="obslabel"] {
+	color: #dd5533;
+}
+
+
+.subtable tr[data-role="obs"] {
+	color: purple;
+	border: dashed 1px black; padding-left: 0;
+}
+
+th[colspan] {
+	border-bottom: 3px solid black;
+}
+
+tr[data-tblrole="columnheaderrow"] th {
+	color: black;
+}
+
+thead {
+	border-bottom: 4px solid red;
+}
+
+/* Subtable title is not indented, highlighted red */
+
+tr[data-tblseg="subtabletitle"] th {
+	background-color: #00ff22;
+	padding-left: -10px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.subtable tr:not([data-tblseg="subtabletitle"]) th[data-role="obslabel"] {
+	padding-left: 10px;
+}
+
+tbody:not[class="subtable"] th[data-role="obslabel"] {
+	color: blue;
+	padding-left: -10px;
+	margin-left: -10px;
+}
+
+caption {
+	margin: 15px 0 25px 0;
+}
+
+tfoot tr td {
+	padding: 20px 0 0 0;
+}
+</style></head><body><h1>10.1016.j.pec.2005.10.002</h1><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button><button title="table4" class="tablinks" onClick="openTab(event, 'table4', 'tabcontent')">table4</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 1 Baseline characteristics in percentages or mean (S.D.) by study group (socio-demographic, pregnancy, smoking history and smoking networks) </caption>
+    <thead>
+     <tr data-tblrole="columnheaderrow">
+      <th />
+      <th class="cell" data-cellminx="137.000" data-cellmaxx="181.000">Experimental (n = 141) </th>
+      <th class="cell" data-cellminx="186.000" data-cellmaxx="211.000">Missing </th>
+      <th class="cell" data-cellminx="216.000" data-cellmaxx="246.000">Control (n = 177) </th>
+      <th class="cell" data-cellminx="264.000" data-cellmaxx="289.000">Missing </th>
+      <th data-role="supp-header">Experimental (n = 141) :0</th>
+      <th data-role="supp-header">Experimental (n = 141) :1</th>
+      <th data-role="supp-header">Control (n = 177) :0</th>
+      <th data-role="supp-header">Control (n = 177) :1</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="50.626" data-rowminy="124.218">
+      <th data-role="obslabel">Age (M, S.D.)</th>
+      <td class="cell" data-cellminx="144.566" data-cellminy="124.218">28.6 (4.32)</td>
+      <td class="cell" data-cellminx="190.033" data-cellminy="124.218">9</td>
+      <td class="cell" data-cellminx="223.312" data-cellminy="124.218">28.4 (4.39)</td>
+      <td class="cell" data-cellminx="268.098" data-cellminy="124.218">5</td>
+      <td data-role="supp-obs" class="cell">28.6</td>
+      <td data-role="supp-obs" class="cell">4.32</td>
+      <td data-role="supp-obs" class="cell">28.4</td>
+      <td data-role="supp-obs" class="cell">4.39</td>
+     </tr>
+     <tbody class="subtable">
+      <tr data-rowminx="50.626" data-rowminy="139.185" data-tblseg="subtabletitle">
+       <th data-role="obslabel">Level of education</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="190.032" data-cellminy="139.185">5</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="264.130" data-cellminy="139.185">13</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.563" data-rowminy="149.163" data-role="obs">
+       <th data-role="obslabel">Low (%)</th>
+       <td class="cell" data-cellminx="144.565" data-cellminy="149.163">47.1</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.312" data-cellminy="149.163">61.6</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">47.1</td>
+       <td data-role="supp-obs" class="cell">47.1</td>
+       <td data-role="supp-obs" class="cell">61.6</td>
+       <td data-role="supp-obs" class="cell">61.6</td>
+      </tr>
+      <tr data-rowminx="58.563" data-rowminy="159.084" data-role="obs">
+       <th data-role="obslabel">Medium (%)</th>
+       <td class="cell" data-cellminx="144.564" data-cellminy="159.084">38.2</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.311" data-cellminy="159.084">23.8</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">38.2</td>
+       <td data-role="supp-obs" class="cell">38.2</td>
+       <td data-role="supp-obs" class="cell">23.8</td>
+       <td data-role="supp-obs" class="cell">23.8</td>
+      </tr>
+      <tr data-rowminx="58.563" data-rowminy="169.062" data-role="obs">
+       <th data-role="obslabel">High (%)</th>
+       <td class="cell" data-cellminx="144.565" data-cellminy="169.062">14.7</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.312" data-cellminy="169.062">14.6</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">14.7</td>
+       <td data-role="supp-obs" class="cell">14.7</td>
+       <td data-role="supp-obs" class="cell">14.6</td>
+       <td data-role="supp-obs" class="cell">14.6</td>
+      </tr>
+     </tbody>
+     <tr data-rowminx="50.626" data-rowminy="184.029">
+      <th data-role="obslabel">Steady partner (yes)</th>
+      <td class="cell" data-cellminx="144.564" data-cellminy="184.029">99.3%</td>
+      <td class="cell" data-cellminx="190.030" data-cellminy="184.029">2</td>
+      <td class="cell" data-cellminx="223.309" data-cellminy="184.029">97.2%</td>
+      <td class="cell" data-cellminx="268.096" data-cellminy="184.029">1</td>
+      <td data-role="supp-obs" class="cell">99.3</td>
+      <td data-role="supp-obs" class="cell">99.3</td>
+      <td data-role="supp-obs" class="cell">97.2</td>
+      <td data-role="supp-obs" class="cell">97.2</td>
+     </tr>
+     <tr data-rowminx="50.626" data-rowminy="193.951">
+      <th data-role="obslabel">Paid job woman (yes)</th>
+      <td class="cell" data-cellminx="144.564" data-cellminy="193.951">68.4%</td>
+      <td class="cell" data-cellminx="190.031" data-cellminy="193.951">5</td>
+      <td class="cell" data-cellminx="223.310" data-cellminy="193.951">65.2%</td>
+      <td class="cell" data-cellminx="264.129" data-cellminy="193.951">13</td>
+      <td data-role="supp-obs" class="cell">68.4</td>
+      <td data-role="supp-obs" class="cell">68.4</td>
+      <td data-role="supp-obs" class="cell">65.2</td>
+      <td data-role="supp-obs" class="cell">65.2</td>
+     </tr>
+     <tbody class="subtable">
+      <tr data-rowminx="50.626" data-rowminy="208.918" data-tblseg="subtabletitle">
+       <th data-role="obslabel">Number of prior</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="190.034" data-cellminy="208.918">5</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="264.133" data-cellminy="208.918">13</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.563" data-rowminy="218.896" data-role="obs">
+       <th>pregnancies</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.563" data-rowminy="228.817" data-role="obs">
+       <th data-role="obslabel">0 (%)</th>
+       <td class="cell" data-cellminx="144.565" data-cellminy="228.817">55.1</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.312" data-cellminy="228.817">51.8</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">55.1</td>
+       <td data-role="supp-obs" class="cell">55.1</td>
+       <td data-role="supp-obs" class="cell">51.8</td>
+       <td data-role="supp-obs" class="cell">51.8</td>
+      </tr>
+      <tr data-rowminx="58.563" data-rowminy="238.795" data-role="obs">
+       <th data-role="obslabel">1 (%)</th>
+       <td class="cell" data-cellminx="144.565" data-cellminy="238.795">29.4</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.312" data-cellminy="238.795">30.5</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">29.4</td>
+       <td data-role="supp-obs" class="cell">29.4</td>
+       <td data-role="supp-obs" class="cell">30.5</td>
+       <td data-role="supp-obs" class="cell">30.5</td>
+      </tr>
+      <tr data-rowminx="58.563" data-rowminy="248.773" data-role="obs">
+       <th data-role="obslabel">2 (%)</th>
+       <td class="cell" data-cellminx="144.565" data-cellminy="248.773">15.4</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.312" data-cellminy="248.773">17.7</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">15.4</td>
+       <td data-role="supp-obs" class="cell">15.4</td>
+       <td data-role="supp-obs" class="cell">17.7</td>
+       <td data-role="supp-obs" class="cell">17.7</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="50.626" data-rowminy="263.683" data-tblseg="subtabletitle">
+       <th data-role="obslabel">Number of weeks</th>
+       <td class="cell" data-cellminx="144.566" data-cellminy="263.683">12.4 (1.91)</td>
+       <td class="cell" data-cellminx="190.033" data-cellminy="263.683">1</td>
+       <td class="cell" data-cellminx="223.312" data-cellminy="263.683">13.4 (3.67)</td>
+       <td class="cell" data-cellminx="268.098" data-cellminy="263.683">3</td>
+       <td data-role="supp-obs" class="cell">12.4</td>
+       <td data-role="supp-obs" class="cell">1.91</td>
+       <td data-role="supp-obs" class="cell">13.4</td>
+       <td data-role="supp-obs" class="cell">3.67</td>
+      </tr>
+      <tr data-rowminx="58.563" data-rowminy="273.661" data-role="obs">
+       <th>pregnant at intake</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.563" data-rowminy="283.639" data-role="obs">
+       <th>(M, S.D.)</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="50.625" data-rowminy="293.617" data-tblseg="subtabletitle">
+       <th data-role="obslabel">Number of cigarettes</th>
+       <td class="cell" data-cellminx="144.565" data-cellminy="293.617">17.4 (8.46)</td>
+       <td class="cell" data-cellminx="190.032" data-cellminy="293.617">1</td>
+       <td class="cell" data-cellminx="223.311" data-cellminy="293.617">18.4 (8.51)</td>
+       <td class="cell" data-cellminx="268.097" data-cellminy="293.617">0</td>
+       <td data-role="supp-obs" class="cell">17.4</td>
+       <td data-role="supp-obs" class="cell">8.46</td>
+       <td data-role="supp-obs" class="cell">18.4</td>
+       <td data-role="supp-obs" class="cell">8.51</td>
+      </tr>
+      <tr data-rowminx="58.562" data-rowminy="303.538" data-role="obs">
+       <th>a day before pregnancy</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.562" data-rowminy="323.494" data-role="obs">
+       <th>(M, S.D.)</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="50.624" data-rowminy="333.472" data-tblseg="subtabletitle">
+       <th data-role="obslabel">Number of cigarettes</th>
+       <td class="cell" data-cellminx="148.533" data-cellminy="333.472">9.1 (6.83)</td>
+       <td class="cell" data-cellminx="190.031" data-cellminy="333.472">0</td>
+       <td class="cell" data-cellminx="227.278" data-cellminy="333.472">7.7 (5.01)</td>
+       <td class="cell" data-cellminx="268.096" data-cellminy="333.472">0</td>
+       <td data-role="supp-obs" class="cell">9.1</td>
+       <td data-role="supp-obs" class="cell">6.83</td>
+       <td data-role="supp-obs" class="cell">7.7</td>
+       <td data-role="supp-obs" class="cell">5.01</td>
+      </tr>
+      <tr data-rowminx="58.561" data-rowminy="343.393" data-role="obs">
+       <th>a day at first visit with</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.561" data-rowminy="353.371" data-role="obs">
+       <th>midwife (M, S.D.)</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="50.624" data-rowminy="363.349" data-tblseg="subtabletitle">
+       <th data-role="obslabel">Age began smoking</th>
+       <td class="cell" data-cellminx="144.564" data-cellminy="363.349">14.9 (2.28)</td>
+       <td class="cell" data-cellminx="190.030" data-cellminy="363.349">5</td>
+       <td class="cell" data-cellminx="223.309" data-cellminy="363.349">15.4 (2.51)</td>
+       <td class="cell" data-cellminx="264.127" data-cellminy="363.349">13</td>
+       <td data-role="supp-obs" class="cell">14.9</td>
+       <td data-role="supp-obs" class="cell">2.28</td>
+       <td data-role="supp-obs" class="cell">15.4</td>
+       <td data-role="supp-obs" class="cell">2.51</td>
+      </tr>
+      <tr data-rowminx="58.560" data-rowminy="373.270" data-role="obs">
+       <th>(M, S.D.)</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="50.623" data-rowminy="388.238" data-tblseg="subtabletitle">
+       <th data-role="obslabel">Minutes to first cigarette</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="190.028" data-cellminy="388.238">6</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="264.126" data-cellminy="388.238">16</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.560" data-rowminy="398.216" data-role="obs">
+       <th data-role="obslabel">&lt;5 (%)</th>
+       <td class="cell" data-cellminx="148.530" data-cellminy="398.216">8.9</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="227.277" data-cellminy="398.216">6.8</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">8.9</td>
+       <td data-role="supp-obs" class="cell">8.9</td>
+       <td data-role="supp-obs" class="cell">6.8</td>
+       <td data-role="supp-obs" class="cell">6.8</td>
+      </tr>
+      <tr data-rowminx="58.560" data-rowminy="408.137" data-role="obs">
+       <th data-role="obslabel">6–30 (%)</th>
+       <td class="cell" data-cellminx="144.562" data-cellminy="408.137">18.5</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.308" data-cellminy="408.137">22.4</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">18.5</td>
+       <td data-role="supp-obs" class="cell">18.5</td>
+       <td data-role="supp-obs" class="cell">22.4</td>
+       <td data-role="supp-obs" class="cell">22.4</td>
+      </tr>
+      <tr data-rowminx="58.560" data-rowminy="418.115" data-role="obs">
+       <th data-role="obslabel">31–60 (%)</th>
+       <td class="cell" data-cellminx="144.562" data-cellminy="418.115">20.0</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.308" data-cellminy="418.115">13.7</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">20.0</td>
+       <td data-role="supp-obs" class="cell">20.0</td>
+       <td data-role="supp-obs" class="cell">13.7</td>
+       <td data-role="supp-obs" class="cell">13.7</td>
+      </tr>
+      <tr data-rowminx="58.560" data-rowminy="428.093" data-role="obs">
+       <th data-role="obslabel">&gt;60 (%)</th>
+       <td class="cell" data-cellminx="144.562" data-cellminy="428.093">52.6</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.308" data-cellminy="428.093">57.1</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">52.6</td>
+       <td data-role="supp-obs" class="cell">52.6</td>
+       <td data-role="supp-obs" class="cell">57.1</td>
+       <td data-role="supp-obs" class="cell">57.1</td>
+      </tr>
+     </tbody>
+     <tr data-rowminx="50.622" data-rowminy="443.060">
+      <th data-role="obslabel">Drinks alcohol</th>
+      <td class="cell" data-cellminx="137.984" data-cellminy="443.060">14%</td>
+      <td class="cell" data-cellminx="190.028" data-cellminy="443.060">5</td>
+      <td class="cell" data-cellminx="216.674" data-cellminy="443.060">11%</td>
+      <td class="cell" data-cellminx="264.125" data-cellminy="443.060">13</td>
+      <td data-role="supp-obs" class="cell">14</td>
+      <td data-role="supp-obs" class="cell">14</td>
+      <td data-role="supp-obs" class="cell">11</td>
+      <td data-role="supp-obs" class="cell">11</td>
+     </tr>
+     <tr data-rowminx="50.622" data-rowminy="452.981">
+      <th data-role="obslabel">Partner smoking (yes)</th>
+      <td class="cell" data-cellminx="144.560" data-cellminy="452.981">71.2%</td>
+      <td class="cell" data-cellminx="186.058" data-cellminy="452.981">10</td>
+      <td class="cell" data-cellminx="223.305" data-cellminy="452.981">72.5%</td>
+      <td class="cell" data-cellminx="264.124" data-cellminy="452.981">18</td>
+      <td data-role="supp-obs" class="cell">71.2</td>
+      <td data-role="supp-obs" class="cell">71.2</td>
+      <td data-role="supp-obs" class="cell">72.5</td>
+      <td data-role="supp-obs" class="cell">72.5</td>
+     </tr>
+     <tbody class="subtable">
+      <tr data-rowminx="50.622" data-rowminy="467.948" data-tblseg="subtabletitle">
+       <th data-role="obslabel">Anticipated help in</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="190.030" data-cellminy="467.948">6</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="264.129" data-cellminy="467.948">12</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.559" data-rowminy="477.926" data-role="obs">
+       <th>effort to quit from</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.559" data-rowminy="487.848" data-role="obs">
+       <th>partner</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.559" data-rowminy="497.826" data-role="obs">
+       <th data-role="obslabel">A lot (%)</th>
+       <td class="cell" data-cellminx="144.561" data-cellminy="497.826">31.1</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.308" data-cellminy="497.826">28.5</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">31.1</td>
+       <td data-role="supp-obs" class="cell">31.1</td>
+       <td data-role="supp-obs" class="cell">28.5</td>
+       <td data-role="supp-obs" class="cell">28.5</td>
+      </tr>
+      <tr data-rowminx="58.559" data-rowminy="507.803" data-role="obs">
+       <th data-role="obslabel">Average (%)</th>
+       <td class="cell" data-cellminx="144.561" data-cellminy="507.803">32.6</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.308" data-cellminy="507.803">32.1</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">32.6</td>
+       <td data-role="supp-obs" class="cell">32.6</td>
+       <td data-role="supp-obs" class="cell">32.1</td>
+       <td data-role="supp-obs" class="cell">32.1</td>
+      </tr>
+      <tr data-rowminx="58.559" data-rowminy="517.781" data-role="obs">
+       <th data-role="obslabel">Little (%)</th>
+       <td class="cell" data-cellminx="144.561" data-cellminy="517.781">14.1</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.308" data-cellminy="517.781">16.4</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">14.1</td>
+       <td data-role="supp-obs" class="cell">14.1</td>
+       <td data-role="supp-obs" class="cell">16.4</td>
+       <td data-role="supp-obs" class="cell">16.4</td>
+      </tr>
+      <tr data-rowminx="58.559" data-rowminy="527.703" data-role="obs">
+       <th data-role="obslabel">None (%)</th>
+       <td class="cell" data-cellminx="144.561" data-cellminy="527.703">22.2</td>
+       <td class="empty" />
+       <td class="cell" data-cellminx="223.308" data-cellminy="527.703">23.0</td>
+       <td class="empty" />
+       <td data-role="supp-obs" class="cell">22.2</td>
+       <td data-role="supp-obs" class="cell">22.2</td>
+       <td data-role="supp-obs" class="cell">23.0</td>
+       <td data-role="supp-obs" class="cell">23.0</td>
+      </tr>
+     </tbody>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="5" />
+     </tr>
+    </tfoot>
+   </table>
+   <p>corpus-oa-uclii-01/10.1016.j.pec.2005.10.002/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 2 Evaluation of video, self-help guide and relapse booklet by experimental intake smoking group </caption>
+    <thead>
+     <tr data-tblrole="columnheaderrow">
+      <th />
+      <th class="cell" data-cellminx="127.000" data-cellmaxx="176.000">Video (n = 92), mean (S.D.) </th>
+      <th class="cell" data-cellminx="208.000" data-cellmaxx="281.000">Self-help guide (n = 112), mean (S.D.) </th>
+      <th data-role="supp-header">Video (n = 92), mean (S.D.) :0</th>
+      <th data-role="supp-header">Video (n = 92), mean (S.D.) :1</th>
+      <th data-role="supp-header">Self-help guide (n = 112), mean (S.D.) :0</th>
+      <th data-role="supp-header">Self-help guide (n = 112), mean (S.D.) :1</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr data-rowminx="42.520" data-rowminy="123.038">
+      <th data-role="obslabel">Credible ^{a}</th>
+      <td class="cell" data-cellminx="127.049" data-cellminy="124.218">5.76 (1.30)</td>
+      <td class="cell" data-cellminx="208.005" data-cellminy="124.218">5.91 (1.03)</td>
+      <td data-role="supp-obs" class="cell">5.76</td>
+      <td data-role="supp-obs" class="cell">1.30</td>
+      <td data-role="supp-obs" class="cell">5.91</td>
+      <td data-role="supp-obs" class="cell">1.03</td>
+     </tr>
+     <tr data-rowminx="42.519" data-rowminy="132.959">
+      <th data-role="obslabel">Understandable ^{a}</th>
+      <td class="cell" data-cellminx="127.049" data-cellminy="134.196">6.30 (0.87)</td>
+      <td class="cell" data-cellminx="208.005" data-cellminy="134.196">6.32 (0.54)</td>
+      <td data-role="supp-obs" class="cell">6.30</td>
+      <td data-role="supp-obs" class="cell">0.87</td>
+      <td data-role="supp-obs" class="cell">6.32</td>
+      <td data-role="supp-obs" class="cell">0.54</td>
+     </tr>
+     <tr data-rowminx="42.519" data-rowminy="142.937">
+      <th data-role="obslabel">Interesting ^{a}</th>
+      <td class="cell" data-cellminx="127.049" data-cellminy="144.173">5.08 (1.66)</td>
+      <td class="cell" data-cellminx="208.005" data-cellminy="144.173">5.78 (1.10)</td>
+      <td data-role="supp-obs" class="cell">5.08</td>
+      <td data-role="supp-obs" class="cell">1.66</td>
+      <td data-role="supp-obs" class="cell">5.78</td>
+      <td data-role="supp-obs" class="cell">1.10</td>
+     </tr>
+     <tr data-rowminx="42.519" data-rowminy="152.915">
+      <th data-role="obslabel">Attractive ^{a}</th>
+      <td class="cell" data-cellminx="127.049" data-cellminy="154.095">4.40 (1.81)</td>
+      <td class="cell" data-cellminx="208.005" data-cellminy="154.095">5.35 (1.41)</td>
+      <td data-role="supp-obs" class="cell">4.40</td>
+      <td data-role="supp-obs" class="cell">1.81</td>
+      <td data-role="supp-obs" class="cell">5.35</td>
+      <td data-role="supp-obs" class="cell">1.41</td>
+     </tr>
+     <tr data-rowminx="42.519" data-rowminy="162.893">
+      <th data-role="obslabel">Length ^{a}</th>
+      <td class="cell" data-cellminx="127.049" data-cellminy="164.073">5.20 (1.59)</td>
+      <td class="cell" data-cellminx="208.005" data-cellminy="164.073">3.19 (1.65)</td>
+      <td data-role="supp-obs" class="cell">5.20</td>
+      <td data-role="supp-obs" class="cell">1.59</td>
+      <td data-role="supp-obs" class="cell">3.19</td>
+      <td data-role="supp-obs" class="cell">1.65</td>
+     </tr>
+     <tr data-rowminx="42.519" data-rowminy="172.814">
+      <th data-role="obslabel">Overall ^{b}</th>
+      <td class="cell" data-cellminx="127.049" data-cellminy="174.051">6.66 (1.36)</td>
+      <td class="cell" data-cellminx="208.005" data-cellminy="174.051">7.39 (0.96)</td>
+      <td data-role="supp-obs" class="cell">6.66</td>
+      <td data-role="supp-obs" class="cell">1.36</td>
+      <td data-role="supp-obs" class="cell">7.39</td>
+      <td data-role="supp-obs" class="cell">0.96</td>
+     </tr>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="3">^{a} Scale of 1–7, 1 = lowest rating. ^{b} Scale of 1–10, 1 = lowest rating. </td>
+     </tr>
+    </tfoot>
+   </table>
+   <p>corpus-oa-uclii-01/10.1016.j.pec.2005.10.002/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 3 Mixed logistic regression of quit attempt and 7-day abstinence on treatment and covariates 6 weeks after the intervention (dropouts included as smoker; N = 289)^{a} </caption>
+    <thead>
+     <tr data-tblrole="columnheaderrow">
+      <th />
+      <th class="cell" data-cellminx="390.000" data-cellmaxx="395.000">B </th>
+      <th class="cell" data-cellminx="422.000" data-cellmaxx="435.000">S.E. </th>
+      <th class="cell" data-cellminx="447.000" data-cellmaxx="459.000">OR </th>
+      <th class="cell" data-cellminx="473.000" data-cellmaxx="498.000">95% CI </th>
+      <th class="cell" data-cellminx="520.000" data-cellmaxx="544.000">p-value </th>
+      <th data-role="supp-header">95% CI :0</th>
+      <th data-role="supp-header">95% CI :1</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="305.517" data-rowminy="123.038" data-tblseg="subtabletitle">
+       <th>Quit attempt ^{a}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="313.512" data-rowminy="132.959" data-role="obs">
+       <th data-role="obslabel">Treatment group ^{1}</th>
+       <td class="cell" data-cellminx="396.907" data-cellminy="134.196">0.92</td>
+       <td class="cell" data-cellminx="422.475" data-cellminy="134.196">0.40</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="134.196">2.51</td>
+       <td class="cell" data-cellminx="473.498" data-cellminy="134.196">1.14–5.54</td>
+       <td class="cell" data-cellminx="520.892" data-cellminy="134.196">0.023</td>
+       <td data-role="supp-obs" class="cell">1.14</td>
+       <td data-role="supp-obs" class="cell">5.54</td>
+      </tr>
+      <tr data-rowminx="313.512" data-rowminy="142.937" data-role="obs">
+       <th data-role="obslabel">Province ^{b}</th>
+       <td class="cell" data-cellminx="396.907" data-cellminy="144.173">0.32</td>
+       <td class="cell" data-cellminx="422.475" data-cellminy="144.173">0.39</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="144.173">1.37</td>
+       <td class="cell" data-cellminx="473.498" data-cellminy="144.173">0.64–2.94</td>
+       <td class="cell" data-cellminx="520.892" data-cellminy="144.173">0.42</td>
+       <td data-role="supp-obs" class="cell">0.64</td>
+       <td data-role="supp-obs" class="cell">2.94</td>
+      </tr>
+      <tr data-rowminx="313.512" data-rowminy="152.915" data-role="obs">
+       <th data-role="obslabel">Cigarettes/day^{c}</th>
+       <td class="cell" data-cellminx="390.784" data-cellminy="154.095">-0.36</td>
+       <td class="cell" data-cellminx="422.475" data-cellminy="154.095">0.14</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="154.095">0.70</td>
+       <td class="cell" data-cellminx="473.497" data-cellminy="154.095">0.53–0.91</td>
+       <td class="cell" data-cellminx="520.891" data-cellminy="154.095">0.008</td>
+       <td data-role="supp-obs" class="cell">0.53</td>
+       <td data-role="supp-obs" class="cell">0.91</td>
+      </tr>
+      <tr data-rowminx="313.511" data-rowminy="162.893" data-role="obs">
+       <th data-role="obslabel">Age onset smoking ^{c}</th>
+       <td class="cell" data-cellminx="396.907" data-cellminy="164.073">0.39</td>
+       <td class="cell" data-cellminx="422.475" data-cellminy="164.073">0.29</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="164.073">1.48</td>
+       <td class="cell" data-cellminx="473.498" data-cellminy="164.073">0.84–2.58</td>
+       <td class="cell" data-cellminx="520.892" data-cellminy="164.073">0.17</td>
+       <td data-role="supp-obs" class="cell">0.84</td>
+       <td data-role="supp-obs" class="cell">2.58</td>
+      </tr>
+      <tr data-rowminx="313.512" data-rowminy="172.814" data-role="obs">
+       <th data-role="obslabel">Smoking partner^{a}</th>
+       <td class="cell" data-cellminx="390.784" data-cellminy="174.051">-0.18</td>
+       <td class="cell" data-cellminx="422.475" data-cellminy="174.051">0.31</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="174.051">0.84</td>
+       <td class="cell" data-cellminx="473.497" data-cellminy="174.051">0.46–1.53</td>
+       <td class="cell" data-cellminx="520.891" data-cellminy="174.051">0.57</td>
+       <td data-role="supp-obs" class="cell">0.46</td>
+       <td data-role="supp-obs" class="cell">1.53</td>
+      </tr>
+      <tr data-rowminx="313.511" data-rowminy="182.792" data-role="obs">
+       <th data-role="obslabel">Educational level ^{d}</th>
+       <td class="cell" data-cellminx="396.907" data-cellminy="184.028">0.58</td>
+       <td class="cell" data-cellminx="422.475" data-cellminy="184.028">0.28</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="184.028">1.79</td>
+       <td class="cell" data-cellminx="473.498" data-cellminy="184.028">1.02–3.12</td>
+       <td class="cell" data-cellminx="520.892" data-cellminy="184.028">0.041</td>
+       <td data-role="supp-obs" class="cell">1.02</td>
+       <td data-role="supp-obs" class="cell">3.12</td>
+      </tr>
+      <tr data-rowminx="313.512" data-rowminy="193.950" data-role="obs">
+       <th data-role="obslabel">Constant</th>
+       <td class="cell" data-cellminx="390.784" data-cellminy="193.950">-2.25</td>
+       <td class="cell" data-cellminx="422.475" data-cellminy="193.950">1.03</td>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="cell" data-cellminx="520.894" data-cellminy="193.950">0.028</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="313.512" data-rowminy="202.748" data-role="obs">
+       <th data-role="obslabel">Cluster variance ^{e}</th>
+       <td class="cell" data-cellminx="396.907" data-cellminy="203.928">0.35</td>
+       <td class="cell" data-cellminx="422.475" data-cellminy="203.928">0.24</td>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="cell" data-cellminx="520.894" data-cellminy="203.928">0.077</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="313.512" data-rowminy="227.636" data-tblseg="subtabletitle">
+       <th>Treatment group ^{a}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="396.907" data-rowminy="228.816" data-role="obs">
+       <th data-role="obslabel">1.90</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="422.475" data-cellminy="228.816">0.67</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="228.816">6.67</td>
+       <td class="cell" data-cellminx="473.498" data-cellminy="228.816">1.81–24.59</td>
+       <td class="cell" data-cellminx="520.892" data-cellminy="228.816">0.004</td>
+       <td data-role="supp-obs" class="cell">1.81</td>
+       <td data-role="supp-obs" class="cell">24.59</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="313.512" data-rowminy="237.614" data-tblseg="subtabletitle">
+       <th>Province ^{b}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="396.907" data-rowminy="238.794" data-role="obs">
+       <th data-role="obslabel">0.74</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="422.475" data-cellminy="238.794">0.63</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="238.794">2.10</td>
+       <td class="cell" data-cellminx="473.498" data-cellminy="238.794">0.61–7.25</td>
+       <td class="cell" data-cellminx="520.892" data-cellminy="238.794">0.24</td>
+       <td data-role="supp-obs" class="cell">0.61</td>
+       <td data-role="supp-obs" class="cell">7.25</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="313.512" data-rowminy="247.535" data-tblseg="subtabletitle">
+       <th>Cigarettes/day^{c}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="390.784" data-rowminy="248.772" data-role="obs">
+       <th data-role="obslabel">-0.95</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="422.475" data-cellminy="248.772">0.27</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="248.772">0.39</td>
+       <td class="cell" data-cellminx="473.497" data-cellminy="248.772">0.23–0.66</td>
+       <td class="cell" data-cellminx="520.891" data-cellminy="248.772">0.000</td>
+       <td data-role="supp-obs" class="cell">0.23</td>
+       <td data-role="supp-obs" class="cell">0.66</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="313.511" data-rowminy="257.513" data-tblseg="subtabletitle">
+       <th>Age onset smoking ^{c}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="396.907" data-rowminy="258.750" data-role="obs">
+       <th data-role="obslabel">0.08</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="422.475" data-cellminy="258.750">0.45</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="258.750">1.08</td>
+       <td class="cell" data-cellminx="473.498" data-cellminy="258.750">0.44–2.64</td>
+       <td class="cell" data-cellminx="520.892" data-cellminy="258.750">0.86</td>
+       <td data-role="supp-obs" class="cell">0.44</td>
+       <td data-role="supp-obs" class="cell">2.64</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="313.512" data-rowminy="267.491" data-tblseg="subtabletitle">
+       <th>Smoking partner^{a}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="390.784" data-rowminy="268.671" data-role="obs">
+       <th data-role="obslabel">-0.72</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="422.475" data-cellminy="268.671">0.43</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="268.671">0.49</td>
+       <td class="cell" data-cellminx="473.497" data-cellminy="268.671">0.21–1.12</td>
+       <td class="cell" data-cellminx="520.891" data-cellminy="268.671">0.091</td>
+       <td data-role="supp-obs" class="cell">0.21</td>
+       <td data-role="supp-obs" class="cell">1.12</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="313.511" data-rowminy="277.469" data-tblseg="subtabletitle">
+       <th>Educational level ^{d}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="396.907" data-rowminy="278.649" data-role="obs">
+       <th data-role="obslabel">0.13</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="422.475" data-cellminy="278.649">0.43</td>
+       <td class="cell" data-cellminx="447.986" data-cellminy="278.649">1.14</td>
+       <td class="cell" data-cellminx="473.498" data-cellminy="278.649">0.49–2.66</td>
+       <td class="cell" data-cellminx="520.892" data-cellminy="278.649">0.77</td>
+       <td data-role="supp-obs" class="cell">0.49</td>
+       <td data-role="supp-obs" class="cell">2.66</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="313.512" data-rowminy="288.627" data-tblseg="subtabletitle">
+       <th>Constant</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="390.784" data-rowminy="288.627" data-role="obs">
+       <th data-role="obslabel">-2.08</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="422.475" data-cellminy="288.627">1.64</td>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="cell" data-cellminx="520.894" data-cellminy="288.627">0.20</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="313.512" data-rowminy="298.548" data-tblseg="subtabletitle">
+       <th>Cluster variance</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="396.905" data-rowminy="298.548" data-role="obs">
+       <th data-role="obslabel">0.82</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="422.474" data-cellminy="298.548">0.55</td>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="cell" data-cellminx="520.892" data-cellminy="298.548">0.069</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="6">^{a} Coding: 1 = yes; 0 = no. ^{b} Province: 1 = west; 0 = east. ^{c} Results for age of onset and number of cigarettes a day are reported for the effects of 5 units increase, i.e. 5 years for age onset smoking and 5 cigarette. ^{d} Educational level: 1 = medium or high, 0 = low; age is in years. ^{e} One-tailed p-value, since the cluster variance cannot be negative. </td>
+     </tr>
+    </tfoot>
+   </table>
+   <p>corpus-oa-uclii-01/10.1016.j.pec.2005.10.002/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table4" id="table4" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption>Table 4 Mixed logistic regression of quit attempt, 7-day abstinence and continuous abstinence on treatment and covariates 6 weeks postpartum (dropouts included as smoker; N = 286)^{a} </caption>
+    <thead>
+     <tr data-tblrole="columnheaderrow">
+      <th />
+      <th class="cell" data-cellminx="135.000" data-cellmaxx="140.000">B </th>
+      <th class="cell" data-cellminx="167.000" data-cellmaxx="180.000">S.E. </th>
+      <th class="cell" data-cellminx="193.000" data-cellmaxx="204.000">OR </th>
+      <th class="cell" data-cellminx="218.000" data-cellmaxx="243.000">95% CI </th>
+      <th class="cell" data-cellminx="265.000" data-cellmaxx="289.000">p-value </th>
+      <th data-role="supp-header">95% CI :0</th>
+      <th data-role="supp-header">95% CI :1</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="50.626" data-rowminy="123.038" data-tblseg="subtabletitle">
+       <th>Quit attempt ^{a}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.564" data-rowminy="132.959" data-role="obs">
+       <th data-role="obslabel">Treatment group ^{a}</th>
+       <td class="cell" data-cellminx="142.016" data-cellminy="134.196">1.17</td>
+       <td class="cell" data-cellminx="167.527" data-cellminy="134.196">0.39</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="134.196">3.21</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="134.196">1.50–6.85</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="134.196">0.003</td>
+       <td data-role="supp-obs" class="cell">1.50</td>
+       <td data-role="supp-obs" class="cell">6.85</td>
+      </tr>
+      <tr data-rowminx="58.564" data-rowminy="142.937" data-role="obs">
+       <th data-role="obslabel">Province ^{b}</th>
+       <td class="cell" data-cellminx="142.016" data-cellminy="144.173">0.13</td>
+       <td class="cell" data-cellminx="167.527" data-cellminy="144.173">0.38</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="144.173">1.14</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="144.173">0.55–2.38</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="144.173">0.73</td>
+       <td data-role="supp-obs" class="cell">0.55</td>
+       <td data-role="supp-obs" class="cell">2.38</td>
+      </tr>
+      <tr data-rowminx="58.564" data-rowminy="152.915" data-role="obs">
+       <th data-role="obslabel">Cigarettes/day^{c}</th>
+       <td class="cell" data-cellminx="135.893" data-cellminy="154.095">-0.72</td>
+       <td class="cell" data-cellminx="167.527" data-cellminy="154.095">0.16</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="154.095">0.52</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="154.095">0.36–0.67</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="154.095">0.000</td>
+       <td data-role="supp-obs" class="cell">0.36</td>
+       <td data-role="supp-obs" class="cell">0.67</td>
+      </tr>
+      <tr data-rowminx="58.564" data-rowminy="162.893" data-role="obs">
+       <th data-role="obslabel">Age onset smoking ^{c}</th>
+       <td class="cell" data-cellminx="142.016" data-cellminy="164.073">0.57</td>
+       <td class="cell" data-cellminx="167.527" data-cellminy="164.073">0.31</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="164.073">1.76</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="164.073">0.97–3.20</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="164.073">0.064</td>
+       <td data-role="supp-obs" class="cell">0.97</td>
+       <td data-role="supp-obs" class="cell">3.20</td>
+      </tr>
+      <tr data-rowminx="58.564" data-rowminy="172.814" data-role="obs">
+       <th data-role="obslabel">Smoking partner^{a}</th>
+       <td class="cell" data-cellminx="135.893" data-cellminy="174.051">-0.48</td>
+       <td class="cell" data-cellminx="167.527" data-cellminy="174.051">0.31</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="174.051">0.62</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="174.051">0.33–1.14</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="174.051">0.12</td>
+       <td data-role="supp-obs" class="cell">0.33</td>
+       <td data-role="supp-obs" class="cell">1.14</td>
+      </tr>
+      <tr data-rowminx="58.564" data-rowminy="182.792" data-role="obs">
+       <th data-role="obslabel">Educational level ^{d}</th>
+       <td class="cell" data-cellminx="142.016" data-cellminy="184.028">0.65</td>
+       <td class="cell" data-cellminx="167.527" data-cellminy="184.028">0.30</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="184.028">1.92</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="184.028">1.07–3.42</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="184.028">0.03</td>
+       <td data-role="supp-obs" class="cell">1.07</td>
+       <td data-role="supp-obs" class="cell">3.42</td>
+      </tr>
+      <tr data-rowminx="58.564" data-rowminy="193.950" data-role="obs">
+       <th data-role="obslabel">Constant</th>
+       <td class="cell" data-cellminx="135.893" data-cellminy="193.950">-2.08</td>
+       <td class="cell" data-cellminx="167.527" data-cellminy="193.950">1.08</td>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="cell" data-cellminx="265.945" data-cellminy="193.950">0.05</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="58.564" data-rowminy="202.748" data-role="obs">
+       <th data-role="obslabel">Cluster variance ^{e}</th>
+       <td class="cell" data-cellminx="142.016" data-cellminy="203.928">0.22</td>
+       <td class="cell" data-cellminx="167.527" data-cellminy="203.928">0.22</td>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="cell" data-cellminx="265.945" data-cellminy="203.928">0.16</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="227.636" data-tblseg="subtabletitle">
+       <th>Treatment group ^{a}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="142.016" data-rowminy="228.816" data-role="obs">
+       <th data-role="obslabel">1.08</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.527" data-cellminy="228.816">0.54</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="228.816">2.94</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="228.816">1.03–8.40</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="228.816">0.044</td>
+       <td data-role="supp-obs" class="cell">1.03</td>
+       <td data-role="supp-obs" class="cell">8.40</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="237.614" data-tblseg="subtabletitle">
+       <th>Province ^{b}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="135.893" data-rowminy="238.794" data-role="obs">
+       <th data-role="obslabel">-0.58</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.527" data-cellminy="238.794">0.52</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="238.794">0.56</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="238.794">0.20–1.54</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="238.794">0.26</td>
+       <td data-role="supp-obs" class="cell">0.20</td>
+       <td data-role="supp-obs" class="cell">1.54</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="247.535" data-tblseg="subtabletitle">
+       <th>Cigarettes/day^{c}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="135.893" data-rowminy="248.772" data-role="obs">
+       <th data-role="obslabel">-0.80</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.527" data-cellminy="248.772">0.23</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="248.772">0.45</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="248.772">0.29–0.71</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="248.772">0.001</td>
+       <td data-role="supp-obs" class="cell">0.29</td>
+       <td data-role="supp-obs" class="cell">0.71</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="257.513" data-tblseg="subtabletitle">
+       <th>Age onset smoking ^{c}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="142.016" data-rowminy="258.750" data-role="obs">
+       <th data-role="obslabel">0.76</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.527" data-cellminy="258.750">0.40</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="258.750">2.13</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="258.750">0.97–4.66</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="258.750">0.06</td>
+       <td data-role="supp-obs" class="cell">0.97</td>
+       <td data-role="supp-obs" class="cell">4.66</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="267.491" data-tblseg="subtabletitle">
+       <th>Smoking partner^{a}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="135.893" data-rowminy="268.671" data-role="obs">
+       <th data-role="obslabel">-1.22</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.527" data-cellminy="268.671">0.39</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="268.671">0.29</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="268.671">0.14–0.64</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="268.671">0.002</td>
+       <td data-role="supp-obs" class="cell">0.14</td>
+       <td data-role="supp-obs" class="cell">0.64</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="277.469" data-tblseg="subtabletitle">
+       <th>Educational level ^{d}</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="142.016" data-rowminy="278.649" data-role="obs">
+       <th data-role="obslabel">1.17</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.527" data-cellminy="278.649">0.41</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="278.649">3.21</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="278.649">1.42–7.22</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="278.649">0.005</td>
+       <td data-role="supp-obs" class="cell">1.42</td>
+       <td data-role="supp-obs" class="cell">7.22</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="288.627" data-tblseg="subtabletitle">
+       <th>Constant</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="135.893" data-rowminy="288.627" data-role="obs">
+       <th data-role="obslabel">-3.06</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.527" data-cellminy="288.627">1.43</td>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="cell" data-cellminx="265.945" data-cellminy="288.627">0.03</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="298.548" data-tblseg="subtabletitle">
+       <th>Cluster variance</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="142.014" data-rowminy="298.548" data-role="obs">
+       <th data-role="obslabel">0.60</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.525" data-cellminy="298.548">0.44</td>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="cell" data-cellminx="265.944" data-cellminy="298.548">0.09</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="323.493" data-tblseg="subtabletitle">
+       <th>Treatment group</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="142.014" data-rowminy="323.493" data-role="obs">
+       <th data-role="obslabel">1.83</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.525" data-cellminy="323.493">0.86</td>
+       <td class="cell" data-cellminx="193.036" data-cellminy="323.493">6.25</td>
+       <td class="cell" data-cellminx="218.547" data-cellminy="323.493">1.16–33.61</td>
+       <td class="cell" data-cellminx="265.941" data-cellminy="323.493">0.033</td>
+       <td data-role="supp-obs" class="cell">1.16</td>
+       <td data-role="supp-obs" class="cell">33.61</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="333.471" data-tblseg="subtabletitle">
+       <th>Province</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="135.893" data-rowminy="333.471" data-role="obs">
+       <th data-role="obslabel">-0.51</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.527" data-cellminy="333.471">0.78</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="333.471">0.60</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="333.471">0.13–2.76</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="333.471">0.52</td>
+       <td data-role="supp-obs" class="cell">0.13</td>
+       <td data-role="supp-obs" class="cell">2.76</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="343.392" data-tblseg="subtabletitle">
+       <th>Cigarettes/day</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="135.893" data-rowminy="343.392" data-role="obs">
+       <th data-role="obslabel">-0.80</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.527" data-cellminy="343.392">0.35</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="343.392">0.45</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="343.392">0.23–0.89</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="343.392">0.022</td>
+       <td data-role="supp-obs" class="cell">0.23</td>
+       <td data-role="supp-obs" class="cell">0.89</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="353.370" data-tblseg="subtabletitle">
+       <th>Age onset smoking</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="142.013" data-rowminy="353.370" data-role="obs">
+       <th data-role="obslabel">0.15</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.524" data-cellminy="353.370">0.64</td>
+       <td class="cell" data-cellminx="193.035" data-cellminy="353.370">1.16</td>
+       <td class="cell" data-cellminx="218.547" data-cellminy="353.370">0.33–4.07</td>
+       <td class="cell" data-cellminx="265.941" data-cellminy="353.370">0.82</td>
+       <td data-role="supp-obs" class="cell">0.33</td>
+       <td data-role="supp-obs" class="cell">4.07</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="363.348" data-tblseg="subtabletitle">
+       <th>Smoking partner</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="135.893" data-rowminy="363.348" data-role="obs">
+       <th data-role="obslabel">-1.26</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.527" data-cellminy="363.348">0.56</td>
+       <td class="cell" data-cellminx="193.038" data-cellminy="363.348">0.28</td>
+       <td class="cell" data-cellminx="218.549" data-cellminy="363.348">0.10–0.84</td>
+       <td class="cell" data-cellminx="265.943" data-cellminy="363.348">0.023</td>
+       <td data-role="supp-obs" class="cell">0.10</td>
+       <td data-role="supp-obs" class="cell">0.84</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="373.269" data-tblseg="subtabletitle">
+       <th>Educational level</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="142.013" data-rowminy="373.269" data-role="obs">
+       <th data-role="obslabel">0.48</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.524" data-cellminy="373.269">0.60</td>
+       <td class="cell" data-cellminx="193.035" data-cellminy="373.269">1.61</td>
+       <td class="cell" data-cellminx="218.547" data-cellminy="373.269">0.50–5.24</td>
+       <td class="cell" data-cellminx="265.941" data-cellminy="373.269">0.43</td>
+       <td data-role="supp-obs" class="cell">0.50</td>
+       <td data-role="supp-obs" class="cell">5.24</td>
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="383.247" data-tblseg="subtabletitle">
+       <th>Constant</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="135.893" data-rowminy="383.247" data-role="obs">
+       <th data-role="obslabel">-2.60</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.527" data-cellminy="383.247">2.27</td>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="cell" data-cellminx="265.945" data-cellminy="383.247">0.25</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+     <tbody class="subtable">
+      <tr data-rowminx="58.564" data-rowminy="393.225" data-tblseg="subtabletitle">
+       <th>Cluster variance</th>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td class="empty" />
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+      <tr data-rowminx="142.014" data-rowminy="393.225" data-role="obs">
+       <th data-role="obslabel">0.98</th>
+       <td class="empty" />
+       <td class="cell" data-cellminx="167.525" data-cellminy="393.225">0.83</td>
+       <td class="empty" />
+       <td class="empty" />
+       <td class="cell" data-cellminx="265.944" data-cellminy="393.225">0.12</td>
+       <td data-role="supp-obs" class="empty" />
+       <td data-role="supp-obs" class="empty" />
+      </tr>
+     </tbody>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="6">^{a} Coding: 1 = yes; 0 = no. ^{b} Province: 1 = west; 0 = east. ^{c} Results for age of onset and number of cigarettes a day are reported for the effects of 5 units increase, i.e. 5 years for age onset smoking and 5 cigarette. ^{d} Educational level: 1 = medium or high, 0 = low; age is in years. ^{e} One-tailed p-value, since the cluster variance cannot be negative. </td>
+     </tr>
+    </tfoot>
+   </table>
+   <p>corpus-oa-uclii-01/10.1016.j.pec.2005.10.002/tables/table4/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

@@ -1,0 +1,10 @@
+"",,,,Bootstrap estimates,Bootstrap estimates,,
+5.28,.028,.14,0.38*,0.17,"[0.06, 0.70]",0.06,0.70
+6.44,.016,.16,- 0.36*,0.14,"[- 0.58, − 0.02]",0.58,0.02
+3.87,.031,.19,-,-,-,-,-
+"-",-,-,- 0.52,1.04,"[- 2.54, 1.45]",2.54,1.45
+"-",-,-,2.06*,0.76,"[0.43, 3.69]",0.43,3.69
+"Note. B = the unstandardized regression coefficient; SE = the estimated standard error of the coefficient, based on 5,000
+bootstrap resamples.
+*p < .05, based on 5,000 bootstrap resamples.
+"
