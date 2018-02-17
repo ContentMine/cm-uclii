@@ -1,0 +1,150 @@
+body, html {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+}
+
+table {
+	margin-top: 50px;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 2px;
+  text-align: left;
+}
+
+td, th {
+    width: 90px;
+    max-width: 90px;
+}
+
+.before > tr, 
+.before > th, 
+.before > td,
+.before > tr[data-tblseg="subtabletitle"] th {
+	background-color: #fff;
+	text-align: left;
+	text-decoration: none;
+	border: 1px solid #fff;
+	color: #ddd;
+}
+
+button {
+  margin: 20px 0;
+  font-size: 12px;
+	background: #eee;
+	background-color: #006688;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Show subtables */
+
+.before .subtable {
+    background-color:#fff;
+    color:#000;
+    border: 0px solid #fff;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition:all 1s;
+}
+
+table.show_st tbody.subtable {
+  background: #bbffbb;
+  color: #000;
+  border: 20px solid white;
+  border-spacing: 20px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition:all 1s;
+}
+
+table.show_st thead {
+  border: 20px solid white;
+  border-spacing: 20px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition:all 1s;
+}
+
+table.show_st tr[data-tblseg="subtabletitle"] th {
+	background-color: #00ff22;
+	padding-left: -10px;
+	text-align: left;
+	text-decoration: underline;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition:all 1s;
+}
+
+table.show_st .subtable tr:not([data-tblseg="subtabletitle"]) th[data-role="obslabel"] {
+	padding-left: 10px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition:all 1s;
+}
+
+table.show_st .subtable th[data-role="obslabel"] {
+	color: #aa3322;
+}
+
+table.show_st .subtable tr[data-role="obs"] {
+  padding-left: 0;
+}
+
+
+/* Show supercolumn headers */
+
+table.show_sc thead th[colspan] {
+  color: #000;
+  border-bottom: 3px solid black;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition:all 1s;
+}
+
+/* supplemental columns */
+td[data-role="supp-obs"],
+th[data-role="supp-header"] {
+  display: none;
+}
+
+table.show_cc td[data-role="supp-obs"] {
+  display: table-cell;
+  background: #dd2;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition:all 1s;
+}
+
+table.show_cc th[data-role="supp-header"] {
+  display: table-cell;
+  font-weight: bold;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition:all 1s;
+}
+
+td.cell, th {
+	border: #eee 2px solid; 
+}
+
+td.empty {
+	border: yellow 2px dotted;
+}
+
+
