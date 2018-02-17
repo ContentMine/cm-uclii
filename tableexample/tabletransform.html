@@ -2,6 +2,19 @@
 <html>
 <head>
  <meta charset="UTF-8">
+ <style>
+	#barchart {
+		margin: 50px auto;
+	}
+	h2 {
+		color: #113388;
+		font-size: 16pt;
+		margin: 20px auto 2px auto;
+	}
+	p {
+		font-size: 12pt;
+	}
+ </style>
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
@@ -15,10 +28,16 @@
 -->
 </head>
 <body>
+<h2>Original PDF table</h2>
 <div>
 	<img src="10.1093.alcalc.ags133_table2.png" />
 </div>
 
+<h2>Apply ContentMine processing</h2>
+<p>
+Processing with norma has resolved the table into a grid of structured usable data.
+Click the buttons to see how the semantic structures of the table are also captured by norma processing. 
+</p>
 
 <button id="subtable_btn">
 Subtables
@@ -390,6 +409,12 @@ intention-to-treat (multiple imputation) and completers-only analyses
 </tbody>
 </tbody>
 </table>
+<br>
+<br>
+<h2>Utilising the extracted data and its semantic structure for visualisation and analysis</h2>
+<div id="barchart">
+	<img src="10.1093.alcalc.ags133_table2_pt1_barchart.png" />
+</div>
 
 </body>
 </html>
